@@ -96,6 +96,29 @@ html(lang="ja")
           //-　Bannerエリア
           //- .advertisement-area__banner
           //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          
+    //- ページネーション
+    .pagination
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
+          
+      .pagination__inside
+        a.pagination__link(href="") 
+          img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          p.pagination__text 前へ
+
+      .pagination__inside.is-next
+        a.pagination__link(href="")
+          p.pagination__text 次へ
+          img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          
+
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 

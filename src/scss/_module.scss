@@ -246,7 +246,7 @@
     // .book-banner__text
     &__text {
       font-size: 12px;
-      padding: 5px;
+      padding: 15px 15px;
       line-height: 1.2;
       text-align: left;
       display: inline-block;
@@ -447,6 +447,10 @@
   }
   & img {
     width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 
