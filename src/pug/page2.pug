@@ -100,7 +100,7 @@ html(lang="ja")
                   //-　サービス名称
                   h2.service-info__name Spotify
                     //-　コピーライト
-                    span.service-info__copy © Spotify AB
+                    span.service-info__copy © Spotify Ltd.
               //-　画像
               ul.service-thumbnail__app.slider-thumbnail
                 - 
@@ -132,7 +132,6 @@ html(lang="ja")
                   ]
                 each item in listSpotify
                   li.service-thumbnail__app-item
-                  a(href="/app/spotify.html")
                     img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　NewsPicksサービス情報
@@ -491,27 +490,27 @@ html(lang="ja")
                     img(src=item.imgSrc alt="item.altName" loading="lazy")
                       
             //-　AmazonBannerエリア
-            //　include include/_TheBooksBanner
+            include include/_TheBooksBanner
 
             //- ページネーション
             .pagination
-              //　.pagination__end
+              //.pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
                   
-              //　.pagination__inside
-                a.pagination__link(href="") 
+              .pagination__inside
+                a.pagination__link(href="index.html") 
                   img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   p.pagination__text 前へ
 
-              .pagination__inside.is-next
-                a.pagination__link(href="page2.html")
+              //.pagination__inside.is-next
+                a.pagination__link(href="")
                   p.pagination__text 次へ
                   img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   
 
-              //　.pagination__end
+              //.pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")
