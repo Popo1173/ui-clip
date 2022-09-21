@@ -131,9 +131,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listSpotify
-                  li.service-thumbnail__app-item
-                  a(href="/app/spotify.html")
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                  div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")                
 
             //-　NewsPicksサービス情報
             .tab-contents__item-inner
@@ -176,8 +176,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listNewspicks
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")                
+                  div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")               
 
             //-　Tripadvisorサービス情報
             .tab-contents__item-inner
@@ -220,8 +221,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listTripadvisor
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                  div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")      
 
             //-　stylehintサービス情報
             .tab-contents__item-inner
@@ -264,8 +266,9 @@ html(lang="ja")
                     },                                                                                               
                   ]
                 each item in listStylehint
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")   
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　AmazonBannerエリア
             include include/_TheBooksBanner
@@ -311,8 +314,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listGo
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")        
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")        
 
             //-　S.RIDEサービス情報
             .tab-contents__item-inner
@@ -355,8 +359,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listGo
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　Evernoteサービス情報
             .tab-contents__item-inner
@@ -399,8 +404,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listEvernote
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　Uber Eatsサービス情報
             .tab-contents__item-inner
@@ -443,8 +449,9 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listUbereats
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")                    
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")                     
 
             //-　出前館サービス情報
             .tab-contents__item-inner
@@ -487,20 +494,21 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listDemaekan
-                  li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                 div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
                       
             //-　AmazonBannerエリア
-            //　include include/_TheBooksBanner
+            //include include/_TheBooksBanner
 
             //- ページネーション
             .pagination
-              //　.pagination__end
+              //.pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
                   
-              //　.pagination__inside
+              //.pagination__inside
                 a.pagination__link(href="") 
                   img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   p.pagination__text 前へ
@@ -511,7 +519,7 @@ html(lang="ja")
                   img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   
 
-              //　.pagination__end
+              //.pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")

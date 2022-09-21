@@ -1191,11 +1191,7 @@ footer .footer-inner .copyright {
 
 .advertisement-area .book-banner__text {
   font-size: 12px;
-<<<<<<< HEAD
   padding: 0 15px 0;
-=======
-  padding: 15px 15px;
->>>>>>> 2750af4bb1a896dde28d2ae5819b2012931c4198
   line-height: 1.2;
   text-align: left;
   display: inline-block;
@@ -1204,7 +1200,6 @@ footer .footer-inner .copyright {
 @media screen and (max-width: 767px) {
   .advertisement-area .book-banner .slick-list {
     padding: 0 !important;
-    background: red;
   }
 }
 
