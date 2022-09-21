@@ -255,6 +255,7 @@
     .slick-list {
       @include mq-up("sp") {
         padding: 0 !important;
+        background: red;
       }            
     }
 

@@ -132,7 +132,8 @@ html(lang="ja")
                   ]
                 each item in listSpotify
                   li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                    a(href="/app/soundcloud.html")
+                      img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　NewsPicksサービス情報
             .tab-contents__item-inner

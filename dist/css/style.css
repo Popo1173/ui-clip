@@ -1199,6 +1199,7 @@ footer .footer-inner .copyright {
 @media screen and (max-width: 767px) {
   .advertisement-area .book-banner .slick-list {
     padding: 0 !important;
+    background: red;
   }
 }
 
