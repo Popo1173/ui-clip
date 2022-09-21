@@ -1326,6 +1326,20 @@ footer .footer-inner .copyright {
   }
 }
 
+.contents-thumbnail {
+  margin-bottom: 1em;
+  margin: 1em 0.5em;
+  flex: 1 1 225px;
+}
+
+.contents-thumbnail img {
+  width: 100%;
+}
+
+.contents-thumbnail:hover {
+  opacity: 0.7;
+}
+
 .overview-text {
   color: #3b4043;
   font-size: 14px;
@@ -1366,27 +1380,6 @@ footer .footer-inner .copyright {
   z-index: 3;
   text-align: center;
   font-size: 10px;
-}
-
-.contents-thumbnail {
-  margin-bottom: 1em;
-  margin-right: 1em;
-  max-width: 225px;
-}
-
-@media screen and (max-width: 767px) {
-  .contents-thumbnail {
-    width: 48%;
-    margin-right: 0;
-  }
-}
-
-.contents-thumbnail img {
-  width: 100%;
-}
-
-.contents-thumbnail:hover {
-  opacity: 0.7;
 }
 
 /*
