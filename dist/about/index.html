@@ -35,26 +35,31 @@
   <body>
     <header>
       <div class="header-inner">
-        <ul class="header-inner__navi">
+        <ul class="header-inner__nav">
           <li class="header-inner__logo"><a href="/"><img src="/assets/common/logo.svg" alt="UICLIP"></a></li>
-          <li class="header-inner__navi-link">
+          <li class="header-inner__nav-link">
             <div class="hamburger">
               <div class="hamburger-inner"><span class="hamburger__lineTop"></span><span class="hamburger__lineMiddle"></span><span class="hamburger__lineBottom"></span></div>
             </div>
-            <div class="background-navi"></div>
-            <ul class="header-inner__menu">
-              <li class="header-inner__menu-item"><a href="/about">About</a></li>
-              <li class="header-inner__menu-item"> <a href="/">Blog</a></li>
-              <li class="header-inner__menu-item"> <a href="/books">Books</a></li>
-              <li class="header-inner__menu-item icons">
-                <ul class="icons-items">
-                  <li><a class="icons-items__link" href="https://twitter.com/uiclip" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
-                  <li><a class="icons-items__link" href="https://www.facebook.com/uiclip" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
-                  <li><a class="icons-items__link" href="example.com" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
-                  <li><a href="https://www.buymeacoffee.com/uiclip"><img src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
-                </ul>
-              </li>
-            </ul>
+            <div class="nav__inner">
+              <div class="background-nav"></div>
+              <ul class="header-inner__menu">
+                <li class="header-inner__menu-item is-current"><a href="/about">About</a></li>
+                <li class="header-inner__menu-item "><a href="/blog">Blog</a></li>
+                <li class="header-inner__menu-item "><a href="/books">Books</a></li>
+                <li class="header-inner__menu-item icons">
+                  <ul class="icons-items">
+                    <li><a class="icons-items__link" href="https://twitter.com/uiclip" target="_blank">
+                        <div class="background-icon"></div><img class="icon-twitter" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
+                    <li><a class="icons-items__link" href="https://www.facebook.com/uiclip" target="_blank">
+                        <div class="background-icon"></div><img class="icon-facebook" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
+                    <li><a class="icons-items__link" href="example.com" target="_blank">
+                        <div class="background-icon"></div><img class="icon-rss icons-items__link-icon" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
+                    <li><a href="https://www.buymeacoffee.com/uiclip"><img class="icon-coffee" src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -69,8 +74,12 @@
 <br /> Twitter、facebookで更新情報を発信しています。
           </p>
           <ul class="about-content__buttons">
-            <li class="about-content__buttons-twitter"><a href="example.com"><img src="/assets/common/btn-twitter.png" alt="twitter"></a></li>
-            <li class="about-content__buttons-facebook"><a href="example.com"><img src="/assets/common/btn-facebook.png" alt="facebook"></a></li>
+            <li class="about-content__button">
+              <div class="background-button"></div><a class="button-link" href="example.com"><img class="button-image" src="/assets/common/icon-twitter.svg" alt="Twitter"><span class="button-text">Twitter </span></a>
+            </li>
+            <li class="about-content__button">
+              <div class="background-button"></div><a class="button-link" href="example.com"><img class="button-image" src="/assets/common/icon-facebook.svg" alt="facebook"><span class="button-text">Facebook                </span></a>
+            </li>
           </ul>
           <h3 class="about-content__heading-policy">サイトポリシー  </h3>
           <ul class="about-content__policy">
@@ -87,17 +96,20 @@
     <footer>
       <div class="footer-inner">
         <ul class="icon-area">
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank"><img src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://www.facebook.com/uiclip" target="_blank"><img src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank"><img src="/assets/common/icon-rss.svg" alt="rss"></a></li>
-          <li class="icon-area__item"><a href="https://www.buymeacoffee.com/uiclip" target="_blank"><img src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-twitter" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://www.facebook.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-facebook" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-rss" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
+          <li class="icon-area__item"><a href="https://www.buymeacoffee.com/uiclip" target="_blank"><img class="icon-coffee" src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
         </ul>
         <p class="copyright">© UI Clip</p>
       </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="/js/scripts.js"></script>
     </footer>
   </body>
 </html>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/scripts.js"></script>

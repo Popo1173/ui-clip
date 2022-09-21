@@ -14,7 +14,7 @@ html(lang="ja")
     meta(property="og:site_name", content="")
     meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「xxxxx」ページです。")
     meta(property="fb:app_id", content="任意のID")
-    title xxxxx | UI Clip | UIデザインギャラリー
+    title soundcloud | UI Clip | UIデザインギャラリー
     link(rel='shortcut icon', href="../assets/common/favicon.png")
     link(rel='shortcut icon', href="../assets/common/apple-touch-icon.png")
     link(rel='shortcut icon', href="../assets/common/android-chrome-192x192.png")    
@@ -37,7 +37,7 @@ html(lang="ja")
     
     //- header (ロゴ、ナビゲーション)
     header
-      include ../include/_header
+      include ../../include/_header
 
     section.content
       .content__inner
@@ -175,18 +175,49 @@ html(lang="ja")
                             span.list-item タグが入ります   
                           li.app-information__tags-list-item         
                             span.list-item タグが入ります
-
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
-
           //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
+          .advertisement-area 
+              .advertisement-area__add-book
+                .book-title
+                  p.book-title__text Books
+                ul.book-banner.slick-add
+                  //- li.book-banner__item ddd
+                  - 
+                    var list = [
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                      {
+                        altName: bookバナー,
+                        imgSrc: "/assets/common/add/banner-add-book01.png",
+                      },
+                                                                                                                    
+                    ]
+                  each item in list
+                    li.book-banner__item
+                      img(src=item.imgSrc alt="item.altName" loading="lazy")
 
+              .advertisement-area__banner
+                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 
     footer
-      include ../include/_footer
+      include ../../include/_footer

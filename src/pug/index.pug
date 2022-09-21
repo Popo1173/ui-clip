@@ -14,7 +14,7 @@ html(lang="ja")
     meta(property="og:site_name", content="")
     meta(property="og:description", content="UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。")
     meta(property="fb:app_id", content="任意のID")
-    title UI Clip | UIデザインギャラリー
+    title UI Clip | UIデザインギャラリーっっd
     link(rel='shortcut icon', href="/assets/common/favicon.png")
     link(rel='shortcut icon', href="/assets/common/apple-touch-icon.png")
     link(rel='shortcut icon', href="/assets/common/android-chrome-192x192.png")
@@ -35,46 +35,10 @@ html(lang="ja")
     //- script.
     //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
     
-    //- ヘッダー
-    //- ロゴ
-    //- ナビゲーション
+    //- header (ロゴ、ナビゲーション)
     header
-      .header-inner
-        ul.header-inner__navi
-          li.header-inner__logo
-            a(href="/")
-              img(src="/assets/common/logo.svg" alt="UICLIP") 
-          li.header-inner__navi-link
-            //- バーガーメニュー
-            .hamburger
-              .hamburger-inner
-                span.hamburger__lineTop
-                span.hamburger__lineMiddle
-                span.hamburger__lineBottom
-            .background-navi
-            ul.header-inner__menu
-              li.header-inner__menu-item
-                a(href="/about") About
-              //- li.header-inner__menu-item 
-              //-   a(href="/") Category
-              li.header-inner__menu-item 
-                a(href="/") Blog
-              li.header-inner__menu-item 
-                a(href="/books") Books
-              li.header-inner__menu-item.icons
-                ul.icons-items
-                  li
-                    a.icons-items__link(href="https://twitter.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-twitter.svg" alt="twitter")
-                  li
-                    a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-facebook.svg" alt="facebook")
-                  li
-                    a.icons-items__link(href="example.com" target="_blank")
-                      img(src="/assets/common/icon-rss.svg" alt="rss" class="icons-items__link-icon")
-                  li
-                    a(href="https://www.buymeacoffee.com/uiclip")
-                      img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")           
+      include include/_header
+
     section.content
       .content__inner
         .tab-contents
@@ -122,52 +86,10 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in list
-                  div.service-thumbnail__app-item.is-modal-open
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
-
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/soundcloud/img06-soundcloud@2x.png" alt="rrr")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img06-soundcloud@2x.png")                        
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/soundcloud/icon-soundcloud.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name SoundCloud
-                            //-　コピーライト
-                            span.service-info__copy © SoundCloud Global Limited & Co KG
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります　タグが
-                          li.app-information__tags-list-item
-                            span.list-item タグが入りますタグが入ります
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります　タグが
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります　タグが入ります
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります                                                        
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります   
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります   
-                          li.app-information__tags-list-item
-                            span.list-item タグが入ります                                                           
+                  div.service-thumbnail__app-item
+                    a(href="/app/soundcloud.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")
+                    
             //-　spotifyサービス情報
             .tab-contents__item-inner
               dl.service-info
@@ -210,7 +132,8 @@ html(lang="ja")
                   ]
                 each item in listSpotify
                   li.service-thumbnail__app-item
-                    img(src=item.imgSrc alt="item.altName" loading="lazy")
+                    a(href="/app/soundcloud.html")
+                      img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　NewsPicksサービス情報
             .tab-contents__item-inner
@@ -344,78 +267,8 @@ html(lang="ja")
                   li.service-thumbnail__app-item
                     img(src=item.imgSrc alt="item.altName" loading="lazy")   
 
-              //-　AmazonBannerエリア
-              .advertisement-area 
-                .advertisement-area__add-book
-                  .book-title
-                    p.book-title__text Books
-                  ul.book-banner.slick-add
-                    //- li.book-banner__item ddd
-                    - 
-                      var list = [
-                        {
-                          altName: bookバナー1,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー2,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー3,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー4,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー5,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー6,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー7,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー8,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー9,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー10,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー11,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー12,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー13,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },
-                        {
-                          altName: bookバナー14,
-                          imgSrc: "/assets/common/add/banner-add-book01.png",
-                        },                                                                                                                                    
-                      ]
-                    each item in list
-                      li.book-banner__item
-                        img(src=item.imgSrc alt="item.altName" loading="lazy")
-
-                .advertisement-area__banner
-                  img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+            //-　AmazonBannerエリア
+            include include/_TheBooksBanner
 
             //-　GOサービス情報
             .tab-contents__item-inner
@@ -461,7 +314,7 @@ html(lang="ja")
                   li.service-thumbnail__app-item
                     img(src=item.imgSrc alt="item.altName" loading="lazy")        
 
-            //-　GOサービス情報
+            //-　S.RIDEサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
@@ -638,77 +491,32 @@ html(lang="ja")
                     img(src=item.imgSrc alt="item.altName" loading="lazy")
                       
             //-　AmazonBannerエリア
-            .advertisement-area 
-              .advertisement-area__add-book
-                .book-title
-                  p.book-title__text Books
-                ul.book-banner.slick-add
-                  //- li.book-banner__item ddd
-                  - 
-                    var list = [
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                      {
-                        altName: bookバナー,
-                        imgSrc: "/assets/common/add/banner-add-book01.png",
-                        text: "テストテストテストテストテストテスト",
-                      },
-                                                                                                                    
-                    ]
-                  each item in list
-                    li.book-banner__item
-                      img(src=item.imgSrc alt="item.altName" loading="lazy")
-                      span.book-banner__item-text #{item.text}
+            include include/_TheBooksBanner
 
-              .advertisement-area__banner
-                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+            //- ページネーション
+            .pagination
+              .pagination__end
+                a.pagination__link(href="")
+                  .pagination__back-ground
+                    img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
+                  
+              .pagination__inside
+                a.pagination__link(href="") 
+                  img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+                  p.pagination__text 前へ
 
+              .pagination__inside.is-next
+                a.pagination__link(href="")
+                  p.pagination__text 次へ
+                  img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+                  
+
+              .pagination__end
+                a.pagination__link(href="")
+                  .pagination__back-ground
+                    img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述
     footer
-      .footer-inner
-          ul.icon-area
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-twitter.svg" alt="twitter")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://www.facebook.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-facebook.svg" alt="facebook")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-rss.svg" alt="rss")
-            li.icon-area__item
-              a(href="https://www.buymeacoffee.com/uiclip" target="_blank")
-                img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")
-          p.copyright © UI Clip
-
-script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-//- script(src="//code.jquery.com/jquery-1.11.0.min.js")
-script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
-script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-//- script(src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js")
-script(src="js/scripts.js")
-
-
-//- script(src="js/pagination.js")
+      include include/_footer

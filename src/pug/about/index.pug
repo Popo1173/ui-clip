@@ -35,46 +35,11 @@ html(lang="ja")
     //- script.
     //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
     
-    //- ヘッダー
-    //- ロゴ
-    //- ナビゲーション
+    //- header (ロゴ、ナビゲーション)
+    - var page = "about";
     header
-      .header-inner
-        ul.header-inner__navi
-          li.header-inner__logo
-            a(href="/")
-              img(src="/assets/common/logo.svg" alt="UICLIP") 
-          li.header-inner__navi-link
-            //- バーガーメニュー
-            .hamburger
-              .hamburger-inner
-                span.hamburger__lineTop
-                span.hamburger__lineMiddle
-                span.hamburger__lineBottom
-            .background-navi
-            ul.header-inner__menu
-              li.header-inner__menu-item
-                a(href="/about") About
-              //- li.header-inner__menu-item 
-              //-   a(href="/") Category
-              li.header-inner__menu-item 
-                a(href="/") Blog
-              li.header-inner__menu-item 
-                a(href="/books") Books
-              li.header-inner__menu-item.icons
-                ul.icons-items
-                  li
-                    a.icons-items__link(href="https://twitter.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-twitter.svg" alt="twitter")
-                  li
-                    a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-facebook.svg" alt="facebook")
-                  li
-                    a.icons-items__link(href="example.com" target="_blank")
-                      img(src="/assets/common/icon-rss.svg" alt="rss" class="icons-items__link-icon")
-                  li
-                    a(href="https://www.buymeacoffee.com/uiclip")
-                      img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")             
+      include ../include/_header
+            
     section.content
       .content__inner
         .about-content
@@ -85,12 +50,16 @@ html(lang="ja")
             <br /> Twitter、facebookで更新情報を発信しています。
           
           ul.about-content__buttons
-            li.about-content__buttons-twitter
-              a(href="example.com")
-                img(src="/assets/common/btn-twitter.png" alt="twitter") 
-            li.about-content__buttons-facebook
-              a(href="example.com")
-                img(src="/assets/common/btn-facebook.png" alt="facebook")    
+            li.about-content__button
+              .background-button
+              a.button-link(href="example.com")
+                img.button-image(src="/assets/common/icon-twitter.svg" alt="Twitter")               
+                span.button-text Twitter 
+            li.about-content__button
+              .background-button
+              a.button-link(href="example.com")
+                img.button-image(src="/assets/common/icon-facebook.svg" alt="facebook") 
+                span.button-text Facebook                
 
           h3.about-content__heading-policy サイトポリシー  
           ul.about-content__policy
@@ -101,29 +70,7 @@ html(lang="ja")
             li.about-content__policy-items 本サイトへのリンクは、原則として自由ですが、公序良俗に反するサイト、違法なサイトからのリンクは、お断りいたします。リンクの際は、本サイトである旨を明示してください。
             li.about-content__policy-items 本サイトでは、Javascriptを使用しております。お使いのブラウザでJavascriptの設定を無効にされている場合、正しく機能しない、もしくは正しく表示されない場合がございます。ブラウザ設定でJavascriptの設定を有効にしていただくことをお奨めいたします。
 
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
     footer
-      .footer-inner
-          ul.icon-area
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-twitter.svg" alt="twitter")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://www.facebook.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-facebook.svg" alt="facebook")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-rss.svg" alt="rss")
-            li.icon-area__item
-              a(href="https://www.buymeacoffee.com/uiclip" target="_blank")
-                img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")
-          p.copyright © UI Clip
-
-
-
-
-//- script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-script(src="//code.jquery.com/jquery-1.11.0.min.js")
-script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
-script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-script(src="js/scripts.js")
-//- script(src="js/pagination.js")
+      include ../include/_footer

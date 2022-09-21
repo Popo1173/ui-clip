@@ -35,46 +35,11 @@ html(lang="ja")
     //- script.
     //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
     
-    //- ヘッダー
-    //- ロゴ
-    //- ナビゲーション
+    //- header (ロゴ、ナビゲーション)
+    - var page = "books";
     header
-      .header-inner
-        ul.header-inner__navi
-          li.header-inner__logo
-            a(href="/")
-              img(src="/assets/common/logo.svg" alt="UICLIP") 
-          li.header-inner__navi-link
-            //- バーガーメニュー
-            .hamburger
-              .hamburger-inner
-                span.hamburger__lineTop
-                span.hamburger__lineMiddle
-                span.hamburger__lineBottom
-            .background-navi
-            ul.header-inner__menu
-              li.header-inner__menu-item
-                a(href="/about") About
-              //- li.header-inner__menu-item 
-              //-   a(href="/") Category
-              li.header-inner__menu-item 
-                a(href="/") Blog
-              li.header-inner__menu-item 
-                a(href="/books") Books
-              li.header-inner__menu-item.icons
-                ul.icons-items
-                  li
-                    a.icons-items__link(href="https://twitter.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-twitter.svg" alt="twitter")
-                  li
-                    a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank")
-                      img.icons-items__link-icon(src="/assets/common/icon-facebook.svg" alt="facebook")
-                  li
-                    a.icons-items__link(href="example.com" target="_blank")
-                      img(src="/assets/common/icon-rss.svg" alt="rss" class="icons-items__link-icon")
-                  li
-                    a(href="https://www.buymeacoffee.com/uiclip")
-                      img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")               
+      include ../include/_header
+               
     section.content
       .content__inner
         .books-content
@@ -82,81 +47,80 @@ html(lang="ja")
 
           .books-content__books
             ul.books-content__books-list
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-01.jpg" alt="books01")
-                p テキストテキストテキスト
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-02.jpg" alt="books02")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-03.jpg" alt="books03")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-04.jpg" alt="books04")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-01.jpg" alt="books01")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-02.jpg" alt="books02")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-03.jpg" alt="books03")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-04.jpg" alt="books04")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-01.jpg" alt="books01")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-02.jpg" alt="books02")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-03.jpg" alt="books03")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-04.jpg" alt="books04")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-01.jpg" alt="books01")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-02.jpg" alt="books02")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-03.jpg" alt="books03")
-              li.books-content__books-list-items
-                a(href="example.com")
-                img(src="/assets/books/item-books-04.jpg" alt="books04")
-            //-　AmazonBannerエリア
-            .advertisement-area 
-              .advertisement-area__banner
-                img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+              -
+                var list = [
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-01.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキストっっっっs'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-02.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-02.jpg',
+                    alt: 'books02',
+                    text: 'テキストテキストテキストテキスト'
+                  },
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-03.jpg',
+                    alt: 'books03',
+                    text: 'テキストテキストテキストテキストテキストテキスト'
+                  },                  
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-04.jpg',
+                    alt: 'books04',
+                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                  },                  
+                  {
+                    link: 'https://google.com',
+                    image: '/assets/books/item-books-01.jpg',
+                    alt: 'books01',
+                    text: 'テキストテキスト'
+                  },                  
 
+                ]
+              each item in list
+                li.books-content__books-list-items
+                  a.book-link(href=item.link target="_blank")
+                    img.book-link__image(src=item.image alt="item.alt")
+                    p.book-link__text #{item.text}
+
+          //-　Bannerエリア
+          //- .advertisement-area__banner
+          //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          
+    //- ページネーション
+    .pagination
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
+          
+      .pagination__inside
+        a.pagination__link(href="") 
+          img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          p.pagination__text 前へ
+
+      .pagination__inside.is-next
+        a.pagination__link(href="")
+          p.pagination__text 次へ
+          img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          
+
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
     footer
-      .footer-inner
-          ul.icon-area
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-twitter.svg" alt="twitter")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://www.facebook.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-facebook.svg" alt="facebook")
-            li.icon-area__item
-              a.icon-area__item-link(href="https://twitter.com/uiclip" target="_blank")
-                img(src="/assets/common/icon-rss.svg" alt="rss")
-            li.icon-area__item
-              a(href="https://www.buymeacoffee.com/uiclip" target="_blank")
-                img(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")
-          p.copyright © UI Clip
-
-
-script(src="https://code.jquery.com/jquery-3.6.0.min.js")
-//- script(src="//code.jquery.com/jquery-1.11.0.min.js")
-script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
-script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-//- script(src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js")
-script(src="../js/scripts.js")
+      include ../include/_footer

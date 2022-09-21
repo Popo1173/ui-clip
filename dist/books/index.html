@@ -35,26 +35,31 @@
   <body>
     <header>
       <div class="header-inner">
-        <ul class="header-inner__navi">
+        <ul class="header-inner__nav">
           <li class="header-inner__logo"><a href="/"><img src="/assets/common/logo.svg" alt="UICLIP"></a></li>
-          <li class="header-inner__navi-link">
+          <li class="header-inner__nav-link">
             <div class="hamburger">
               <div class="hamburger-inner"><span class="hamburger__lineTop"></span><span class="hamburger__lineMiddle"></span><span class="hamburger__lineBottom"></span></div>
             </div>
-            <div class="background-navi"></div>
-            <ul class="header-inner__menu">
-              <li class="header-inner__menu-item"><a href="/about">About</a></li>
-              <li class="header-inner__menu-item"> <a href="/">Blog</a></li>
-              <li class="header-inner__menu-item"> <a href="/books">Books</a></li>
-              <li class="header-inner__menu-item icons">
-                <ul class="icons-items">
-                  <li><a class="icons-items__link" href="https://twitter.com/uiclip" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
-                  <li><a class="icons-items__link" href="https://www.facebook.com/uiclip" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
-                  <li><a class="icons-items__link" href="example.com" target="_blank"><img class="icons-items__link-icon" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
-                  <li><a href="https://www.buymeacoffee.com/uiclip"><img src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
-                </ul>
-              </li>
-            </ul>
+            <div class="nav__inner">
+              <div class="background-nav"></div>
+              <ul class="header-inner__menu">
+                <li class="header-inner__menu-item "><a href="/about">About</a></li>
+                <li class="header-inner__menu-item "><a href="/blog">Blog</a></li>
+                <li class="header-inner__menu-item is-current"><a href="/books">Books</a></li>
+                <li class="header-inner__menu-item icons">
+                  <ul class="icons-items">
+                    <li><a class="icons-items__link" href="https://twitter.com/uiclip" target="_blank">
+                        <div class="background-icon"></div><img class="icon-twitter" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
+                    <li><a class="icons-items__link" href="https://www.facebook.com/uiclip" target="_blank">
+                        <div class="background-icon"></div><img class="icon-facebook" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
+                    <li><a class="icons-items__link" href="example.com" target="_blank">
+                        <div class="background-icon"></div><img class="icon-rss icons-items__link-icon" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
+                    <li><a href="https://www.buymeacoffee.com/uiclip"><img class="icon-coffee" src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -65,46 +70,50 @@
           <h2 class="books-content__heading">Books</h2>
           <div class="books-content__books">
             <ul class="books-content__books-list">
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-01.jpg" alt="books01">
-                <p>テキストテキストテキスト</p>
-              </li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-02.jpg" alt="books02"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-03.jpg" alt="books03"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-04.jpg" alt="books04"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-01.jpg" alt="books01"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-02.jpg" alt="books02"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-03.jpg" alt="books03"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-04.jpg" alt="books04"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-01.jpg" alt="books01"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-02.jpg" alt="books02"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-03.jpg" alt="books03"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-04.jpg" alt="books04"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-01.jpg" alt="books01"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-02.jpg" alt="books02"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-03.jpg" alt="books03"></li>
-              <li class="books-content__books-list-items"><a href="example.com"></a><img src="/assets/books/item-books-04.jpg" alt="books04"></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-01.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキストっっっっs</p></a></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-02.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p></a></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-02.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキストテキストテキスト</p></a></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-03.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキストテキストテキストテキストテキスト</p></a></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-04.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキストテキストテキストテキストテキストテキストテキスト</p></a></li>
+              <li class="books-content__books-list-items"><a class="book-link" href="https://google.com" target="_blank"><img class="book-link__image" src="/assets/books/item-books-01.jpg" alt="item.alt">
+                  <p class="book-link__text">テキストテキスト</p></a></li>
             </ul>
-            <div class="advertisement-area"> 
-              <div class="advertisement-area__banner"><img class="banner-add" src="/assets/common/add/banner-add-adobe.png" alt="広告"></div>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="pagination">
+      <div class="pagination__end"><a class="pagination__link" href="">
+          <div class="pagination__back-ground"><img class="pagination__image" src="/assets/common/icon-goto-first.svg" alt="一番前に戻る"></div></a></div>
+      <div class="pagination__inside"><a class="pagination__link" href=""> <img class="pagination__inside-image is-back" src="/assets/common/icon-arrow.svg" alt="一番前に戻る">
+          <p class="pagination__text">前へ</p></a></div>
+      <div class="pagination__inside is-next"><a class="pagination__link" href="">
+          <p class="pagination__text">次へ</p><img class="pagination__inside-image" src="/assets/common/icon-arrow.svg" alt="一番前に戻る"></a></div>
+      <div class="pagination__end"><a class="pagination__link" href="">
+          <div class="pagination__back-ground"><img class="pagination__image is-last-arrow" src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く"></div></a></div>
+    </div>
     <footer>
       <div class="footer-inner">
         <ul class="icon-area">
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank"><img src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://www.facebook.com/uiclip" target="_blank"><img src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
-          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank"><img src="/assets/common/icon-rss.svg" alt="rss"></a></li>
-          <li class="icon-area__item"><a href="https://www.buymeacoffee.com/uiclip" target="_blank"><img src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-twitter" src="/assets/common/icon-twitter.svg" alt="twitter"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://www.facebook.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-facebook" src="/assets/common/icon-facebook.svg" alt="facebook"></a></li>
+          <li class="icon-area__item"><a class="icon-area__item-link" href="https://twitter.com/uiclip" target="_blank">
+              <div class="background-icon"></div><img class="icon-rss" src="/assets/common/icon-rss.svg" alt="rss"></a></li>
+          <li class="icon-area__item"><a href="https://www.buymeacoffee.com/uiclip" target="_blank"><img class="icon-coffee" src="/assets/common/banner-coffee.svg" alt="buy me a coffee"></a></li>
         </ul>
         <p class="copyright">© UI Clip</p>
       </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="/js/scripts.js"></script>
     </footer>
   </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/scripts.js"></script>

@@ -1,0 +1,106 @@
+//-　AmazonBannerエリア
+.advertisement-area 
+  .advertisement-area__add-book
+    //- .book-title
+    .book-header
+      p.book-header__title Books
+      p.book-header__link
+        a.book-header__link-link(href="/books") View All
+    .book-banner.slick-add
+      //- li.book-banner__item ddd
+      - 
+        var list = [
+          {
+            altName: bookバナー1,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー2,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://yahoo.com",
+          },
+          {
+            altName: bookバナー3,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://yahoo.com",
+          },
+          {
+            altName: bookバナー4,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー5,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー6,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー7,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー8,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキストテキスト",
+            link: "https://google.com",
+          },     
+        {
+            altName: bookバナー9,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキス",
+            link: "https://google.com",
+          },     
+        {
+            altName: bookバナー10,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキスト",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー7,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキ",
+            link: "https://google.com",
+          },
+          {
+            altName: bookバナー8,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキ",
+            link: "https://google.com",            
+          },     
+        {
+            altName: bookバナー9,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキ",
+            link: "https://google.com",            
+          },     
+        {
+            altName: bookバナー10,
+            imgSrc: "/assets/common/add/banner-add-book01.png",
+            text: "テキストテキストテキ",
+            link: "https://google.com",
+          },                                                                                                                                                                                                                            
+        ]
+      each item in list
+        .book-banner__item
+          a.book-banner__inner(href=item.link target="_blank")
+            img.book-banner__image(src=item.imgSrc alt="item.altName" loading="lazy")
+            span.book-banner__text #{item.text}
+
+  //- 広告バナーはこれから追加するので現時点で非表示にする
+  //- .advertisement-area__banner
+  //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")

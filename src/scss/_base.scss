@@ -71,8 +71,8 @@ header {
     margin: 0 auto;
   }
 
-  // .header-inner__navi
-  &__navi {
+  // .header-inner__nav
+  &__nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -91,17 +91,21 @@ header {
       }
     }
   }
-  &__navi-link {
+  
+  &__nav-link {
 
-    .background-navi {
+    .nav__inner {
+      position: relative;
+    }
+    .background-nav {
       position: absolute;
       z-index: 0;
       background: #fff;
-      width: 235px;
-      height: 63px;
+      width: 100%;
+      height: 55px;
       border-radius: 50px;
-      top: 25px;
-      right: 53px;
+      top: -4px;
+      right: 4px;
       
       @include mq-up("sp") {
         display: none;
@@ -117,59 +121,64 @@ header {
       .hamburger {
         display: block;
         position: fixed;
-        z-index: 3;
-        right: 10px;
-        top: 12px;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        text-align: center;
-        background-image: url("/assets/common/hamburger-bg.png");
+        z-index: 5;
+        right: 20px;
+        top: 10px;
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        background: #fff;
+
         &-inner {
           position: absolute;
-          top: 8px;
-          left: 15px;
+          top: 2px;
+          left: 5px;
+          width: 53px;
+          height: 53px;
+          border-radius: 53px;
+          background: #F5F5F5;
+          box-shadow: 3px 3px 3px rgba(116, 116, 116, 0.3);
         }
         span {
           display: block;
           position: absolute;
           width: 18px;
           height: 2px;
-          left: 6px;
+          left: 18px;
           background: #191919;
           -webkit-transition: 0.3s ease-in-out;
           -moz-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
         }
         &__lineTop {
-          top: 10px;
+          top: 18px;
         }
         &__lineMiddle {
-          top: 20px;
+          top: 26px;
         }
         &__lineBottom {
-          top: 30px;
+          bottom: 17px;
         }
         //- ハンバーガーメニュー click時の動き
         &.active {
           .hamburger {
             &__lineTop {
-              top: 21px;
-              left: 6px;
+              top: 25px;
+              left: 18px;
               background: #191919;
               -webkit-transform: rotate(-45deg);
               -moz-transform: rotate(-45deg);
               transform: rotate(-45deg);
             }
             &__lineMiddle {
-              top: 21px;
+              top: 25px;
               background: #191919;
               -webkit-transform: rotate(45deg);
               -moz-transform: rotate(45deg);
               transform: rotate(45deg);
             }
             &__lineBottom {
-              top: 21px;
+              top: 25px;
               background: #191919;
               -webkit-transform: rotate(45deg);
               -moz-transform: rotate(45deg);
@@ -189,6 +198,7 @@ header {
     background: #F7F7F7;
     border-radius: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 51px;
 
     @include mq-up("pc") {
       padding: 20px 10px 20px 40px;
@@ -260,21 +270,20 @@ header {
 
             &__link {
               position: absolute;
-              background: #fff;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
               width: 50px;
               height: 50px;
+              padding-top: 5px;
+              padding-left: 7px;
               border-radius: 50px;
               border: 10px solid #fff;
+              background: #fff;
 
-              &-icon {
+              img {
                 position: absolute;
-                left: -7px;
-                top: -7px;
-                width: 50px;
-                height: 50px;
-                background: #F5F5F5;
-                border-radius: 50px;
-                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
               }
             }
           }
@@ -286,6 +295,20 @@ header {
         margin-right: 0;
         text-align: center;
         font-size: 2rem;
+      }
+
+      &.is-current {
+        @include mq-up("pc") {
+          &:after {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            content: "";
+            width: 35px;
+            height: 2px;
+            background: #191919;
+          }
+        }
       }
     }
   }
@@ -386,20 +409,45 @@ header {
   &__buttons {
     display: flex;
     margin: 25px 0 60px;
+  }
 
-    // .about-content__buttons-twitter
+  // .about-content__button
+  &__button {
+    position: relative;
+    margin-right: 20px;
 
-    &-twitter {
-      margin-right: 10px;
+    .button-link{
+      position: relative;
+      height: 45px;
+      display: flex;
+      flex-direction: row;
+      padding: 10px 30px;
+      align-items: center;
+      background: #F5F5F5;
+      border-radius: 50px;
+      box-shadow: 3px 4px 3px rgba(222, 222, 222, 0.7);
     }
 
-
-    // .about-content__buttons-facebook
-
-    &-facebook {
-      
+    .background-button {
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 50px;
+      border-radius: 50px;
+      top: -5px;
+      right: 3px;
     }
 
+    .button-text{
+      flex: 1 1 100%;
+      letter-spacing: 1px;
+    }
+
+    .button-image{
+      height: 9px;
+      height: 15px;
+      padding-right: 10px;
+    }
   }
 
   // .about-content__policy
@@ -436,29 +484,55 @@ header {
   // .books-content__books
   &__books {
     
+    padding-bottom: 70px;
 
+    @include mq-up("pc") {
+      padding-bottom: 90px;
+    }
+
+    // .books-content__books-list
     &-list {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 30px 15px;
 
-      // .books-content__books-items
+      @include mq-up("pc") {
+        justify-content: flex-start;
+        gap: 40px 37px;
+      }
+
+      // .books-content__books-list-items
       &-items {
-        max-width: 196px;
-        margin-bottom: 30px;
-        margin-right: 20px;
+        flex: 1 1 196px;
+        max-width: 196px;  
+        background-color: #fff;
 
         @include mq-up("sp") {
-          max-width: 145px;
-          margin-right: 0;
+          flex: 1 1 160px;
+          // max-width: 160px;
         }
 
-        img {
-          width: 100%;
+        .book-link {
+          display: block;
+
+          // .book-link__image
+          &__image {
+            width: 100%;
+          }
+
+          // .book-link__text
+          &__text {
+            height: auto;
+            padding: 15px 15px 15px;
+            font-size: 12px;
+          }          
         }
       }
     }
   }
+
+
 }
 
 // フッター
@@ -504,21 +578,20 @@ footer {
 
         &-link {
           position: absolute;
-          background: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           width: 50px;
           height: 50px;
+          padding-top: 5px;
+          padding-left: 5px;
           border-radius: 50px;
           border: 10px solid #fff;
+          background: #fff;
 
           img {
             position: absolute;
-            left: -7px;
-            top: -7px;
-            width: 50px;
-            height: 50px;
-            background: #F5F5F5;
-            border-radius: 50px;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
           }
         }
 
@@ -556,4 +629,28 @@ footer {
       }
     }
   }
+}
+
+// SNSアイコンの白背景上の背景 フッター、バーガー共通
+.background-icon {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 50px;
+  height: 50px;
+  background: #F5F5F5;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-twitter {
+  width: 18px;
+}
+
+.icon-facebook {
+  width: 10px;
+}
+
+.icon-rss {
+
 }
