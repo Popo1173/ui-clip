@@ -80,10 +80,9 @@ $(function(){
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          // slidesToScroll: 1,
+          variableWidth: true,
+          focusOnSelect: true,
           centerMode: true,
-          // infinite: true,
         }
       }
     ]    

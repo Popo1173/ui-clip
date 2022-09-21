@@ -247,7 +247,11 @@
     // .book-banner__text
     &__text {
       font-size: 12px;
+<<<<<<< HEAD
       padding: 0 15px 0;
+=======
+      padding: 15px 15px;
+>>>>>>> 2750af4bb1a896dde28d2ae5819b2012931c4198
       line-height: 1.2;
       text-align: left;
       display: inline-block;
@@ -256,6 +260,7 @@
     .slick-list {
       @include mq-up("sp") {
         padding: 0 !important;
+        background: red;
       }            
     }
 
@@ -448,6 +453,10 @@
   }
   & img {
     width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 

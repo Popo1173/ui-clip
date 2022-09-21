@@ -51,39 +51,39 @@ html(lang="ja")
                 var list = [
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-01.jpg',
+                    image: '/assets/books/item-books-01@2x.jpg',
                     alt: 'books01',
-                    text: 'テキストテキストっっっっs'
+                    text: 'アイデアのつくり方'
                   },
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-02.jpg',
+                    image: '/assets/books/item-books-02@2x.jpg',
                     alt: 'books01',
-                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                    text: 'ウェブデザインの思考法 (Business×Design×IT) '
                   },
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-02.jpg',
+                    image: '/assets/books/item-books-03@2x.jpg',
                     alt: 'books02',
-                    text: 'テキストテキストテキストテキスト'
+                    text: 'オンスクリーンタイポグラフィ 事例と論説から考えるウェブの文字表現'
                   },
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-03.jpg',
+                    image: '/assets/books/item-books-04@2x.jpg',
                     alt: 'books03',
-                    text: 'テキストテキストテキストテキストテキストテキスト'
+                    text: '欧文書体―その背景と使い方'
                   },                  
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-04.jpg',
+                    image: '/assets/books/item-books-05@2x.jpg',
                     alt: 'books04',
-                    text: 'テキストテキストテキストテキストテキストテキストテキストテキスト'
+                    text: 'ディテール・イン・タイポグラフィ 読みやすい欧文組版のための基礎知識と考え方'
                   },                  
                   {
                     link: 'https://google.com',
-                    image: '/assets/books/item-books-01.jpg',
+                    image: '/assets/books/item-books-06@2x.jpg',
                     alt: 'books01',
-                    text: 'テキストテキスト'
+                    text: 'UXデザインの教科書'
                   },                  
 
                 ]
@@ -96,6 +96,29 @@ html(lang="ja")
           //-　Bannerエリア
           //- .advertisement-area__banner
           //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          
+    //- ページネーション
+    .pagination
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
+          
+      .pagination__inside
+        a.pagination__link(href="") 
+          img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          p.pagination__text 前へ
+
+      .pagination__inside.is-next
+        a.pagination__link(href="")
+          p.pagination__text 次へ
+          img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          
+
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 
