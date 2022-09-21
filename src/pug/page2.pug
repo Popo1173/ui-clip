@@ -100,9 +100,9 @@ html(lang="ja")
                   //-　サービス名称
                   h2.service-info__name Spotify
                     //-　コピーライト
-                    span.service-info__copy © Spotify AB
+                    span.service-info__copy © Spotify Ltd.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listSpotify = [
                     {
@@ -131,9 +131,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listSpotify
-                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")                
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　NewsPicksサービス情報
             .tab-contents__item-inner
@@ -147,7 +146,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy UZABASE, Inc.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listNewspicks = [
                     {
@@ -176,9 +175,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listNewspicks
-                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")               
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")                
 
             //-　Tripadvisorサービス情報
             .tab-contents__item-inner
@@ -192,7 +190,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © TripAdvisor LLC
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listTripadvisor = [
                     {
@@ -221,9 +219,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listTripadvisor
-                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")      
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　stylehintサービス情報
             .tab-contents__item-inner
@@ -237,7 +234,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © FAST RETAILING CO., LTD. 
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listStylehint = [
                     {
@@ -266,9 +263,8 @@ html(lang="ja")
                     },                                                                                               
                   ]
                 each item in listStylehint
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　AmazonBannerエリア
             include include/_TheBooksBanner
@@ -285,7 +281,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Mobility Technologies Co., Ltd.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listGo = [
                     {
@@ -314,9 +310,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listGo
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")        
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")        
 
             //-　S.RIDEサービス情報
             .tab-contents__item-inner
@@ -330,7 +325,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © S.RIDE Inc.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listGo = [
                     {
@@ -359,9 +354,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listGo
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　Evernoteサービス情報
             .tab-contents__item-inner
@@ -375,7 +369,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Evernote Corporation.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listEvernote = [
                     {
@@ -404,9 +398,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listEvernote
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")
 
             //-　Uber Eatsサービス情報
             .tab-contents__item-inner
@@ -420,7 +413,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © Uber Technologies, Inc.
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listUbereats = [
                     {
@@ -449,9 +442,8 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listUbereats
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")                     
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")                    
 
             //-　出前館サービス情報
             .tab-contents__item-inner
@@ -465,7 +457,7 @@ html(lang="ja")
                     //-　コピーライト
                     span.service-info__copy © DEMAE-CAN CO., LTD
               //-　画像
-              div.service-thumbnail__app.slider-thumbnail
+              ul.service-thumbnail__app.slider-thumbnail
                 - 
                   var listDemaekan = [
                     {
@@ -494,12 +486,11 @@ html(lang="ja")
                     },                                                                                                    
                   ]
                 each item in listDemaekan
-                 div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
+                  li.service-thumbnail__app-item
+                    img(src=item.imgSrc alt="item.altName" loading="lazy")
                       
             //-　AmazonBannerエリア
-            //include include/_TheBooksBanner
+            include include/_TheBooksBanner
 
             //- ページネーション
             .pagination
@@ -508,13 +499,13 @@ html(lang="ja")
                   .pagination__back-ground
                     img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
                   
-              //.pagination__inside
-                a.pagination__link(href="") 
+              .pagination__inside
+                a.pagination__link(href="index.html") 
                   img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   p.pagination__text 前へ
 
-              .pagination__inside.is-next
-                a.pagination__link(href="page2.html")
+              //.pagination__inside.is-next
+                a.pagination__link(href="")
                   p.pagination__text 次へ
                   img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   
