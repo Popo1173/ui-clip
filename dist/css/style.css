@@ -861,6 +861,12 @@ footer .footer-inner .icon-area {
   padding-bottom: 2.3rem;
 }
 
+@media screen and (max-width: 767px) {
+  footer .footer-inner .icon-area {
+    padding-bottom: 0;
+  }
+}
+
 footer .footer-inner .icon-area__item {
   width: 70px;
   min-width: 5%;
