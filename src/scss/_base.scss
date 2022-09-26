@@ -408,12 +408,14 @@ header {
 
   &__buttons {
     display: flex;
-    margin: 25px 0 60px;
+    flex-wrap: wrap;
+    margin: 0 0 60px;
   }
 
   // .about-content__button
   &__button {
     position: relative;
+    margin-top: 25px;
     margin-right: 20px;
 
     .button-link{
