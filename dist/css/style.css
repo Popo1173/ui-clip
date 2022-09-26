@@ -1517,7 +1517,7 @@ footer .footer-inner .copyright__text {
 
 @media screen and (max-width: 767px) {
   .modal-content__inner-app-information {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 10% 5% 10%;
   }

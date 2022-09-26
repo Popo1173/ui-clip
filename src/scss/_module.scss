@@ -527,7 +527,7 @@
         background-color: #fff;
         
         @include mq-up("sp") {
-          max-width: 100%;
+          width: 100%;
           height: auto;
           padding: 10% 5% 10%;
         }
