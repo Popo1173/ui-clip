@@ -1504,7 +1504,7 @@ footer .footer-inner .copyright__text {
 }
 
 .modal-content__inner-app-information {
-  max-width: 33%;
+  width: 33%;
   height: 100vh;
   display: flex;
   flex-direction: column;
