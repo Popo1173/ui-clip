@@ -1,0 +1,150 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「出前館」ページです。")
+    meta(name="keywords", content="*****,*****,*****,*****,*****")
+    meta(name="author", content="")
+    meta(property="og:title", content="タイトル")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="http://任意のURL")
+    meta(property="og:image", content="http://任意のURL/og_image.png")
+    meta(property="og:site_name", content="")
+    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「出前館」ページです。")
+    meta(property="fb:app_id", content="任意のID")
+    title 出前館 | UI Clip | UIデザインギャラリー
+    link(rel='shortcut icon', href="../assets/common/favicon.png")
+    link(rel='shortcut icon', href="../assets/common/apple-touch-icon.png")
+    link(rel='shortcut icon', href="../assets/common/android-chrome-192x192.png")    
+    link(rel='stylesheet', href="../css/font-style.css")
+    link(rel='stylesheet', href="../css/style.css")
+    link(rel='stylesheet', href="../css/slick.css")
+    link(rel='stylesheet', href="../css/slick-theme.css")
+    
+    script.
+      (function(i,s,o,g,r,a,m){i['demaecanogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.demaecanogle-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-XXXXXXXX-Y', 'example.com');
+      ga('send', 'pageview');
+  body
+    //- script.
+    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
+    
+    //- header (ロゴ、ナビゲーション)
+    header
+      include ../include/_header
+
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　demaecanサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/demaecan/icon-demaecan.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name 出前館
+                    //-　コピーライト,version
+                    span.service-info__copy © DEMAE-CAN CO., LTD
+                    span.service-info__version Version  8.6.30
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 出前・宅配・デリバリー「出前館」公式アプリ!
+                br
+                | 日本最大級の飲食店数！様々なジャンルの料理が楽しめます
+                br
+                | さらに、とってもお得な特典もついてくる
+                br
+                | 好きなお店の料理を選んで、豊富な支払方法で簡単注文！
+
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text フード／ドリンク
+
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img01-demaecan@2x.png",
+                    },
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img02-demaecan@2x.png",
+                    },
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img03-demaecan@2x.png",
+                    },
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img04-demaecan@2x.png",
+                    },
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img05-demaecan@2x.png",
+                    },
+                    {
+                      altName: demaecan,
+                      imgSrc: "/assets/app/demaecan/img06-demaecan@2x.png",
+                    },                                                                                                                 
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt="item.altName")
+
+
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/demaecan/img01-demaecan@2x.png" alt="rrr")
+                      .modal-image
+                        img(src="/assets/app/demaecan/img02-demaecan@2x.png")                        
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/demaecan/icon-demaecan.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name 出前館
+                            //-　コピーライト
+                            span.service-info__copy © DEMAE-CAN CO., LTD
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item フード／ドリンク
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

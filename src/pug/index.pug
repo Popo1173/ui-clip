@@ -177,8 +177,8 @@ html(lang="ja")
                   ]
                 each item in listNewspicks
                   div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")               
+                    a(href="/app/newspicks.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")               
 
             //-　Tripadvisorサービス情報
             .tab-contents__item-inner
@@ -222,8 +222,8 @@ html(lang="ja")
                   ]
                 each item in listTripadvisor
                   div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")      
+                    a(href="/app/tripadvisor.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")      
 
             //-　stylehintサービス情報
             .tab-contents__item-inner
@@ -267,8 +267,8 @@ html(lang="ja")
                   ]
                 each item in listStylehint
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")   
+                    a(href="/app/stylehint.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　AmazonBannerエリア
             include include/_TheBooksBanner
@@ -315,8 +315,8 @@ html(lang="ja")
                   ]
                 each item in listGo
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")        
+                    a(href="/app/go.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")        
 
             //-　S.RIDEサービス情報
             .tab-contents__item-inner
@@ -360,8 +360,8 @@ html(lang="ja")
                   ]
                 each item in listGo
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")   
+                    a(href="/app/sride.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　Evernoteサービス情報
             .tab-contents__item-inner
@@ -405,8 +405,8 @@ html(lang="ja")
                   ]
                 each item in listEvernote
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")   
+                    a(href="/app/evernote.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
 
             //-　Uber Eatsサービス情報
             .tab-contents__item-inner
@@ -450,15 +450,15 @@ html(lang="ja")
                   ]
                 each item in listUbereats
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")                     
+                    a(href="/app/ubereats.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")                     
 
             //-　出前館サービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/demaekan/icon-demaekan.svg")
+                  img(src="/assets/app/demaecan/icon-demaecan.svg")
                 dd
                   //-　サービス名称
                   h2.service-info__name 出前館
@@ -467,7 +467,7 @@ html(lang="ja")
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listDemaekan = [
+                  var listDemaecan = [
                     {
                       altName: "Newspicks",
                       imgSrc: "/assets/app/demaekan/img01-demaekan@2.png",
@@ -493,22 +493,22 @@ html(lang="ja")
                       imgSrc: "/assets/app/demaekan/img06-demaekan@2.png",
                     },                                                                                                    
                   ]
-                each item in listDemaekan
+                each item in listDemaecan
                  div.service-thumbnail__app-item
-                    a(href="/app/spotify.html")
-                      img.test(src=item.imgSrc alt=item.altName loading="lazy")   
+                    a(href="/app/demaecan.html")
+                      img.test(src=item.imgSrc alt="item.altName" loading="lazy")   
                       
             //-　AmazonBannerエリア
             //include include/_TheBooksBanner
 
             //- ページネーション
-            .pagination
-              //.pagination__end
+            //-.pagination
+              .pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
                   
-              //.pagination__inside
+              .pagination__inside
                 a.pagination__link(href="") 
                   img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   p.pagination__text 前へ
@@ -519,7 +519,7 @@ html(lang="ja")
                   img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
                   
 
-              //.pagination__end
+              .pagination__end
                 a.pagination__link(href="")
                   .pagination__back-ground
                     img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")

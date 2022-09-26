@@ -4,7 +4,7 @@ html(lang="ja")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「xxxxx」ページです。")
+    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「NewsPicks」ページです。")
     meta(name="keywords", content="*****,*****,*****,*****,*****")
     meta(name="author", content="")
     meta(property="og:title", content="タイトル")
@@ -12,7 +12,7 @@ html(lang="ja")
     meta(property="og:url", content="http://任意のURL")
     meta(property="og:image", content="http://任意のURL/og_image.png")
     meta(property="og:site_name", content="")
-    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「xxxxx」ページです。")
+    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「NewsPicks」ページです。")
     meta(property="fb:app_id", content="任意のID")
     title NewsPicks | UI Clip | UIデザインギャラリー
     link(rel='shortcut icon', href="../assets/common/favicon.png")
@@ -43,7 +43,7 @@ html(lang="ja")
       .content__inner
           //-　APPコンテンツ
           .detail-contents
-            //-　SoundCloudサービス情報
+            //-　newspicksサービス情報
             .detail-contents__items
               dl.service-info
                 dt
@@ -54,12 +54,14 @@ html(lang="ja")
                   h2.service-info__name NewsPicks
                     //-　コピーライト,version
                     span.service-info__copy © UZABASE, Inc.
-                    span.service-info__version Version  8.6.30
+                    span.service-info__version Version  10.1.24
               
               //-　サービス概要
               .detail-contents__overview
                 p.overview-text 
-                | 厳選された世界最先端の経済ニュースをまとめ読み／イラストや図解で、簡単に経済がわかる／経済の専門家が話題のニュースをコメントで解説／各分野のスペシャリストが集う編集部によるオリジナル記事／オリジナル動画で、経済を、もっとおもしろく。
+                | 厳選された世界最先端の経済ニュースをまとめ読み／イラストや図解で、簡単に経済がわかる／経済の専門家が話題のニュースをコメントで解説／
+                br
+                | 各分野のスペシャリストが集う編集部によるオリジナル記事／オリジナル動画で、経済を、もっとおもしろく
                 br
                 | ※ プレミアムプラン、7日間無料トライアル実施中。有料のオリジナル記事、オリジナル動画も全て見放題。
                 br
@@ -72,68 +74,291 @@ html(lang="ja")
                 ul.tag-items 
                   li.tag-items__item 
                     .background-tag
-                    span.item-text タグが入ります
-                  li.tag-items__item
-                    .background-tag
-                    span.item-text タグが入ります
-                  li.tag-items__item
-                    .background-tag
-                    span.item-text タグが入ります
-                  li.tag-items__item
-                    .background-tag
-                    span.item-text タグが入ります
+                    span.item-text ニュース
 
               ul.detail-contents__thumbnail
                 - 
                   var list = [
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img01-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img01-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img02-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img02-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img03-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img03-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img04-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img04-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img05-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img05-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img06-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img06-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img07-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img07-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img08-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img08-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img09-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img09-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img10-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img10-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img11-soundcloud@2x.png",
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img11-newspicks@2x.png",
                     },
                     {
-                      altName: SoundCloud,
-                      imgSrc: "/assets/app/soundcloud/img12-soundcloud@2x.png",
-                    },                                                                                                                         
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img12-newspicks@2x.png",
+                    },             
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img13-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img14-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img15-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img16-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img17-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img18-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img19-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img20-newspicks@2x.png",
+                    },       
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img21-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img22-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img23-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img24-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img25-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img26-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img27-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img28-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img29-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img30-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img31-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img32-newspicks@2x.png",
+                    },             
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img33-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img34-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img35-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img36-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img37-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img38-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img39-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img40-newspicks@2x.png",
+                    }, 
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img41-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img42-newspicks@2x.png",
+                    },             
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img43-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img44-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img45-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img46-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img47-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img48-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img49-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img50-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img51-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img52-newspicks@2x.png",
+                    },             
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img53-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img54-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img55-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img56-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img57-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img58-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img59-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img60-newspicks@2x.png",
+                    },       
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img61-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img62-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img63-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img64-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img65-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img66-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img67-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img68-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img69-newspicks@2x.png",
+                    },
+                    {
+                      altName: newspicks,
+                      imgSrc: "/assets/app/newspicks/img70-newspicks@2x.png",
+                    },
                   ]
                 each item in list
                   li.contents-thumbnail.is-modal-open
@@ -148,41 +373,161 @@ html(lang="ja")
                     .modal-content__inner-slider.slick-modal
                       //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
                       .modal-image 
-                        img(src="/assets/app/soundcloud/img06-soundcloud@2x.png" alt="rrr")
+                        img(src="/assets/app/newspicks/img01-newspicks@2x.png" alt="NewsPicks")
                       .modal-image
-                        img(src="/assets/app/soundcloud/img06-soundcloud@2x.png")                        
+                        img(src="/assets/app/newspicks/img02-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img03-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img04-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img05-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img06-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img07-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img08-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img09-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img10-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img11-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img12-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img13-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img14-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img15-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img16-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img17-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img18-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img19-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img20-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img21-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img22-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img23-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img24-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img25-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img26-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img27-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img28-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img29-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img30-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img31-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img32-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img33-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img34-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img35-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img36-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img37-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img38-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img39-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img40-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img41-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img42-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img43-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img44-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img45-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img46-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img47-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img48-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img49-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img50-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img51-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img52-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img53-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img54-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img55-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img56-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img57-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img58-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img59-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img60-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img61-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img62-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img63-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img64-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img65-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img66-newspicks@2x.png" alt="NewsPicks")               
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img67-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img68-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image 
+                        img(src="/assets/app/newspicks/img69-newspicks@2x.png" alt="NewsPicks")
+                      .modal-image
+                        img(src="/assets/app/newspicks/img70-newspicks@2x.png" alt="NewsPicks")                    
                     .modal-content__inner-app-information
                       .app-information__service
                         dl.service-info
                           dt
                             //-　アイコン
-                            img(src="/assets/app/soundcloud/icon-soundcloud.svg")
+                            img(src="/assets/app/newspicks/icon-newspicks.svg")
                           dd
                             //-　サービス名称
-                            h2.service-info__name SoundCloud
+                            h2.service-info__name Newspicks
                             //-　コピーライト
-                            span.service-info__copy © SoundCloud Global Limited & Co KG
+                            span.service-info__copy © UZABASE, Inc.
                             
                       .app-information__tags
                         ul.app-information__tags-list
                           li.app-information__tags-list-item
-                            span.list-item タグが入ります
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります　タグが
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入りますタグが入ります
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります　タグが
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります　タグが入ります
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります                                                        
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります   
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります   
-                          li.app-information__tags-list-item         
-                            span.list-item タグが入ります
+                            span.list-item ニュース
 
               .back-button
                 a(href="/")
