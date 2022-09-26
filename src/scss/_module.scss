@@ -395,9 +395,16 @@
 
 // サムネイルエリア
 .contents-thumbnail {
+  flex: 1 1 15%;
+  max-width: 225px;
   margin-bottom: 1em;
   margin: 1em 0.5em;
-  flex: 1 1 225px;
+
+  @include mq-up("sp") {
+    flex: 1 1 45%;
+    max-width: initial;
+  }
+  
 
   & img {
     width: 100%;

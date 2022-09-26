@@ -1386,9 +1386,17 @@ footer .footer-inner .copyright__text {
 }
 
 .contents-thumbnail {
+  flex: 1 1 15%;
+  max-width: 225px;
   margin-bottom: 1em;
   margin: 1em 0.5em;
-  flex: 1 1 225px;
+}
+
+@media screen and (max-width: 767px) {
+  .contents-thumbnail {
+    flex: 1 1 45%;
+    max-width: initial;
+  }
 }
 
 .contents-thumbnail img {
