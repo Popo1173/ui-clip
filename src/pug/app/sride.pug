@@ -88,33 +88,33 @@ html(lang="ja")
                 - 
                   var list = [
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img01-sride@2x.png",
                     },
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img02-sride@2x.png",
                     },
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img03-sride@2x.png",
                     },
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img04-sride@2x.png",
                     },
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img05-sride@2x.png",
                     },
                     {
-                      altName: sride,
+                      altName: "sride",
                       imgSrc: "/assets/app/sride/img06-sride@2x.png",
                     },                                                                                                                 
                   ]
                 each item in list
                   li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt="item.altName")
+                    img(src=item.imgSrc alt=item.altName)
 
 
               #modal.modal
