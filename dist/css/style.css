@@ -593,11 +593,11 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .header-inner__menu-item:not(:nth-child(3)) .icons-items li:nth-child(4) {
+  .header-inner__menu-item:not(:nth-child(3)) .icons-items li:last-of-type {
     width: 100%;
     margin-top: 2em;
   }
-  .header-inner__menu-item:not(:nth-child(3)) .icons-items li:nth-child(4) a {
+  .header-inner__menu-item:not(:nth-child(3)) .icons-items li:last-of-type a {
     display: flex;
     flex-direction: column;
     padding: 0.3em 1em;
@@ -881,7 +881,7 @@ footer .footer-inner .icon-area__item {
   footer .footer-inner .icon-area__item {
     text-align: center;
   }
-  footer .footer-inner .icon-area__item:nth-child(4) {
+  footer .footer-inner .icon-area__item:last-of-type {
     width: 150px;
     margin-top: 0.65em;
     margin-left: 1.5em;
@@ -915,13 +915,13 @@ footer .footer-inner .icon-area__item-link img {
     width: 20%;
     margin-right: 0;
   }
-  footer .footer-inner .icon-area__item:nth-child(4) {
+  footer .footer-inner .icon-area__item:last-of-type {
     width: 100%;
     margin-top: 7.5em;
     margin-bottom: 2.5em;
     text-align: center;
   }
-  footer .footer-inner .icon-area__item:nth-child(4) a {
+  footer .footer-inner .icon-area__item:last-of-type a {
     padding: 0.55em 1.0em;
     background: #fff;
     border-radius: 0.5em;
