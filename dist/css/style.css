@@ -1391,14 +1391,27 @@ footer .footer-inner .copyright__text {
   width: calc(16.1% - 6px);
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px) {
+@media only screen and (max-width: 1100px) and (min-width: 950px) {
   .contents-thumbnail {
     width: calc(16% - 6px);
   }
 }
 
+@media only screen and (max-width: 950px) and (min-width: 838px) {
+  .contents-thumbnail {
+    width: calc(15.9% - 6px);
+  }
+}
+
+@media only screen and (max-width: 838px) and (min-width: 768px) {
+  .contents-thumbnail {
+    width: calc(15.8% - 6px);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contents-thumbnail {
+    max-width: initial;
     width: calc(49% - 2px);
   }
 }
