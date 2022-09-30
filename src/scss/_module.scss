@@ -385,22 +385,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 2em;
+    gap: 1.5em 1em;
 
     @include mq-up("sp") {
-      justify-content: space-between;
+      justify-content: space-around;
+      gap: 1.5em 0.5em;
     }
   }
 }
 
 // サムネイルエリア
 .contents-thumbnail {
-  margin-bottom: 1em;
-  margin: 1em 0.5em;
-  flex: 1 1 225px;
+  // flex-grow: 1;
+  max-width: 226px;
+  width: calc(16.1% - 6px);
+
+  @media only screen and (max-width: 1100px) and (min-width: 950px) {
+    width: calc(16% - 6px);
+  }
+
+  @media only screen and (max-width: 950px) and (min-width: 838px) {
+    width: calc(15.9% - 6px);
+  }
+
+  @media only screen and (max-width: 838px) and (min-width: 768px) {
+    width: calc(15.8% - 6px);
+  }  
+
+  @include mq-up("sp") {
+    max-width: initial;
+    width: calc(49% - 2px);
+  }
+  
 
   & img {
     width: 100%;
+    // width: calc(10% - 4px);
   }
 
   &:hover {

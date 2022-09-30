@@ -251,7 +251,7 @@ header {
               justify-content: center;
               align-items: center;
 
-              &:nth-child(4) {
+              &:last-of-type {
                 width: 100%;
                 margin-top: 2em;
 
@@ -495,7 +495,7 @@ header {
     // .books-content__books-list
     &-list {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       gap: 30px 15px;
 
@@ -506,8 +506,8 @@ header {
 
       // .books-content__books-list-items
       &-items {
-        flex: 1 1 196px;
-        max-width: 196px;  
+        // max-width: 196px; 
+        width: calc(22.3% - 4px);
         background-color: #fff;
 
         @include mq-up("sp") {
@@ -569,7 +569,7 @@ footer {
         @include mq-up("pc") {
           text-align: center;
         
-          &:nth-child(4) {
+          &:last-of-type {
             width: 150px;
             margin-top: 0.65em;
             margin-left: 1.5em;
@@ -602,7 +602,7 @@ footer {
           width: 20%;
           margin-right: 0;
 
-          &:nth-child(4) {
+          &:last-of-type {
             width: 100%;
             margin-top: 7.5em;
             margin-bottom: 2.5em;
