@@ -777,7 +777,7 @@ header {
 }
 
 .books-content {
-  max-width: 896px;
+  max-width: 900px;
   width: auto;
   margin: 0 auto 90px;
 }
@@ -808,24 +808,26 @@ header {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 30px 15px;
+  gap: 3em 4%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .books-content__books-list {
     justify-content: flex-start;
-    gap: 40px 37px;
+    gap: 2em 1em;
   }
 }
 
 .books-content__books-list-items {
+  max-width: 196px;
   width: calc(22.3% - 4px);
   background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {
   .books-content__books-list-items {
-    flex: 1 1 160px;
+    max-width: initial;
+    width: calc(48% - 2px);
   }
 }
 
@@ -841,6 +843,7 @@ header {
   height: auto;
   padding: 15px 15px 15px;
   font-size: 12px;
+  word-break: break-word;
 }
 
 footer .footer-inner {

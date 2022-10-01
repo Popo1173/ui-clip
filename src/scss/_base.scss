@@ -468,7 +468,7 @@ header {
 
 //Books
 .books-content {
-  max-width: 896px;
+  max-width: 900px;
   width: auto;
   margin: 0 auto 90px;
 
@@ -497,22 +497,22 @@ header {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
-      gap: 30px 15px;
+      gap: 3em 4%;
 
-      @include mq-up("pc") {
+      @include mq-up("sp") {
         justify-content: flex-start;
-        gap: 40px 37px;
+        gap: 2em 1em;
       }
 
       // .books-content__books-list-items
       &-items {
-        // max-width: 196px; 
+        max-width: 196px; 
         width: calc(22.3% - 4px);
         background-color: #fff;
 
         @include mq-up("sp") {
-          flex: 1 1 160px;
-          // max-width: 160px;
+          max-width: initial; 
+          width: calc(48% - 2px);
         }
 
         .book-link {
@@ -528,6 +528,7 @@ header {
             height: auto;
             padding: 15px 15px 15px;
             font-size: 12px;
+            word-break: break-word;
           }          
         }
       }
