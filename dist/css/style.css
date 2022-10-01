@@ -1390,9 +1390,9 @@ footer .footer-inner .copyright__text {
   width: calc(16.1% - 6px);
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 950px) {
+@media only screen and (max-width: 1200px) and (min-width: 950px) {
   .contents-thumbnail {
-    width: calc(16% - 6px);
+    width: calc(15.9% - 6px);
   }
 }
 
