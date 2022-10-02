@@ -1,12 +1,19 @@
-$sizes: sp, pc;  //冒頭に使うサイズを明記するとわかりやすい
+$sizes: sp, pc, tablet;  //冒頭に使うサイズを明記するとわかりやすい
 
 $breakpoint-up: ( 
   'sp': 'screen and (max-width: 767px)',
   'pc': 'screen and (min-width: 768px)',
+  'tablet': 'screen and (max-width: 960px)',
 ) !default;
 
 //mixinを定義（初期値はpc）
 @mixin mq-up($breakpoint: pc) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-up($breakpoint: tablet) {
   @media #{map-get($breakpoint-up, $breakpoint)} {
     @content;
   }

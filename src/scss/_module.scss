@@ -221,7 +221,7 @@
     margin: 0 auto;
     padding: 0 45px;
     
-    @include mq-up("sp") {
+    @include mq-up("tablet") {
       padding: 0;
     }
 
@@ -235,7 +235,7 @@
       margin: 15px 10px;
       background: #fff;      
 
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         width: auto !important;
       }      
     }
@@ -264,7 +264,7 @@
     }
 
     .slick-list {
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         padding: 0 !important;
       }            
     }
@@ -274,7 +274,7 @@
       justify-content: space-between;
       height:auto;
 
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         justify-content: center;
       }
     }
@@ -292,8 +292,8 @@
         border-top: 4px solid #aaa;
         border-right: 4px solid #aaa;
 
-        @include mq-up("sp") {
-          bottom: 0;
+        @include mq-up("tablet") {
+          top: 0;
           width: 16px;
           height: 16px;
           border-top: 3px solid #aaa;
@@ -308,7 +308,7 @@
         transform: rotate(225deg);
       }
 
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         top: 100%;
         left: 15px;
       }
@@ -320,7 +320,7 @@
         transform: rotate(45deg);
       }
       
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         top: 100%;
         right: 20px;
       }      
@@ -328,8 +328,8 @@
 
     // dots
     .slick-dots {
-      position: static;
-      bottom: -40px;
+      position: relative;
+      bottom: -8px;
 
       li {
         width: 10px;

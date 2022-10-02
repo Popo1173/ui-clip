@@ -78,7 +78,7 @@ $(function(){
     slidesToShow: 7,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 960,
         settings: {
           variableWidth: true,
           focusOnSelect: true,
