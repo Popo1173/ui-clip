@@ -225,10 +225,15 @@
       padding: 0;
     }
 
-    &__item {
+    &__link {
       display: flex !important;
       flex-direction: column;
       align-items: center;
+      max-width: 180px;
+      height: auto;
+      padding-bottom: 15px;
+      margin: 15px 10px;
+      background: #fff;      
 
       @include mq-up("sp") {
         width: auto !important;
@@ -252,9 +257,10 @@
     &__text {
       font-size: 12px;
       padding: 0 15px 0;
-      line-height: 1.2;
+      line-height: 1.4;
       text-align: left;
       display: inline-block;
+      word-break: break-word;
     }
 
     .slick-list {
@@ -264,6 +270,13 @@
     }
 
     .slick-track {
+      display: flex;
+      justify-content: space-between;
+      height:auto;
+
+      @include mq-up("sp") {
+        justify-content: center;
+      }
     }
 
     .slick-arrow {
@@ -400,6 +413,7 @@
   max-width: 226px;
   width: calc(16.1% - 6px);
 
+  //  画面サイズに合わせて１列６枚に並ぶようにサイズを適宜調整  
   @media only screen and (max-width: 1200px) and (min-width: 950px) {
     width: calc(15.9% - 6px);
   }

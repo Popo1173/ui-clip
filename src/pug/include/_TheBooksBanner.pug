@@ -72,10 +72,10 @@
           },                                                                                                                                                                                                                    
         ]
       each item in list
-        .book-banner__item
-          a.book-banner__inner(href=item.link target="_blank")
-            img.book-banner__image(src=item.imgSrc alt=item.altName loading="lazy")
-            span.book-banner__text #{item.text}
+        //- .book-banner__item
+        a.book-banner__link(href=item.link target="_blank")
+          img.book-banner__image(src=item.imgSrc alt=item.altName loading="lazy")
+          p.book-banner__text #{item.text}
 
   //- 広告バナーはこれから追加するので現時点で非表示にする
   //- .advertisement-area__banner
