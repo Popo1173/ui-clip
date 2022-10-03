@@ -1,3 +1,6 @@
 # html,cssを除外
 *.css
 *.html
+
+# Dependency directories
+node_modules/
