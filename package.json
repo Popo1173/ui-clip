@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-notify": "^3.2.0",
@@ -19,9 +19,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2"
   },
-  "browserslist": [ 
-		"last 2 versions",
-		"ie >= 11", 
-		"Android >= 4.4"
-	]
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "Android >= 4.4"
+  ]
 }
