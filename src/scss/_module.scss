@@ -304,6 +304,7 @@
 
     .slick-prev {
       left: 25px;
+      z-index: 2;
       &::before {
         transform: rotate(225deg);
       }
@@ -316,6 +317,7 @@
 
     .slick-next {
       right: 15px;
+      z-index: 2;
       &::before {
         transform: rotate(45deg);
       }
@@ -330,6 +332,7 @@
     .slick-dots {
       position: relative;
       bottom: -8px;
+      z-index: 1;
 
       li {
         width: 10px;
