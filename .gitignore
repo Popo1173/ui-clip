@@ -1,0 +1,3 @@
+# html,cssを除外
+*.css
+*.html

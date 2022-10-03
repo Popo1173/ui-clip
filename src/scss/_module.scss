@@ -221,16 +221,21 @@
     margin: 0 auto;
     padding: 0 45px;
     
-    @include mq-up("sp") {
+    @include mq-up("tablet") {
       padding: 0;
     }
 
-    &__item {
+    &__link {
       display: flex !important;
       flex-direction: column;
       align-items: center;
+      max-width: 180px;
+      height: auto;
+      padding-bottom: 15px;
+      margin: 15px 10px;
+      background: #fff;      
 
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         width: auto !important;
       }      
     }
@@ -252,18 +257,26 @@
     &__text {
       font-size: 12px;
       padding: 0 15px 0;
-      line-height: 1.2;
+      line-height: 1.4;
       text-align: left;
       display: inline-block;
+      word-break: break-word;
     }
 
     .slick-list {
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         padding: 0 !important;
       }            
     }
 
     .slick-track {
+      display: flex;
+      justify-content: space-between;
+      height:auto;
+
+      @include mq-up("tablet") {
+        justify-content: center;
+      }
     }
 
     .slick-arrow {
@@ -279,8 +292,8 @@
         border-top: 4px solid #aaa;
         border-right: 4px solid #aaa;
 
-        @include mq-up("sp") {
-          bottom: 0;
+        @include mq-up("tablet") {
+          top: 0;
           width: 16px;
           height: 16px;
           border-top: 3px solid #aaa;
@@ -295,7 +308,7 @@
         transform: rotate(225deg);
       }
 
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         top: 100%;
         left: 15px;
       }
@@ -307,7 +320,7 @@
         transform: rotate(45deg);
       }
       
-      @include mq-up("sp") {
+      @include mq-up("tablet") {
         top: 100%;
         right: 20px;
       }      
@@ -315,8 +328,8 @@
 
     // dots
     .slick-dots {
-      position: static;
-      bottom: -40px;
+      position: relative;
+      bottom: -8px;
 
       li {
         width: 10px;
@@ -400,8 +413,9 @@
   max-width: 226px;
   width: calc(16.1% - 6px);
 
-  @media only screen and (max-width: 1100px) and (min-width: 950px) {
-    width: calc(16% - 6px);
+  //  画面サイズに合わせて１列６枚に並ぶようにサイズを適宜調整  
+  @media only screen and (max-width: 1200px) and (min-width: 950px) {
+    width: calc(15.9% - 6px);
   }
 
   @media only screen and (max-width: 950px) and (min-width: 838px) {
