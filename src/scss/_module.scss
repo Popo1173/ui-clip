@@ -429,6 +429,7 @@
   @include mq-up("sp") {
     max-width: initial;
     width: calc(49% - 2px);
+    margin-right: auto;
   }
   
 
