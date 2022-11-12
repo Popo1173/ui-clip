@@ -1,0 +1,531 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。")
+    meta(name="keywords", content="*****,*****,*****,*****,*****")
+    meta(name="author", content="")
+    meta(property="og:title", content="タイトル")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="http://任意のURL")
+    meta(property="og:image", content="http://任意のURL/og_image.png")
+    meta(property="og:site_name", content="")
+    meta(property="og:description", content="UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。")
+    meta(property="fb:app_id", content="任意のID")
+    title UI Clip | UIデザインギャラリー
+    link(rel='shortcut icon', href="/assets/common/favicon.png")
+    link(rel='shortcut icon', href="/assets/common/apple-touch-icon.png")
+    link(rel='shortcut icon', href="/assets/common/android-chrome-192x192.png")
+    link(rel='stylesheet', href="css/font-style.css")
+    link(rel='stylesheet', href="css/style.css")
+    link(rel='stylesheet', href="css/slick.css")
+    link(rel='stylesheet', href="css/slick-theme.css")
+    
+    //- Googleアナリティクス
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-2P5TLC1NZG')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2P5TLC1NZG');
+
+
+  body
+    //- script.
+    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
+    
+    //- header (ロゴ、ナビゲーション)
+    header
+      include include/_header
+
+    section.content
+      .content__inner
+        .tab-contents
+          //-　APPコンテンツ
+          .tab-contents__item-area.is-show
+            //-　SoundCloudサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/soundcloud/icon-soundcloud.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name SoundCloud
+                    //-　コピーライト
+                    span.service-info__copy © SoundCloud Global Limited & Co KG
+              
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img01-soundcloud@2x.png",
+                    },
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img02-soundcloud@2x.png",
+                    },
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img03-soundcloud@2x.png",
+                    },
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img04-soundcloud@2x.png",
+                    },
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img05-soundcloud@2x.png",
+                    },
+                    {
+                      altName: "SoundCloud",
+                      imgSrc: "/assets/app/soundcloud/img06-soundcloud@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in list
+                  div.service-thumbnail__app-item
+                    a(href="/app/soundcloud.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")
+                    
+            //-　spotifyサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/spotify/icon-spotify.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Spotify
+                    //-　コピーライト
+                    span.service-info__copy © Spotify AB
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listSpotify = [
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img01-spotify@2x.png",
+                    },
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img02-spotify@2x.png",
+                    },
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img03-spotify@2x.png",
+                    },
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img04-spotify@2x.png",
+                    },
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img05-spotify@2x.png",
+                    },
+                    {
+                      altName: "Spotify",
+                      imgSrc: "/assets/app/spotify/img06-spotify@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listSpotify
+                  div.service-thumbnail__app-item
+                    a(href="/app/spotify.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")                
+
+            //-　NewsPicksサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/newspicks/icon-newspicks.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name NewsPicks
+                    //-　コピーライト
+                    span.service-info__copy © UZABASE, Inc.
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listNewspicks = [
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img01-newspicks@2x.png",
+                    },
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img02-newspicks@2x.png",
+                    },
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img03-newspicks@2x.png",
+                    },
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img04-newspicks@2x.png",
+                    },
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img05-newspicks@2x.png",
+                    },
+                    {
+                      altName: "NewsPicks",
+                      imgSrc: "/assets/app/newspicks/img06-newspicks@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listNewspicks
+                  div.service-thumbnail__app-item
+                    a(href="/app/newspicks.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")               
+
+            //-　Tripadvisorサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Tripadvisor
+                    //-　コピーライト
+                    span.service-info__copy © TripAdvisor LLC
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listTripadvisor = [
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img01-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img02-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img03-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img04-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img05-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "Tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img06-tripadvisor@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listTripadvisor
+                  div.service-thumbnail__app-item
+                    a(href="/app/tripadvisor.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")      
+
+            //-　stylehintサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/stylehint/icon-stylehint.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name StyleHint
+                    //-　コピーライト
+                    span.service-info__copy © FAST RETAILING CO., LTD. 
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listStylehint = [
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img01-stylehint@2x.png",
+                    },
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img02-stylehint@2x.png",
+                    },
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img03-stylehint@2x.png",
+                    },
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img04-stylehint@2x.png",
+                    },
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img05-stylehint@2x.png",
+                    },
+                    {
+                      altName: "StyleHint",
+                      imgSrc: "/assets/app/stylehint/img06-stylehint@2x.png",
+                    },                                                                                               
+                  ]
+                each item in listStylehint
+                 div.service-thumbnail__app-item
+                    a(href="/app/stylehint.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+            //-　AmazonBannerエリア
+            include include/_TheBooksBanner
+
+            //-　GOサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/go/icon-go.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name GO
+                    //-　コピーライト
+                    span.service-info__copy © Mobility Technologies Co., Ltd.
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listGo = [
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img01-go@2x.png",
+                    },
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img02-go@2x.png",
+                    },
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img03-go@2x.png",
+                    },
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img04-go@2x.png",
+                    },
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img05-go@2x.png",
+                    },
+                    {
+                      altName: "GO",
+                      imgSrc: "/assets/app/go/img06-go@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listGo
+                 div.service-thumbnail__app-item
+                    a(href="/app/go.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")        
+
+            //-　S.RIDEサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/sride/icon-sride.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name S.RIDE
+                    //-　コピーライト
+                    span.service-info__copy © S.RIDE Inc.
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listSride = [
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img01-sride@2x.png",
+                    },
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img02-sride@2x.png",
+                    },
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img03-sride@2x.png",
+                    },
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img04-sride@2x.png",
+                    },
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img05-sride@2x.png",
+                    },
+                    {
+                      altName: "S.RIDE",
+                      imgSrc: "/assets/app/sride/img06-sride@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listSride
+                 div.service-thumbnail__app-item
+                    a(href="/app/sride.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+            //-　Evernoteサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/evernote/icon-evernote.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Evernote
+                    //-　コピーライト
+                    span.service-info__copy © Evernote Corporation.
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listEvernote = [
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img01-evernote@2x.png",
+                    },
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img02-evernote@2x.png",
+                    },
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img03-evernote@2x.png",
+                    },
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img04-evernote@2x.png",
+                    },
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img05-evernote@2x.png",
+                    },
+                    {
+                      altName: "Evernote",
+                      imgSrc: "/assets/app/evernote/img06-evernote@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listEvernote
+                 div.service-thumbnail__app-item
+                    a(href="/app/evernote.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+            //-　Uber Eatsサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/ubereats/icon-ubereats.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Uber Eats
+                    //-　コピーライト
+                    span.service-info__copy © Uber Technologies, Inc.
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listUbereats = [
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img01-ubereats@2x.png",
+                    },
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img02-ubereats@2x.png",
+                    },
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img03-ubereats@2x.png",
+                    },
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img04-ubereats@2x.png",
+                    },
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img05-ubereats@2x.png",
+                    },
+                    {
+                      altName: "Uber Eats",
+                      imgSrc: "/assets/app/ubereats/img06-ubereats@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listUbereats
+                 div.service-thumbnail__app-item
+                    a(href="/app/ubereats.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")                     
+
+            //-　出前館サービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/demaecan/icon-demaecan.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name 出前館
+                    //-　コピーライト
+                    span.service-info__copy © DEMAE-CAN CO., LTD
+              //-　画像
+              div.service-thumbnail__app.slider-thumbnail
+                - 
+                  var listDemaecan = [
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img01-demaecan@2x.png",
+                    },
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img02-demaecan@2x.png",
+                    },
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img03-demaecan@2x.png",
+                    },
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img04-demaecan@2x.png",
+                    },
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img05-demaecan@2x.png",
+                    },
+                    {
+                      altName: "出前館",
+                      imgSrc: "/assets/app/demaecan/img06-demaecan@2x.png",
+                    },                                                                                                    
+                  ]
+                each item in listDemaecan
+                 div.service-thumbnail__app-item
+                    a(href="/app/demaecan.html")
+                      img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+            //- ページネーション
+            .pagination
+              //- .pagination__end
+                a.pagination__link(href="")
+                  .pagination__back-ground
+                    img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
+                  
+              .pagination__inside
+                a.pagination__link(href="index.html") 
+                  img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="前へ")
+                  p.pagination__text 前へ
+
+              //- .pagination__inside.is-next
+                a.pagination__link(href="page2.html")
+                  p.pagination__text 次へ
+                  img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="次へ")
+                  
+
+              //- .pagination__end
+                a.pagination__link(href="")
+                  .pagination__back-ground
+                    img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番最後へ")
+
+            //-　AmazonBannerエリア
+            include include/_TheBooksBanner
+    
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述
+    footer
+      include include/_footer
