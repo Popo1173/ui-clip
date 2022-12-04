@@ -91,22 +91,24 @@ header {
       }
     }
   }
-  
+
   &__nav-link {
 
     .nav__inner {
       position: relative;
     }
+
     .background-nav {
       position: absolute;
       z-index: 0;
-      background: #fff;
+      // background: #fff;
       width: 100%;
       height: 55px;
       border-radius: 50px;
       top: -4px;
       right: 4px;
-      
+      box-shadow: -3px -3px 5px #fff;
+
       @include mq-up("sp") {
         display: none;
       }
@@ -115,8 +117,10 @@ header {
     .hamburger {
       display: none;
     }
+
     //- ハンバーガーメニュー
     @include mq-up("sp") {
+
       //- ハンバーガーメニュー　アイコン
       .hamburger {
         display: block;
@@ -127,7 +131,7 @@ header {
         width: 55px;
         height: 55px;
         border-radius: 55px;
-        background: #fff;
+        box-shadow: -3px -3px 5px #fff;
 
         &-inner {
           position: absolute;
@@ -139,6 +143,7 @@ header {
           background: #F5F5F5;
           box-shadow: 3px 3px 3px rgba(116, 116, 116, 0.3);
         }
+
         span {
           display: block;
           position: absolute;
@@ -150,15 +155,19 @@ header {
           -moz-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
         }
+
         &__lineTop {
           top: 18px;
         }
+
         &__lineMiddle {
           top: 26px;
         }
+
         &__lineBottom {
           bottom: 17px;
         }
+
         //- ハンバーガーメニュー click時の動き
         &.active {
           .hamburger {
@@ -170,6 +179,7 @@ header {
               -moz-transform: rotate(-45deg);
               transform: rotate(-45deg);
             }
+
             &__lineMiddle {
               top: 25px;
               background: #191919;
@@ -177,6 +187,7 @@ header {
               -moz-transform: rotate(45deg);
               transform: rotate(45deg);
             }
+
             &__lineBottom {
               top: 25px;
               background: #191919;
@@ -189,6 +200,7 @@ header {
       }
     }
   }
+
   // .header-inner__menu
   &__menu {
     position: relative;
@@ -226,7 +238,7 @@ header {
     // .header-inner__menu-item
     &-item {
       font-family: $en-font;
-      flex: 1 1 auto; 
+      flex: 1 1 auto;
 
       &:not(:nth-child(3)) {
         margin-right: 30px;
@@ -359,6 +371,7 @@ header {
     }
   }
 }
+
 .tab-contents {
   font-size: 30px;
   text-align: center;
@@ -380,6 +393,7 @@ header {
     }
   }
 }
+
 .arrow-svg {
   fill: red;
 }
@@ -389,6 +403,7 @@ header {
   max-width: 896px;
   width: auto;
   margin: 0 auto 120px;
+
   &__heading {
     font-family: $en-font;
     font-size: $en-hedding01;
@@ -418,7 +433,7 @@ header {
     margin-top: 25px;
     margin-right: 20px;
 
-    .button-link{
+    .button-link {
       position: relative;
       height: 45px;
       display: flex;
@@ -432,7 +447,7 @@ header {
 
     .background-button {
       position: absolute;
-      background: #fff;
+      box-shadow: -3px -3px 5px #fff;
       width: 100%;
       height: 50px;
       border-radius: 50px;
@@ -440,12 +455,12 @@ header {
       right: 3px;
     }
 
-    .button-text{
+    .button-text {
       flex: 1 1 100%;
       letter-spacing: 1px;
     }
 
-    .button-image{
+    .button-image {
       height: 9px;
       height: 15px;
       padding-right: 10px;
@@ -482,10 +497,10 @@ header {
       font-size: $en-hedding02;
     }
   }
-  
+
   // .books-content__books
   &__books {
-    
+
     padding-bottom: 70px;
 
     @include mq-up("pc") {
@@ -506,12 +521,12 @@ header {
 
       // .books-content__books-list-items
       &-items {
-        max-width: 196px; 
+        max-width: 196px;
         width: calc(22.3% - 4px);
         background-color: #fff;
 
         @include mq-up("sp") {
-          max-width: initial; 
+          max-width: initial;
           width: calc(48% - 2px);
         }
 
@@ -529,7 +544,7 @@ header {
             padding: 15px 15px 15px;
             font-size: 12px;
             word-break: break-word;
-          }          
+          }
         }
       }
     }
@@ -569,7 +584,7 @@ footer {
 
         @include mq-up("pc") {
           text-align: center;
-        
+
           &:last-of-type {
             width: 150px;
             margin-top: 0.65em;
@@ -588,11 +603,11 @@ footer {
           justify-content: center;
           width: 50px;
           height: 50px;
-          padding-top: 5px;
-          padding-left: 5px;
+          // padding-top: 5px;
+          // padding-left: 5px;
           border-radius: 50px;
           border: 10px solid #fff;
-          background: #fff;
+          box-shadow: -1px -3px 4px #fff;
 
           img {
             position: absolute;
@@ -665,7 +680,7 @@ footer {
             height: 14px;
             width: 1px;
             background: #333333;
-          }          
+          }
         }
 
         .link-text {
@@ -691,8 +706,8 @@ footer {
 // SNSアイコンの白背景上の背景 フッター、バーガー共通
 .background-icon {
   position: absolute;
-  left: -7px;
-  top: -7px;
+  left: -10px;
+  top: -10px;
   width: 50px;
   height: 50px;
   background: #F5F5F5;
@@ -708,6 +723,4 @@ footer {
   width: 10px;
 }
 
-.icon-rss {
-
-}
+.icon-rss {}
