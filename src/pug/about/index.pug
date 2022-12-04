@@ -31,8 +31,6 @@ html(lang="ja")
       gtag('js', new Date());
       gtag('config', 'G-2P5TLC1NZG');
 
-    //- Googleアドセンス
-    script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
 
   body
     //- script.
@@ -49,8 +47,14 @@ html(lang="ja")
           h2.about-content__heading About
           p UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。
             <br /> 国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。
-            <br />
-            <br /> 当サイト以外にも Twitter、facebook、noteで情報を発信しています。
+            <br /> ブログ（UI Clip Magazine）では、UI/UXの事例、デザインやテクノロジーに関するナレッジ・ノウハウを紹介しています。
+          </p>
+          <ul class="about-content__buttons">
+            <li class="about-content__button">
+              <div class="background-button"></div><a class="button-link" href="https://ui-clip.com/blog/" target="_blank" rel="noopener noreferrer"><span class="button-text">UI Clip Magazine   </span></a>
+            </li><br />
+          </ul>
+          <p>当サイト以外にも Twitter、facebook、noteで情報を発信しています。</p>
           
           ul.about-content__buttons
             li.about-content__button
@@ -80,6 +84,14 @@ html(lang="ja")
           h3.about-content__heading-policy お問い合わせ
           p 当サイトに関するお問い合わせは、
             a(href="https://ui-clip.com/blog/contact/" target="_blank" rel="noopener noreferrer") こちら。
+
+  //- Googleアドセンス
+  center
+    script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
+    // 横長
+    ins.adsbygoogle(style='display:inline-block;width:728px;height:90px' data-ad-client='ca-pub-6235916185768986' data-ad-slot='5420764018')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({});
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 

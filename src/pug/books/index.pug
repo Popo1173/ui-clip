@@ -31,8 +31,6 @@ html(lang="ja")
       gtag('js', new Date());
       gtag('config', 'G-2P5TLC1NZG');
 
-    //- Googleアドセンス
-    script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
 
   body
     //- script.
@@ -230,6 +228,14 @@ html(lang="ja")
         a.pagination__link(href="")
           .pagination__back-ground
             img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
+
+  //- Googleアドセンス
+  center
+    script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
+    // 横長
+    ins.adsbygoogle(style='display:inline-block;width:728px;height:90px' data-ad-client='ca-pub-6235916185768986' data-ad-slot='5420764018')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({});
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 
