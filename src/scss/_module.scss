@@ -59,6 +59,7 @@
 
     img {
       width: 100%;
+      border-radius: 10px;
     }
 
     &:last-of-type {
@@ -457,6 +458,7 @@
 
   & img {
     width: 100%;
+    border-radius: 10px;
     // width: calc(10% - 4px);
   }
 
@@ -558,6 +560,7 @@
 
           img {
             width: 100%;
+            border-radius: 10px;
           }
         }
 
