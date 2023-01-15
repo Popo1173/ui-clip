@@ -1,455 +1,425 @@
-doctype
-html(lang="ja")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ArtSticker」ページです。")
-    meta(name="keywords", content="*****,*****,*****,*****,*****")
-    meta(name="author", content="")
-    meta(property="og:title", content="タイトル")
-    meta(property="og:type", content="website")
-    meta(property="og:url", content="http://任意のURL")
-    meta(property="og:image", content="http://任意のURL/og_image.png")
-    meta(property="og:site_name", content="")
-    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ArtSticker」ページです。")
-    meta(property="fb:app_id", content="任意のID")
-    title ArtSticker | UI Clip | UIデザインギャラリー
-    link(rel='shortcut icon', href="../assets/common/favicon.png")
-    link(rel='shortcut icon', href="../assets/common/apple-touch-icon.png")
-    link(rel='shortcut icon', href="../assets/common/android-chrome-192x192.png")    
-    link(rel='stylesheet', href="../css/font-style.css")
-    link(rel='stylesheet', href="../css/style.css")
-    link(rel='stylesheet', href="../css/slick.css")
-    link(rel='stylesheet', href="../css/slick-theme.css")
-    
-    //- Googleアナリティクス
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-2P5TLC1NZG')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2P5TLC1NZG');
+//- meta情報
+- var pageName='ArtSticker | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ArtSticker」ページです。';
+- var pagekey='*****';
+- var ogpName='ArtSticker | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ArtSticker」ページです。';
+- var ogpUrl='https://ui-clip.com/artsticker';
+- var page = "artsticker"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
+
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　artstickerサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/artsticker/icon-artsticker.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name ArtSticker
+                //-　コピーライト,version
+                span.service-info__copy © The Chain Museum
+                span.service-info__version Version  6.12.0
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | ArtStickerは、現代アートの一連の鑑賞体験が楽しめる、アート・コミュニケーションプラットフォーム。著名作家から注目の若手作家の作品まで、数々のジャンルの作品を収録。
+            br
+            | 新たな作品やアーティストとの出会い、他のユーザーとのコミュニケーションをお楽しみください。
+
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ライフスタイル
+
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-01.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-02.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-03.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-04.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-05.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-06.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-07.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-08.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-09.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-10.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-11.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-12.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-13.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-14.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-15.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-16.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-17.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-18.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-19.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-20.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-21.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-22.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-23.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-24.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-25.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-26.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-27.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-28.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-29.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-30.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-31.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-32.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-33.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-34.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-35.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-36.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-37.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-38.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-39.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-40.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-41.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-42.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-43.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-44.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-45.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-46.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-47.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-48.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-49.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-50.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-51.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-52.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-53.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-54.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-55.png",
+                },
+                {
+                  altName: "artsticker",
+                  imgSrc: "/assets/app/artsticker/artsticker-56.png",
+                },
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-  body
-    //- script.
-    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
-    
-    //- header (ロゴ、ナビゲーション)
-    header
-      include ../include/_header
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-01.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-02.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-03.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-04.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-05.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-06.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-07.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-08.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-09.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-10.png" alt="artsticker")
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-11.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-12.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-13.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-14.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-15.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-16.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-17.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-18.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-19.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-20.png" alt="artsticker")
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-21.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-22.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-23.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-24.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-25.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-26.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-27.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-28.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-29.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-30.png" alt="artsticker")
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-31.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-32.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-33.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-34.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-35.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-36.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-37.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-38.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-39.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-40.png" alt="artsticker")
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-41.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-42.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-43.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-44.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-45.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-46.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-47.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-48.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-49.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-50.png" alt="artsticker")
+                  .modal-image 
+                    img(src="/assets/app/artsticker/artsticker-51.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-52.png" alt="artsticker")  
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-53.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-54.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-55.png" alt="artsticker")
+                  .modal-image
+                    img(src="/assets/app/artsticker/artsticker-56.png" alt="artsticker")
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/artsticker/icon-artsticker.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name ArtSticker
+                        //-　コピーライト
+                        span.service-info__copy © The Chain Museum
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ライフスタイル
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　artstickerサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/artsticker/icon-artsticker.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name ArtSticker
-                    //-　コピーライト,version
-                    span.service-info__copy © The Chain Museum
-                    span.service-info__version Version  6.12.0
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | ArtStickerは、現代アートの一連の鑑賞体験が楽しめる、アート・コミュニケーションプラットフォーム。著名作家から注目の若手作家の作品まで、数々のジャンルの作品を収録。
-                br
-                | 新たな作品やアーティストとの出会い、他のユーザーとのコミュニケーションをお楽しみください。
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text ライフスタイル
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-01.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-02.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-03.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-04.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-05.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-06.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-07.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-08.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-09.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-10.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-11.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-12.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-13.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-14.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-15.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-16.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-17.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-18.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-19.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-20.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-21.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-22.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-23.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-24.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-25.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-26.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-27.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-28.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-29.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-30.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-31.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-32.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-33.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-34.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-35.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-36.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-37.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-38.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-39.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-40.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-41.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-42.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-43.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-44.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-45.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-46.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-47.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-48.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-49.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-50.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-51.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-52.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-53.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-54.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-55.png",
-                    },
-                    {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-56.png",
-                    },
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-01.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-02.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-03.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-04.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-05.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-06.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-07.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-08.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-09.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-10.png" alt="artsticker")
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-11.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-12.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-13.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-14.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-15.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-16.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-17.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-18.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-19.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-20.png" alt="artsticker")
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-21.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-22.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-23.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-24.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-25.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-26.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-27.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-28.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-29.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-30.png" alt="artsticker")
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-31.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-32.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-33.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-34.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-35.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-36.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-37.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-38.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-39.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-40.png" alt="artsticker")
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-41.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-42.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-43.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-44.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-45.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-46.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-47.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-48.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-49.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-50.png" alt="artsticker")
-                      .modal-image 
-                        img(src="/assets/app/artsticker/artsticker-51.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-52.png" alt="artsticker")  
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-53.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-54.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-55.png" alt="artsticker")
-                      .modal-image
-                        img(src="/assets/app/artsticker/artsticker-56.png" alt="artsticker")
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/artsticker/icon-artsticker.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name ArtSticker
-                            //-　コピーライト
-                            span.service-info__copy © The Chain Museum
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ライフスタイル
-
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
-
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
-
-
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer

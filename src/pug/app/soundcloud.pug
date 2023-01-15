@@ -1,373 +1,343 @@
-doctype
-html(lang="ja")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「SoundCloud」ページです。")
-    meta(name="keywords", content="*****,*****,*****,*****,*****")
-    meta(name="author", content="")
-    meta(property="og:title", content="タイトル")
-    meta(property="og:type", content="website")
-    meta(property="og:url", content="http://任意のURL")
-    meta(property="og:image", content="http://任意のURL/og_image.png")
-    meta(property="og:site_name", content="")
-    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「SoundCloud」ページです。")
-    meta(property="fb:app_id", content="任意のID")
-    title SoundCloud | UI Clip | UIデザインギャラリー
-    link(rel='shortcut icon', href="../assets/common/favicon.png")
-    link(rel='shortcut icon', href="../assets/common/apple-touch-icon.png")
-    link(rel='shortcut icon', href="../assets/common/android-chrome-192x192.png")    
-    link(rel='stylesheet', href="../css/font-style.css")
-    link(rel='stylesheet', href="../css/style.css")
-    link(rel='stylesheet', href="../css/slick.css")
-    link(rel='stylesheet', href="../css/slick-theme.css")
-    
-    //- Googleアナリティクス
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-2P5TLC1NZG')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2P5TLC1NZG');
+//- meta情報
+- var pageName='SoundCloud | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「SoundCloud」ページです。';
+- var pagekey='*****';
+- var ogpName='SoundCloud | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「SoundCloud」ページです。';
+- var ogpUrl='https://ui-clip.com/app/soundcloud';
+- var page = "soundcloud"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
+
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　SoundCloudサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/soundcloud/icon-soundcloud.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name SoundCloud
+                //-　コピーライト,version
+                span.service-info__copy © SoundCloud Global Limited & Co KG
+                span.service-info__version Version  6.7.0
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | SoundCloudではもっとたくさんのミュージックやオーディオを視聴できる。新しい話題の音楽を検索し、トラックやプレイリストを集めよう。
+            br
+            | 友達やアーティストをフォローして、ポッドキャスト、コメディ、ニュースを見つけ出そう。
+            br
+            | どこで何をしていても、SoundCloudのアプリがあれば、もっとオーディオを楽しむことができる。ヒップホップ、ロック、エレクトロニカ、クラシック、ハウス、ジャズ、オーディオブック、スポーツなど・・・。もっと楽しめます。
+
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ミュージック
+
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img01-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img02-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img03-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img04-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img05-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img06-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img07-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img08-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img09-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img10-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img11-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img12-soundcloud@2x.png",
+                },    
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img13-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img14-soundcloud@2x.png",
+                },
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img15-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img16-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img17-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img18-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img19-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img20-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img21-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img22-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img23-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img24-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img25-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img26-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img27-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img28-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img29-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img30-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img31-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img32-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img33-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img34-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img35-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img36-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img37-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img38-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img39-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img40-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img41-soundcloud@2x.png",
+                },  
+                {
+                  altName: "SoundCloud",
+                  imgSrc: "/assets/app/soundcloud/img42-soundcloud@2x.png",
+                },                                                                                                                     
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-  body
-    //- script.
-    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
-    
-    //- header (ロゴ、ナビゲーション)
-    header
-      include ../include/_header
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/soundcloud/img01-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img02-soundcloud@2x.png" alt="SoundCloud")  
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img03-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img04-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img05-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img06-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img07-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img08-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img09-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img10-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image 
+                    img(src="/assets/app/soundcloud/img11-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img12-soundcloud@2x.png" alt="SoundCloud")  
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img13-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img14-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img15-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img16-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img17-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img18-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img19-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img20-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image 
+                    img(src="/assets/app/soundcloud/img21-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img22-soundcloud@2x.png" alt="SoundCloud")  
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img23-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img24-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img25-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img26-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img27-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img28-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img29-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img30-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image 
+                    img(src="/assets/app/soundcloud/img31-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img32-soundcloud@2x.png" alt="SoundCloud")  
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img33-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img34-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img35-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img36-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img37-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img38-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img39-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img40-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img41-soundcloud@2x.png" alt="SoundCloud")
+                  .modal-image
+                    img(src="/assets/app/soundcloud/img42-soundcloud@2x.png" alt="SoundCloud")                        
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/soundcloud/icon-soundcloud.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name SoundCloud
+                        //-　コピーライト
+                        span.service-info__copy © SoundCloud Global Limited & Co KG
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ミュージック
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　SoundCloudサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/soundcloud/icon-soundcloud.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name SoundCloud
-                    //-　コピーライト,version
-                    span.service-info__copy © SoundCloud Global Limited & Co KG
-                    span.service-info__version Version  6.7.0
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | SoundCloudではもっとたくさんのミュージックやオーディオを視聴できる。新しい話題の音楽を検索し、トラックやプレイリストを集めよう。
-                br
-                | 友達やアーティストをフォローして、ポッドキャスト、コメディ、ニュースを見つけ出そう。
-                br
-                | どこで何をしていても、SoundCloudのアプリがあれば、もっとオーディオを楽しむことができる。ヒップホップ、ロック、エレクトロニカ、クラシック、ハウス、ジャズ、オーディオブック、スポーツなど・・・。もっと楽しめます。
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text ミュージック
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img01-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img02-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img03-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img04-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img05-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img06-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img07-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img08-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img09-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img10-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img11-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img12-soundcloud@2x.png",
-                    },    
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img13-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img14-soundcloud@2x.png",
-                    },
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img15-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img16-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img17-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img18-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img19-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img20-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img21-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img22-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img23-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img24-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img25-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img26-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img27-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img28-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img29-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img30-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img31-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img32-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img33-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img34-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img35-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img36-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img37-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img38-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img39-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img40-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img41-soundcloud@2x.png",
-                    },  
-                    {
-                      altName: "SoundCloud",
-                      imgSrc: "/assets/app/soundcloud/img42-soundcloud@2x.png",
-                    },                                                                                                                     
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/soundcloud/img01-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img02-soundcloud@2x.png" alt="SoundCloud")  
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img03-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img04-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img05-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img06-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img07-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img08-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img09-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img10-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image 
-                        img(src="/assets/app/soundcloud/img11-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img12-soundcloud@2x.png" alt="SoundCloud")  
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img13-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img14-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img15-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img16-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img17-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img18-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img19-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img20-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image 
-                        img(src="/assets/app/soundcloud/img21-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img22-soundcloud@2x.png" alt="SoundCloud")  
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img23-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img24-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img25-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img26-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img27-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img28-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img29-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img30-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image 
-                        img(src="/assets/app/soundcloud/img31-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img32-soundcloud@2x.png" alt="SoundCloud")  
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img33-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img34-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img35-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img36-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img37-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img38-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img39-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img40-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img41-soundcloud@2x.png" alt="SoundCloud")
-                      .modal-image
-                        img(src="/assets/app/soundcloud/img42-soundcloud@2x.png" alt="SoundCloud")                        
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/soundcloud/icon-soundcloud.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name SoundCloud
-                            //-　コピーライト
-                            span.service-info__copy © SoundCloud Global Limited & Co KG
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ミュージック
-
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
-
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
-
-
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer

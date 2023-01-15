@@ -1,452 +1,422 @@
-doctype
-html(lang="ja")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「S.RIDE」ページです。")
-    meta(name="keywords", content="*****,*****,*****,*****,*****")
-    meta(name="author", content="")
-    meta(property="og:title", content="タイトル")
-    meta(property="og:type", content="website")
-    meta(property="og:url", content="http://任意のURL")
-    meta(property="og:image", content="http://任意のURL/og_image.png")
-    meta(property="og:site_name", content="")
-    meta(property="og:description", content="優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「S.RIDE」ページです。")
-    meta(property="fb:app_id", content="任意のID")
-    title S.RIDE | UI Clip | UIデザインギャラリー
-    link(rel='shortcut icon', href="../assets/common/favicon.png")
-    link(rel='shortcut icon', href="../assets/common/apple-touch-icon.png")
-    link(rel='shortcut icon', href="../assets/common/android-chrome-192x192.png")    
-    link(rel='stylesheet', href="../css/font-style.css")
-    link(rel='stylesheet', href="../css/style.css")
-    link(rel='stylesheet', href="../css/slick.css")
-    link(rel='stylesheet', href="../css/slick-theme.css")
-    
-    //- Googleアナリティクス
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-2P5TLC1NZG')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2P5TLC1NZG');
+//- meta情報
+- var pageName='S.RIDE | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「S.RIDE」ページです。';
+- var pagekey='*****';
+- var ogpName='S.RIDE | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「S.RIDE」ページです。';
+- var ogpUrl='https://ui-clip.com/app/sride';
+- var page = "sride"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
+
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　srideサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/sride/icon-sride.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name S.RIDE
+                //-　コピーライト,version
+                span.service-info__copy © S.RIDE Inc.
+                span.service-info__version Version  9.2.0
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | タクシー配車はアプリで秒速ワンスライド。
+            br
+            br
+            | ＜1. ワンスライドでタクシー配車＞
+            br
+            | アプリ起動後、ワンスライドで1番近くのタクシーを配車。待ち時間に目的地を入力しておけば移動はよりスムーズに。タクシー乗務員とメッセージのやり取りもできるので、急なトラブル時も安心です。
+            br
+            br
+            | ＜2. キャッシュレスでスムーズに降車＞
+            br
+            | クレジットカード/Apple Payを登録しておけばネット決済を利用できます。各種コード決済サービスや、独自のバーコード決済にも対応。
+            br
+            | モニターに表示されるバーコードをアプリで読み込むだけで決済手続きができます。
+            br
+            br
+            | ＜3. 東京最大級のタクシーネットワーク＞
+            br
+            | 東京最大級のネットワークから、一番近くのタクシーを配車。
+
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text 旅行
+
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img01-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img02-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img03-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img04-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img05-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img06-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img07-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img08-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img09-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img10-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img11-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img12-sride@2x.png",
+                },    
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img13-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img14-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img15-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img16-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img17-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img18-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img19-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img20-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img21-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img22-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img23-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img24-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img25-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img26-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img27-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img28-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img29-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img30-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img31-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img32-sride@2x.png",
+                },    
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img33-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img34-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img35-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img36-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img37-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img38-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img39-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img40-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img41-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img42-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img43-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img44-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img45-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img46-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img47-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img48-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img49-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img50-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img51-sride@2x.png",
+                },
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img52-sride@2x.png",
+                },    
+                {
+                  altName: "sride",
+                  imgSrc: "/assets/app/sride/img53-sride@2x.png",
+                },                                                                                                                 
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-  body
-    //- script.
-    //-   (window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));
-    
-    //- header (ロゴ、ナビゲーション)
-    header
-      include ../include/_header
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/sride/img01-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img02-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img03-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img04-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img05-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img06-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img07-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img08-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img09-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img10-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img11-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img12-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img13-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img14-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img15-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img16-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img17-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img18-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img19-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img20-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img21-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img22-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img23-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img24-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img25-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img26-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img27-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img28-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img29-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img30-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img31-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img32-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img33-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img34-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img35-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img36-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img37-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img38-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img39-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img40-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img41-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img42-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img43-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img44-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img45-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img46-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img47-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img48-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img49-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img50-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img51-sride@2x.png" alt="S.RIDE")
+                  .modal-image
+                    img(src="/assets/app/sride/img52-sride@2x.png" alt="S.RIDE")
+                  .modal-image 
+                    img(src="/assets/app/sride/img53-sride@2x.png" alt="S.RIDE")                        
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/sride/icon-sride.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name S.RIDE
+                        //-　コピーライト
+                        span.service-info__copy © S.RIDE Inc.
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item 旅行
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　srideサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/sride/icon-sride.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name S.RIDE
-                    //-　コピーライト,version
-                    span.service-info__copy © S.RIDE Inc.
-                    span.service-info__version Version  9.2.0
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | タクシー配車はアプリで秒速ワンスライド。
-                br
-                br
-                | ＜1. ワンスライドでタクシー配車＞
-                br
-                | アプリ起動後、ワンスライドで1番近くのタクシーを配車。待ち時間に目的地を入力しておけば移動はよりスムーズに。タクシー乗務員とメッセージのやり取りもできるので、急なトラブル時も安心です。
-                br
-                br
-                | ＜2. キャッシュレスでスムーズに降車＞
-                br
-                | クレジットカード/Apple Payを登録しておけばネット決済を利用できます。各種コード決済サービスや、独自のバーコード決済にも対応。
-                br
-                | モニターに表示されるバーコードをアプリで読み込むだけで決済手続きができます。
-                br
-                br
-                | ＜3. 東京最大級のタクシーネットワーク＞
-                br
-                | 東京最大級のネットワークから、一番近くのタクシーを配車。
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text 旅行
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img01-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img02-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img03-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img04-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img05-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img06-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img07-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img08-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img09-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img10-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img11-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img12-sride@2x.png",
-                    },    
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img13-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img14-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img15-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img16-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img17-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img18-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img19-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img20-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img21-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img22-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img23-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img24-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img25-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img26-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img27-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img28-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img29-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img30-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img31-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img32-sride@2x.png",
-                    },    
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img33-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img34-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img35-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img36-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img37-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img38-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img39-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img40-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img41-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img42-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img43-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img44-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img45-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img46-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img47-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img48-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img49-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img50-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img51-sride@2x.png",
-                    },
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img52-sride@2x.png",
-                    },    
-                    {
-                      altName: "sride",
-                      imgSrc: "/assets/app/sride/img53-sride@2x.png",
-                    },                                                                                                                 
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/sride/img01-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img02-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img03-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img04-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img05-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img06-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img07-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img08-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img09-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img10-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img11-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img12-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img13-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img14-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img15-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img16-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img17-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img18-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img19-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img20-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img21-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img22-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img23-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img24-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img25-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img26-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img27-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img28-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img29-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img30-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img31-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img32-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img33-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img34-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img35-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img36-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img37-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img38-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img39-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img40-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img41-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img42-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img43-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img44-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img45-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img46-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img47-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img48-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img49-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img50-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img51-sride@2x.png" alt="S.RIDE")
-                      .modal-image
-                        img(src="/assets/app/sride/img52-sride@2x.png" alt="S.RIDE")
-                      .modal-image 
-                        img(src="/assets/app/sride/img53-sride@2x.png" alt="S.RIDE")                        
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/sride/icon-sride.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name S.RIDE
-                            //-　コピーライト
-                            span.service-info__copy © S.RIDE Inc.
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item 旅行
-
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
-
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
-
-
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer
