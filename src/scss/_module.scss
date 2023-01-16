@@ -589,14 +589,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         padding-right: 30px;
         padding-left: 30px;
         background-color: #fff;
 
         @include mq-up("sp") {
           width: 100%;
-          height: auto;
+          height: 33vh;
           padding: 10% 5% 10%;
         }
 
