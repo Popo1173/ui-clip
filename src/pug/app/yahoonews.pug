@@ -1,0 +1,399 @@
+//- meta情報
+- var pageName='Yahoo!ニュース | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Yahoo!ニュース」ページです。';
+- var pagekey='*****';
+- var ogpName='Yahoo!ニュース | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Yahoo!ニュース」ページです。';
+- var ogpUrl='https://ui-clip.com/app/yahoonews';
+- var page = "yahoonews"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
+
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　yahoonewsサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/yahoonews/icon-yahoonews.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Yahoo!ニュース
+                //-　コピーライト,version
+                span.service-info__copy © Yahoo Japan Corp.
+                span.service-info__version Version  5.65.3
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | Yahoo!ニュースは、新聞・通信社が配信するニュースのほか、映像、雑誌や個人の書き手が執筆する記事など多種多様なニュースを掲載しています。
+
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ニュース
+
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews1.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews2.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews3.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews4.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews5.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews6.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews7.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews8.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews9.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews10.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews11.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews12.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews13.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews14.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews15.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews16.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews17.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews18.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews19.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews20.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews21.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews22.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews23.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews24.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews25.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews26.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews27.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews28.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews29.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews30.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews31.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews32.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews33.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews34.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews35.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews36.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews37.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews38.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews39.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews40.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews41.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews42.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews43.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews44.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews45.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews46.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews47.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews48.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews49.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews50.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews51.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews52.webp",
+                },                                                                                                                  
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
+
+
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews1.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews2.webp" alt="yahoonews")  
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews3.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews4.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews5.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews6.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews7.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews8.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews9.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews10.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews11.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews12.webp" alt="yahoonews")  
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews13.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews14.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews15.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews16.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews17.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews18.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews19.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews20.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews21.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews22.webp" alt="yahoonews")  
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews23.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews24.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews25.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews26.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews27.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews28.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews29.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews30.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews31.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews32.webp" alt="yahoonews")  
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews33.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews34.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews35.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews36.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews37.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews38.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews39.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews40.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews41.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews42.webp" alt="yahoonews")  
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews43.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews44.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews45.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews46.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews47.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews48.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews49.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews50.webp" alt="yahoonews")
+                  .modal-image 
+                    img(src="/assets/app/yahoonews/yahoonews51.webp" alt="yahoonews")
+                  .modal-image
+                    img(src="/assets/app/yahoonews/yahoonews52.webp" alt="yahoonews")  
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/yahoonews/icon-yahoonews.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name Yahoo!ニュース
+                        //-　コピーライト
+                        span.service-info__copy © Yahoo Japan Corp.
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ニュース
+
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
+
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
+
+
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer
