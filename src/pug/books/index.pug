@@ -6,206 +6,212 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Books」ページです。';
 - var ogpUrl='https://ui-clip.com/books';
 - var page = "books"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-header
-  include ../include/_header
-            
-section.content
-  .content__inner
-    .books-content
-      h2.books-content__heading Books
 
-      .books-content__books
-        ul.books-content__books-list
-          -
-            var list = [
-              {
-                link: 'https://amzn.to/3UTcz0B',
-                image: '/assets/books/item-books-01@2x.jpg',
-                alt: 'アイデアのつくり方',
-                text: 'アイデアのつくり方'
-              },
-              {
-                link: 'https://amzn.to/3C0Rj0h',
-                image: '/assets/books/item-books-02@2x.jpg',
-                alt: 'ウェブデザインの思考法 (Business×Design×IT)',
-                text: 'ウェブデザインの思考法 (Business×Design×IT) '
-              },
-              {
-                link: 'https://amzn.to/3dUpxdY',
-                image: '/assets/books/item-books-03@2x.jpg',
-                alt: 'オンスクリーンタイポグラフィ 事例と論説から考えるウェブの文字表現',
-                text: 'オンスクリーンタイポグラフィ 事例と論説から考えるウェブの文字表現'
-              },
-              {
-                link: 'https://amzn.to/3y20Lzx',
-                image: '/assets/books/item-books-04@2x.jpg',
-                alt: '欧文書体―その背景と使い方',
-                text: '欧文書体―その背景と使い方'
-              },                  
-              {
-                link: 'https://amzn.to/3UMG2tj',
-                image: '/assets/books/item-books-05@2x.jpg',
-                alt: 'ディテール・イン・タイポグラフィ 読みやすい欧文組版のための基礎知識と考え方',
-                text: 'ディテール・イン・タイポグラフィ 読みやすい欧文組版のための基礎知識と考え方'
-              },                  
-              {
-                link: 'https://amzn.to/3C1u72b',
-                image: '/assets/books/item-books-06@2x.jpg',
-                alt: 'UXデザインの教科書',
-                text: 'UXデザインの教科書'
-              },        
-              {
-                link: 'https://amzn.to/3RqfUBC',
-                image: '/assets/books/item-books-07@2x.jpg',
-                alt: '融けるデザイン ―ハード×ソフト×ネット時代の新たな設計論',
-                text: '融けるデザイン ―ハード×ソフト×ネット時代の新たな設計論'
-              },         
-              {
-                link: 'https://amzn.to/3E7w9QV',
-                image: '/assets/books/item-books-08@2x.jpg',
-                alt: 'はじめてのUIデザイン 改訂版',
-                text: 'はじめてのUIデザイン 改訂版'
-              },   
-              {
-                link: 'https://amzn.to/3E7wsv3',
-                image: '/assets/books/item-books-09@2x.jpg',
-                alt: 'UIデザインの教科書［新版］ マルチデバイス時代のインターフェース設計',
-                text: 'UIデザインの教科書［新版］ マルチデバイス時代のインターフェース設計'
-              },   
-              {
-                link: 'https://amzn.to/3Sw2QvK',
-                image: '/assets/books/item-books-10@2x.jpg',
-                alt: '【新版】UI GRAPHICS 成功事例と思想から学ぶ、これからのインターフェイスデザインとUX',
-                text: '【新版】UI GRAPHICS 成功事例と思想から学ぶ、これからのインターフェイスデザインとUX'
-              },   
-              {
-                link: 'https://amzn.to/3CohZK1',
-                image: '/assets/books/item-books-11@2x.jpg',
-                alt: 'Design Systems ―デジタルプロダクトのためのデザインシステム実践ガイド',
-                text: 'Design Systems ―デジタルプロダクトのためのデザインシステム実践ガイド'
-              },   
-              {
-                link: 'https://amzn.to/3e3kdoB',
-                image: '/assets/books/item-books-12@2x.jpg',
-                alt: '欧文書体 2 定番書体と演出法 (タイポグラフィの基本BOOK)',
-                text: '欧文書体 2 定番書体と演出法 (タイポグラフィの基本BOOK)'
-              },   
-              {
-                link: 'https://amzn.to/3LZrzWE',
-                image: '/assets/books/item-books-13@2x.jpg',
-                alt: '欧文書体のつくり方 美しいカーブと心地よい字並びのために',
-                text: '欧文書体のつくり方 美しいカーブと心地よい字並びのために'
-              },   
-              {
-                link: 'https://amzn.to/3SzE3ak',
-                image: '/assets/books/item-books-14@2x.jpg',
-                alt: 'レタースペーシング タイポグラフィにおける文字間調整の考え方',
-                text: 'レタースペーシング タイポグラフィにおける文字間調整の考え方'
-              },   
-              {
-                link: 'https://amzn.to/3Ss2aYj',
-                image: '/assets/books/item-books-15@2x.jpg',
-                alt: '日本語組版入門: その構造とアルゴリズム',
-                text: '日本語組版入門: その構造とアルゴリズム'
-              },   
-              {
-                link: 'https://amzn.to/3C60Fbs',
-                image: '/assets/books/item-books-16@2x.jpg',
-                alt: 'タイポグラフィの基本ルール ―プロに学ぶ、一生枯れない永久不滅テクニック―［デザインラボ］',
-                text: 'タイポグラフィの基本ルール ―プロに学ぶ、一生枯れない永久不滅テクニック―［デザインラボ］'
-              },   
-              {
-                link: 'https://amzn.to/3LUF7D2',
-                image: '/assets/books/item-books-17@2x.jpg',
-                alt: 'スティーブ・ジョブズ　I',
-                text: 'スティーブ・ジョブズ　I'
-              },   
-              {
-                link: 'https://amzn.to/3rkkkiD',
-                image: '/assets/books/item-books-18@2x.jpg',
-                alt: 'スティーブ・ジョブズ　II',
-                text: 'スティーブ・ジョブズ　II'
-              },   
-              {
-                link: 'https://amzn.to/3y5Iam2',
-                image: '/assets/books/item-books-19@2x.jpg',
-                alt: 'スティーブ・ジョブズ 驚異のプレゼン',
-                text: 'スティーブ・ジョブズ 驚異のプレゼン'
-              },   
-              {
-                link: 'https://amzn.to/3SPxEan',
-                image: '/assets/books/item-books-20@2x.jpg',
-                alt: 'スティーブ・ジョブズ 驚異のイノベーション',
-                text: 'スティーブ・ジョブズ 驚異のイノベーション'
-              },   
-              {
-                link: 'https://amzn.to/3CorrNl',
-                image: '/assets/books/item-books-21@2x.jpg',
-                alt: 'Becoming Steve Jobs 上: ビジョナリーへの成長物語',
-                text: 'Becoming Steve Jobs 上: ビジョナリーへの成長物語'
-              },   
-              {
-                link: 'https://amzn.to/3E8jNYX',
-                image: '/assets/books/item-books-22@2x.jpg',
-                alt: 'Becoming Steve Jobs 下: ビジョナリーへの成長物語',
-                text: 'Becoming Steve Jobs 下: ビジョナリーへの成長物語'
-              },       
-              {
-                link: 'https://amzn.to/3SObFkc',
-                image: '/assets/books/item-books-23@2x.jpg',
-                alt: 'スティーブ・ジョブズ グラフィック伝記',
-                text: 'スティーブ・ジョブズ グラフィック伝記'
-              },
-              {
-                link: 'https://amzn.to/3M0shmU',
-                image: '/assets/books/item-books-24@2x.jpg',
-                alt: '誰のためのデザイン？　増補・改訂版　―認知科学者のデザイン原論',
-                text: '誰のためのデザイン？　増補・改訂版　―認知科学者のデザイン原論'
-              },     
 
-            ]
-          each item in list
-            li.books-content__books-list-items
-              a.book-link(href=item.link target="_blank")
-                img.book-link__image(src=item.image alt=item.alt)
-                p.book-link__text #{item.text}
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-      //-　Bannerエリア
-      //- .advertisement-area__banner
-      //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
-      
-//- ページネーション
-//-.pagination
-  .pagination__end
-    a.pagination__link(href="")
-      .pagination__back-ground
-        img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
-      
-  .pagination__inside
-    a.pagination__link(href="") 
-      img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
-      p.pagination__text 前へ
+  body
+    include ../include/_header
 
-  .pagination__inside.is-next
-    a.pagination__link(href="")
-      p.pagination__text 次へ
-      img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
-      
+    section.content
+      .content__inner
+        .books-content
+          h2.books-content__heading Books
 
-  .pagination__end
-    a.pagination__link(href="")
-      .pagination__back-ground
-        img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
+          .books-content__books
+            ul.books-content__books-list
+              -
+                var list = [
+                  {
+                    link: 'https://amzn.to/3UTcz0B',
+                    image: '/assets/books/item-books-01@2x.jpg',
+                    alt: 'アイデアのつくり方',
+                    text: 'アイデアのつくり方'
+                  },
+                  {
+                    link: 'https://amzn.to/3C0Rj0h',
+                    image: '/assets/books/item-books-02@2x.jpg',
+                    alt: 'ウェブデザインの思考法 (Business×Design×IT)',
+                    text: 'ウェブデザインの思考法 (Business×Design×IT) '
+                  },
+                  {
+                    link: 'https://amzn.to/3dUpxdY',
+                    image: '/assets/books/item-books-03@2x.jpg',
+                    alt: 'オンスクリーンタイポグラフィ 事例と論説から考えるウェブの文字表現',
+                    text: 'オンスクリーンタイポグラフィ 事例と論説から考えるウェブの文字表現'
+                  },
+                  {
+                    link: 'https://amzn.to/3y20Lzx',
+                    image: '/assets/books/item-books-04@2x.jpg',
+                    alt: '欧文書体―その背景と使い方',
+                    text: '欧文書体―その背景と使い方'
+                  },                  
+                  {
+                    link: 'https://amzn.to/3UMG2tj',
+                    image: '/assets/books/item-books-05@2x.jpg',
+                    alt: 'ディテール・イン・タイポグラフィ 読みやすい欧文組版のための基礎知識と考え方',
+                    text: 'ディテール・イン・タイポグラフィ 読みやすい欧文組版のための基礎知識と考え方'
+                  },                  
+                  {
+                    link: 'https://amzn.to/3C1u72b',
+                    image: '/assets/books/item-books-06@2x.jpg',
+                    alt: 'UXデザインの教科書',
+                    text: 'UXデザインの教科書'
+                  },        
+                  {
+                    link: 'https://amzn.to/3RqfUBC',
+                    image: '/assets/books/item-books-07@2x.jpg',
+                    alt: '融けるデザイン ―ハード×ソフト×ネット時代の新たな設計論',
+                    text: '融けるデザイン ―ハード×ソフト×ネット時代の新たな設計論'
+                  },         
+                  {
+                    link: 'https://amzn.to/3E7w9QV',
+                    image: '/assets/books/item-books-08@2x.jpg',
+                    alt: 'はじめてのUIデザイン 改訂版',
+                    text: 'はじめてのUIデザイン 改訂版'
+                  },   
+                  {
+                    link: 'https://amzn.to/3E7wsv3',
+                    image: '/assets/books/item-books-09@2x.jpg',
+                    alt: 'UIデザインの教科書［新版］ マルチデバイス時代のインターフェース設計',
+                    text: 'UIデザインの教科書［新版］ マルチデバイス時代のインターフェース設計'
+                  },   
+                  {
+                    link: 'https://amzn.to/3Sw2QvK',
+                    image: '/assets/books/item-books-10@2x.jpg',
+                    alt: '【新版】UI GRAPHICS 成功事例と思想から学ぶ、これからのインターフェイスデザインとUX',
+                    text: '【新版】UI GRAPHICS 成功事例と思想から学ぶ、これからのインターフェイスデザインとUX'
+                  },   
+                  {
+                    link: 'https://amzn.to/3CohZK1',
+                    image: '/assets/books/item-books-11@2x.jpg',
+                    alt: 'Design Systems ―デジタルプロダクトのためのデザインシステム実践ガイド',
+                    text: 'Design Systems ―デジタルプロダクトのためのデザインシステム実践ガイド'
+                  },   
+                  {
+                    link: 'https://amzn.to/3e3kdoB',
+                    image: '/assets/books/item-books-12@2x.jpg',
+                    alt: '欧文書体 2 定番書体と演出法 (タイポグラフィの基本BOOK)',
+                    text: '欧文書体 2 定番書体と演出法 (タイポグラフィの基本BOOK)'
+                  },   
+                  {
+                    link: 'https://amzn.to/3LZrzWE',
+                    image: '/assets/books/item-books-13@2x.jpg',
+                    alt: '欧文書体のつくり方 美しいカーブと心地よい字並びのために',
+                    text: '欧文書体のつくり方 美しいカーブと心地よい字並びのために'
+                  },   
+                  {
+                    link: 'https://amzn.to/3SzE3ak',
+                    image: '/assets/books/item-books-14@2x.jpg',
+                    alt: 'レタースペーシング タイポグラフィにおける文字間調整の考え方',
+                    text: 'レタースペーシング タイポグラフィにおける文字間調整の考え方'
+                  },   
+                  {
+                    link: 'https://amzn.to/3Ss2aYj',
+                    image: '/assets/books/item-books-15@2x.jpg',
+                    alt: '日本語組版入門: その構造とアルゴリズム',
+                    text: '日本語組版入門: その構造とアルゴリズム'
+                  },   
+                  {
+                    link: 'https://amzn.to/3C60Fbs',
+                    image: '/assets/books/item-books-16@2x.jpg',
+                    alt: 'タイポグラフィの基本ルール ―プロに学ぶ、一生枯れない永久不滅テクニック―［デザインラボ］',
+                    text: 'タイポグラフィの基本ルール ―プロに学ぶ、一生枯れない永久不滅テクニック―［デザインラボ］'
+                  },   
+                  {
+                    link: 'https://amzn.to/3LUF7D2',
+                    image: '/assets/books/item-books-17@2x.jpg',
+                    alt: 'スティーブ・ジョブズ　I',
+                    text: 'スティーブ・ジョブズ　I'
+                  },   
+                  {
+                    link: 'https://amzn.to/3rkkkiD',
+                    image: '/assets/books/item-books-18@2x.jpg',
+                    alt: 'スティーブ・ジョブズ　II',
+                    text: 'スティーブ・ジョブズ　II'
+                  },   
+                  {
+                    link: 'https://amzn.to/3y5Iam2',
+                    image: '/assets/books/item-books-19@2x.jpg',
+                    alt: 'スティーブ・ジョブズ 驚異のプレゼン',
+                    text: 'スティーブ・ジョブズ 驚異のプレゼン'
+                  },   
+                  {
+                    link: 'https://amzn.to/3SPxEan',
+                    image: '/assets/books/item-books-20@2x.jpg',
+                    alt: 'スティーブ・ジョブズ 驚異のイノベーション',
+                    text: 'スティーブ・ジョブズ 驚異のイノベーション'
+                  },   
+                  {
+                    link: 'https://amzn.to/3CorrNl',
+                    image: '/assets/books/item-books-21@2x.jpg',
+                    alt: 'Becoming Steve Jobs 上: ビジョナリーへの成長物語',
+                    text: 'Becoming Steve Jobs 上: ビジョナリーへの成長物語'
+                  },   
+                  {
+                    link: 'https://amzn.to/3E8jNYX',
+                    image: '/assets/books/item-books-22@2x.jpg',
+                    alt: 'Becoming Steve Jobs 下: ビジョナリーへの成長物語',
+                    text: 'Becoming Steve Jobs 下: ビジョナリーへの成長物語'
+                  },       
+                  {
+                    link: 'https://amzn.to/3SObFkc',
+                    image: '/assets/books/item-books-23@2x.jpg',
+                    alt: 'スティーブ・ジョブズ グラフィック伝記',
+                    text: 'スティーブ・ジョブズ グラフィック伝記'
+                  },
+                  {
+                    link: 'https://amzn.to/3M0shmU',
+                    image: '/assets/books/item-books-24@2x.jpg',
+                    alt: '誰のためのデザイン？　増補・改訂版　―認知科学者のデザイン原論',
+                    text: '誰のためのデザイン？　増補・改訂版　―認知科学者のデザイン原論'
+                  },     
 
-//- Googleアドセンス
-center
-script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
-// 横長
-ins.adsbygoogle(style='display:inline-block;width:728px;height:90px' data-ad-client='ca-pub-6235916185768986' data-ad-slot='5420764018')
-script.
-  (adsbygoogle = window.adsbygoogle || []).push({});
+                ]
+              each item in list
+                li.books-content__books-list-items
+                  a.book-link(href=item.link target="_blank")
+                    img.book-link__image(src=item.image alt=item.alt)
+                    p.book-link__text #{item.text}
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+          //-　Bannerエリア
+          //- .advertisement-area__banner
+          //-   img.banner-add(src="/assets/common/add/banner-add-adobe.png" alt="広告")
+          
+    //- ページネーション
+    //-.pagination
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番前に戻る")
+          
+      .pagination__inside
+        a.pagination__link(href="") 
+          img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          p.pagination__text 前へ
+
+      .pagination__inside.is-next
+        a.pagination__link(href="")
+          p.pagination__text 次へ
+          img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="一番前に戻る")
+          
+
+      .pagination__end
+        a.pagination__link(href="")
+          .pagination__back-ground
+            img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番後ろに行く")          
+
+    //- Googleアドセンス
+    center
+    script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6235916185768986' crossorigin='anonymous')
+    // 横長
+    ins.adsbygoogle(style='display:inline-block;width:728px;height:90px' data-ad-client='ca-pub-6235916185768986' data-ad-slot='5420764018')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({});
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

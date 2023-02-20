@@ -6,798 +6,802 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「メルカリ」ページです。';
 - var ogpUrl='https://ui-clip.com/app/mercari';
 - var page = "mercari"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　mercariサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/mercari/icon-mercari.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name メルカリ
-                //-　コピーライト,version
-                span.service-info__copy © Mercari, Inc.
-                span.service-info__version Version  7.63.2
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | フリマアプリのメルカリ(Mercari)は新品も中古も商品豊富で日本最大の"売れる"フリマアプリ。
-            br
-            | 236万ヶ所のお店で使える"かんたんスマホ決済"機能のメルペイ (Merpay)でお得にショッピングも！
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ショッピング
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari1.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari2.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari3.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari4.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari5.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari6.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari7.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari8.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari9.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari10.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari11.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari12.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari13.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari14.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari15.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari16.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari17.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari18.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari19.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari20.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari21.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari22.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari23.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari24.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari25.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari26.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari27.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari28.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari29.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari30.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari31.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari32.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari33.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari34.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari35.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari36.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari37.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari38.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari39.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari40.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari41.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari42.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari43.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari44.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari45.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari46.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari47.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari48.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari49.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari50.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari51.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari52.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari53.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari54.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari55.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari56.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari57.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari58.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari59.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari60.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari61.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari62.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari63.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari64.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari65.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari66.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari67.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari68.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari69.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari70.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari71.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari72.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari73.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari74.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari75.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari76.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari77.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari78.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari79.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari80.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari81.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari82.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari83.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari84.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari85.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari86.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari87.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari88.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari89.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari90.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari91.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari92.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari93.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari94.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari95.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari96.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari97.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari98.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari99.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari100.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari101.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari102.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari103.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari104.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari105.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari106.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari107.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari108.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari109.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari110.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari111.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari112.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari113.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari114.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari115.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari116.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari117.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari118.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari119.webp",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　mercariサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/mercari/icon-mercari.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name メルカリ
+                    //-　コピーライト,version
+                    span.service-info__copy © Mercari, Inc.
+                    span.service-info__version Version  7.63.2
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | フリマアプリのメルカリ(Mercari)は新品も中古も商品豊富で日本最大の"売れる"フリマアプリ。
+                br
+                | 236万ヶ所のお店で使える"かんたんスマホ決済"機能のメルペイ (Merpay)でお得にショッピングも！
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari1.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari2.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari3.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari4.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari5.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari6.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari7.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari8.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari9.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari10.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari11.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari12.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari13.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari14.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari15.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari16.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari17.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari18.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari19.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari20.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari21.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari22.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari23.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari24.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari25.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari26.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari27.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari28.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari29.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari30.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari31.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari32.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari33.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari34.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari35.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari36.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari37.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari38.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari39.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari40.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari41.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari42.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari43.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari44.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari45.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari46.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari47.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari48.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari49.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari50.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari51.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari52.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari53.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari54.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari55.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari56.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari57.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari58.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari59.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari60.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari61.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari62.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari63.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari64.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari65.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari66.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari67.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari68.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari69.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari70.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari71.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari72.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari73.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari74.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari75.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari76.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari77.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari78.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari79.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari80.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari81.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari82.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari83.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari84.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari85.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari86.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari87.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari88.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari89.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari90.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari91.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari92.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari93.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari94.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari95.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari96.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari97.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari98.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari99.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari100.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari101.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari102.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari103.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari104.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari105.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari106.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari107.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari108.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari109.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari110.webp" alt="mercari")
-                  .modal-image 
-                    img(src="/assets/app/mercari/mercari111.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari112.webp" alt="mercari")  
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari113.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari114.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari115.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari116.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari117.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari118.webp" alt="mercari")
-                  .modal-image
-                    img(src="/assets/app/mercari/mercari119.webp" alt="mercari")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/mercari/icon-mercari.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name メルカリ
-                        //-　コピーライト
-                        span.service-info__copy © Mercari, Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ショッピング
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari1.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari2.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari3.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari4.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari5.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari6.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari7.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari8.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari9.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari10.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari11.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari12.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari13.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari14.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari15.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari16.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari17.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari18.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari19.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari20.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari21.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari22.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari23.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari24.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari25.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari26.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari27.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari28.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari29.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari30.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari31.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari32.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari33.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari34.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari35.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari36.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari37.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari38.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari39.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari40.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari41.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari42.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari43.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari44.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari45.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari46.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari47.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari48.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari49.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari50.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari51.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari52.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari53.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari54.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari55.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari56.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari57.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari58.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari59.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari60.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari61.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari62.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari63.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari64.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari65.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari66.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari67.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari68.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari69.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari70.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari71.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari72.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari73.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari74.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari75.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari76.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari77.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari78.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari79.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari80.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari81.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari82.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari83.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari84.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari85.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari86.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari87.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari88.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari89.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari90.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari91.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari92.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari93.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari94.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari95.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari96.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari97.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari98.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari99.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari100.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari101.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari102.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari103.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari104.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari105.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari106.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari107.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari108.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari109.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari110.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari111.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari112.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari113.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari114.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari115.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari116.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari117.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari118.webp",
+                    },
+                    {
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari119.webp",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari1.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari2.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari3.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari4.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari5.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari6.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari7.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari8.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari9.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari10.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari11.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari12.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari13.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari14.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari15.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari16.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari17.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari18.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari19.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari20.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari21.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari22.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari23.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari24.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari25.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari26.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari27.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari28.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari29.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari30.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari31.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari32.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari33.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari34.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari35.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari36.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari37.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari38.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari39.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari40.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari41.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari42.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari43.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari44.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari45.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari46.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari47.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari48.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari49.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari50.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari51.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari52.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari53.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari54.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari55.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari56.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari57.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari58.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari59.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari60.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari61.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari62.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari63.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari64.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari65.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari66.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari67.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari68.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari69.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari70.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari71.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari72.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari73.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari74.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari75.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari76.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari77.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari78.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari79.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari80.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari81.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari82.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari83.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari84.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari85.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari86.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari87.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari88.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari89.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari90.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari91.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari92.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari93.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari94.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari95.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari96.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari97.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari98.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari99.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari100.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari101.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari102.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari103.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari104.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari105.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari106.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari107.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari108.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari109.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari110.webp" alt="mercari")
+                      .modal-image 
+                        img(src="/assets/app/mercari/mercari111.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari112.webp" alt="mercari")  
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari113.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari114.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari115.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari116.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari117.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari118.webp" alt="mercari")
+                      .modal-image
+                        img(src="/assets/app/mercari/mercari119.webp" alt="mercari")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/mercari/icon-mercari.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name メルカリ
+                            //-　コピーライト
+                            span.service-info__copy © Mercari, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

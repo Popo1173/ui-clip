@@ -6,912 +6,916 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Trip.com」ページです。';
 - var ogpUrl='https://ui-clip.com/app/tripcom';
 - var page = "tripcom"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　tripcomサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/tripcom/icon-tripcom.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Trip.com
-                //-　コピーライト,version
-                span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
-                span.service-info__version Version  7.63.2
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 旅に必要なすべてが揃うワンストップの旅行プラットフォーム「Trip.com（トリップドットコム）」は、お得な旅を豊富にご用意しています！
-            br
-            | 今すぐTrip.com（トリップドットコム）アプリをダウンロードして、素敵な旅をお楽しみください！
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 旅行
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-01.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-02.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-03.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-04.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-05.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-06.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-07.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-08.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-09.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-10.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-11.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-12.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-13.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-14.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-15.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-16.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-17.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-18.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-19.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-20.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-21.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-22.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-23.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-24.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-25.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-26.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-27.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-28.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-29.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-30.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-31.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-32.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-33.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-34.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-35.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-36.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-37.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-38.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-39.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-40.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-41.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-42.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-43.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-44.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-45.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-46.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-47.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-48.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-49.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-50.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-51.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-52.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-53.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-54.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-55.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-56.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-57.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-58.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-59.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-60.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-61.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-62.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-63.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-64.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-65.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-66.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-67.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-68.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-69.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-70.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-71.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-72.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-73.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-74.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-75.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-76.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-77.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-78.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-79.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-80.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-81.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-82.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-83.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-84.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-85.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-86.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-87.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-88.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-89.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-90.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-91.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-92.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-93.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-94.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-95.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-96.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-97.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-98.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-99.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-100.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-101.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-102.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-103.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-104.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-105.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-106.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-107.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-108.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-109.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-110.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-111.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-112.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-113.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-114.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-115.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-116.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-117.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-118.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-119.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-120.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-121.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-122.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-123.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-124.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-125.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-126.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-127.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-128.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-129.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-130.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-131.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-132.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-133.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-134.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-135.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-136.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-137.png",
-                },
-                {
-                  altName: "tripcom",
-                  imgSrc: "/assets/app/tripcom/tripcom-138.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　tripcomサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/tripcom/icon-tripcom.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Trip.com
+                    //-　コピーライト,version
+                    span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
+                    span.service-info__version Version  7.63.2
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 旅に必要なすべてが揃うワンストップの旅行プラットフォーム「Trip.com（トリップドットコム）」は、お得な旅を豊富にご用意しています！
+                br
+                | 今すぐTrip.com（トリップドットコム）アプリをダウンロードして、素敵な旅をお楽しみください！
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 旅行
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-01.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-02.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-03.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-04.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-05.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-06.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-07.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-08.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-09.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-10.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-11.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-12.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-13.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-14.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-15.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-16.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-17.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-18.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-19.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-20.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-21.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-22.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-23.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-24.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-25.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-26.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-27.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-28.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-29.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-30.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-31.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-32.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-33.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-34.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-35.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-36.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-37.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-38.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-39.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-40.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-41.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-42.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-43.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-44.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-45.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-46.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-47.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-48.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-49.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-50.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-51.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-52.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-53.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-54.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-55.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-56.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-57.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-58.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-59.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-60.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-61.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-62.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-63.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-64.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-65.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-66.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-67.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-68.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-69.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-70.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-71.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-72.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-73.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-74.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-75.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-76.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-77.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-78.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-79.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-80.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-81.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-82.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-83.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-84.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-85.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-86.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-87.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-88.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-89.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-90.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-91.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-92.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-93.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-94.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-95.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-96.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-97.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-98.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-99.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-100.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-101.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-102.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-103.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-104.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-105.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-106.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-107.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-108.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-109.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-110.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-111.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-112.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-113.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-114.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-115.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-116.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-117.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-118.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-119.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-120.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-121.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-122.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-123.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-124.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-125.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-126.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-127.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-128.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-129.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-130.png" alt="tripcom")
-                  .modal-image 
-                    img(src="/assets/app/tripcom/tripcom-131.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-132.png" alt="tripcom")  
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-133.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-134.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-135.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-136.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-137.png" alt="tripcom")
-                  .modal-image
-                    img(src="/assets/app/tripcom/tripcom-138.png" alt="tripcom")  
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/tripcom/icon-tripcom.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Trip.com
-                        //-　コピーライト
-                        span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 旅行
-
-          .back-button
-            a(href="/page2.html")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-01.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-02.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-03.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-04.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-05.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-06.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-07.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-08.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-09.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-10.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-11.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-12.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-13.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-14.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-15.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-16.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-17.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-18.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-19.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-20.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-21.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-22.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-23.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-24.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-25.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-26.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-27.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-28.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-29.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-30.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-31.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-32.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-33.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-34.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-35.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-36.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-37.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-38.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-39.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-40.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-41.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-42.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-43.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-44.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-45.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-46.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-47.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-48.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-49.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-50.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-51.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-52.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-53.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-54.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-55.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-56.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-57.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-58.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-59.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-60.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-61.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-62.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-63.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-64.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-65.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-66.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-67.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-68.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-69.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-70.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-71.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-72.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-73.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-74.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-75.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-76.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-77.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-78.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-79.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-80.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-81.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-82.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-83.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-84.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-85.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-86.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-87.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-88.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-89.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-90.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-91.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-92.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-93.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-94.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-95.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-96.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-97.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-98.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-99.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-100.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-101.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-102.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-103.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-104.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-105.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-106.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-107.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-108.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-109.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-110.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-111.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-112.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-113.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-114.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-115.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-116.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-117.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-118.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-119.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-120.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-121.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-122.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-123.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-124.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-125.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-126.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-127.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-128.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-129.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-130.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-131.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-132.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-133.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-134.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-135.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-136.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-137.png",
+                    },
+                    {
+                      altName: "tripcom",
+                      imgSrc: "/assets/app/tripcom/tripcom-138.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-01.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-02.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-03.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-04.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-05.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-06.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-07.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-08.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-09.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-10.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-11.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-12.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-13.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-14.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-15.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-16.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-17.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-18.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-19.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-20.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-21.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-22.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-23.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-24.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-25.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-26.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-27.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-28.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-29.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-30.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-31.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-32.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-33.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-34.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-35.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-36.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-37.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-38.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-39.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-40.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-41.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-42.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-43.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-44.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-45.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-46.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-47.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-48.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-49.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-50.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-51.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-52.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-53.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-54.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-55.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-56.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-57.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-58.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-59.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-60.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-61.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-62.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-63.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-64.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-65.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-66.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-67.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-68.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-69.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-70.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-71.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-72.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-73.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-74.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-75.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-76.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-77.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-78.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-79.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-80.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-81.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-82.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-83.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-84.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-85.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-86.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-87.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-88.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-89.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-90.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-91.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-92.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-93.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-94.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-95.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-96.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-97.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-98.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-99.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-100.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-101.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-102.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-103.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-104.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-105.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-106.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-107.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-108.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-109.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-110.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-111.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-112.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-113.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-114.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-115.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-116.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-117.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-118.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-119.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-120.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-121.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-122.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-123.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-124.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-125.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-126.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-127.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-128.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-129.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-130.png" alt="tripcom")
+                      .modal-image 
+                        img(src="/assets/app/tripcom/tripcom-131.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-132.png" alt="tripcom")  
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-133.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-134.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-135.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-136.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-137.png" alt="tripcom")
+                      .modal-image
+                        img(src="/assets/app/tripcom/tripcom-138.png" alt="tripcom")  
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/tripcom/icon-tripcom.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Trip.com
+                            //-　コピーライト
+                            span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 旅行
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

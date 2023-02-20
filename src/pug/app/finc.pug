@@ -6,596 +6,600 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「FiNC」ページです。';
 - var ogpUrl='https://ui-clip.com/app/finc';
 - var page = "finc"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　fincサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/finc/icon-finc.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name FiNC
-                //-　コピーライト,version
-                span.service-info__copy © FINC TECHNOLOGIES INC.
-                span.service-info__version Version  9.13.0
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | ダイエットに必要な体重管理やカロリー計算はもちろん、食事管理や運動記録(歩数計)、生理管理や睡眠記録もこのアプリひとつでOK！FiNCは手軽に続けられる健康管理アプリです。
-            br
-            | FiNCではダイエットを、バランスの取れた食事や適切な運動・休養を通じ、健康的な生活を目指すことと位置付けてます。
-            br
-            | さらに体重や食事などを記録することでポイントが貯まり、貯まったポイントで美容・健康グッズをお得に購入することができます。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ヘルスケア／フィットネス
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc2.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc3.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc4.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc5.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc6.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc7.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc8.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc9.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc10.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc11.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc12.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc13.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc14.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc15.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc16.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc17.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc18.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc19.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc20.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc21.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc22.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc23.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc24.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc25.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc26.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc27.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc28.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc29.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc30.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc31.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc32.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc33.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc34.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc35.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc36.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc37.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc38.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc39.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc40.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc41.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc42.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc43.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc44.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc45.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc46.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc47.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc48.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc49.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc50.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc51.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc52.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc53.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc54.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc55.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc56.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc57.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc58.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc59.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc60.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc61.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc62.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc63.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc64.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc65.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc66.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc67.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc68.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc69.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc70.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc71.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc72.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc73.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc74.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc75.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc76.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc77.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc78.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc79.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc80.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc81.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc82.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc83.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc84.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc85.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc86.webp",
-                },                                                                                                                   
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　fincサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/finc/icon-finc.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name FiNC
+                    //-　コピーライト,version
+                    span.service-info__copy © FINC TECHNOLOGIES INC.
+                    span.service-info__version Version  9.13.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | ダイエットに必要な体重管理やカロリー計算はもちろん、食事管理や運動記録(歩数計)、生理管理や睡眠記録もこのアプリひとつでOK！FiNCは手軽に続けられる健康管理アプリです。
+                br
+                | FiNCではダイエットを、バランスの取れた食事や適切な運動・休養を通じ、健康的な生活を目指すことと位置付けてます。
+                br
+                | さらに体重や食事などを記録することでポイントが貯まり、貯まったポイントで美容・健康グッズをお得に購入することができます。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ヘルスケア／フィットネス
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image
-                    img(src="/assets/app/finc/finc2.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc3.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc4.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc5.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc6.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc7.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc8.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc9.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc10.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc11.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc12.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc13.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc14.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc15.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc16.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc17.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc18.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc19.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc20.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc21.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc22.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc23.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc24.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc25.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc26.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc27.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc28.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc29.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc30.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc31.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc32.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc33.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc34.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc35.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc36.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc37.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc38.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc39.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc40.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc41.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc42.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc43.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc44.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc45.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc46.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc47.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc48.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc49.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc50.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc51.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc52.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc53.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc54.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc55.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc56.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc57.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc58.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc59.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc60.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc61.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc62.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc63.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc64.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc65.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc66.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc67.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc68.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc69.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc70.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc71.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc72.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc73.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc74.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc75.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc76.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc77.webp" alt="finc")
-                  .modal-image 
-                    img(src="/assets/app/finc/finc78.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc79.webp" alt="finc")  
-                  .modal-image
-                    img(src="/assets/app/finc/finc80.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc81.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc82.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc83.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc84.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc85.webp" alt="finc")
-                  .modal-image
-                    img(src="/assets/app/finc/finc86.webp" alt="finc")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/finc/icon-finc.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name FiNC
-                        //-　コピーライト
-                        span.service-info__copy © FINC TECHNOLOGIES INC.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ヘルスケア／フィットネス
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc2.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc3.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc4.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc5.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc6.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc7.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc8.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc9.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc10.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc11.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc12.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc13.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc14.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc15.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc16.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc17.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc18.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc19.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc20.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc21.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc22.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc23.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc24.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc25.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc26.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc27.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc28.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc29.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc30.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc31.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc32.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc33.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc34.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc35.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc36.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc37.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc38.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc39.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc40.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc41.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc42.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc43.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc44.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc45.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc46.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc47.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc48.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc49.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc50.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc51.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc52.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc53.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc54.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc55.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc56.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc57.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc58.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc59.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc60.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc61.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc62.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc63.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc64.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc65.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc66.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc67.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc68.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc69.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc70.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc71.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc72.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc73.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc74.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc75.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc76.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc77.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc78.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc79.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc80.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc81.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc82.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc83.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc84.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc85.webp",
+                    },
+                    {
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc86.webp",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image
+                        img(src="/assets/app/finc/finc2.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc3.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc4.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc5.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc6.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc7.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc8.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc9.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc10.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc11.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc12.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc13.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc14.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc15.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc16.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc17.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc18.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc19.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc20.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc21.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc22.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc23.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc24.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc25.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc26.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc27.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc28.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc29.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc30.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc31.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc32.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc33.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc34.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc35.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc36.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc37.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc38.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc39.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc40.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc41.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc42.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc43.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc44.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc45.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc46.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc47.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc48.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc49.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc50.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc51.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc52.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc53.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc54.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc55.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc56.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc57.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc58.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc59.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc60.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc61.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc62.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc63.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc64.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc65.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc66.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc67.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc68.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc69.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc70.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc71.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc72.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc73.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc74.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc75.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc76.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc77.webp" alt="finc")
+                      .modal-image 
+                        img(src="/assets/app/finc/finc78.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc79.webp" alt="finc")  
+                      .modal-image
+                        img(src="/assets/app/finc/finc80.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc81.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc82.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc83.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc84.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc85.webp" alt="finc")
+                      .modal-image
+                        img(src="/assets/app/finc/finc86.webp" alt="finc")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/finc/icon-finc.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name FiNC
+                            //-　コピーライト
+                            span.service-info__copy © FINC TECHNOLOGIES INC.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ヘルスケア／フィットネス
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

@@ -6,504 +6,508 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Tripadvisor」ページです。';
 - var ogpUrl='https://ui-clip.com/app/tripadvisor';
 - var page = "tripadvisor"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　tripadvisorサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Tripadvisor
-                //-　コピーライト,version
-                span.service-info__copy © TripAdvisor LLC
-                span.service-info__version Version  48.9
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | トリップアドバイザーは旅をサポートする会社として、人々、旅への情熱、スポットを結び付けています。 旅行の計画から予約、旅行中まで、賢く旅を楽しめるようにお手伝いします。 
-            br
-            | 旅行を計画中でも、旅先にいても、トリップアドバイザーのアプリを活用すれば旅を最大限に楽しめます。 
-            br
-            | 実際に行ったことのある多くの旅行者からのアドバイスを参考にして、宿泊施設、観光スポット、レストランを見つけましょう。 
-            br
-            | ホテルのお得な料金をチェックしたり、ツアーやアクティビティを予約したり、話題のレストランを予約したり。周辺エリアの観光スポットを探すことも可能です。 
-            br
-            | トリップアドバイザーのアプリでは、どんなタイプの旅でもスムーズに計画を立てられるほか、他の旅行者にアドバイスすることもできます。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 旅行
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img01-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img02-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img03-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img04-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img05-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img06-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img07-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img08-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img09-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img10-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img11-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img12-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img13-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img14-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img15-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img16-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img17-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img18-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img19-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img20-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img21-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img22-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img23-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img24-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img25-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img26-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img27-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img28-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img29-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img30-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img31-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img32-tripadvisor@2x.png",
-                },             
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img33-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img34-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img35-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img36-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img37-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img38-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img39-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img40-tripadvisor@2x.png",
-                }, 
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img41-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img42-tripadvisor@2x.png",
-                },             
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img43-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img44-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img45-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img46-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img47-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img48-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img49-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img50-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img51-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img52-tripadvisor@2x.png",
-                },             
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img53-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img54-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img55-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img56-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img57-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img58-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img59-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img60-tripadvisor@2x.png",
-                },       
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img61-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img62-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img63-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img64-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img65-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img66-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img67-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img68-tripadvisor@2x.png",
-                },
-                {
-                  altName: "tripadvisor",
-                  imgSrc: "/assets/app/tripadvisor/img69-tripadvisor@2x.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　tripadvisorサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Tripadvisor
+                    //-　コピーライト,version
+                    span.service-info__copy © TripAdvisor LLC
+                    span.service-info__version Version  48.9
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | トリップアドバイザーは旅をサポートする会社として、人々、旅への情熱、スポットを結び付けています。 旅行の計画から予約、旅行中まで、賢く旅を楽しめるようにお手伝いします。 
+                br
+                | 旅行を計画中でも、旅先にいても、トリップアドバイザーのアプリを活用すれば旅を最大限に楽しめます。 
+                br
+                | 実際に行ったことのある多くの旅行者からのアドバイスを参考にして、宿泊施設、観光スポット、レストランを見つけましょう。 
+                br
+                | ホテルのお得な料金をチェックしたり、ツアーやアクティビティを予約したり、話題のレストランを予約したり。周辺エリアの観光スポットを探すことも可能です。 
+                br
+                | トリップアドバイザーのアプリでは、どんなタイプの旅でもスムーズに計画を立てられるほか、他の旅行者にアドバイスすることもできます。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 旅行
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img01-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img02-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img03-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img04-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img05-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img06-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img07-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img08-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img09-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img10-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img11-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img12-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img13-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img14-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img15-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img16-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img17-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img18-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img19-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img20-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img21-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img22-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img23-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img24-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img25-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img26-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img27-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img28-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img29-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img30-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img31-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img32-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img33-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img34-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img35-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img36-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img37-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img38-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img39-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img40-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img41-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img42-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img43-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img44-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img45-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img46-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img47-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img48-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img49-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img50-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img51-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img52-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img53-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img54-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img55-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img56-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img57-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img58-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img59-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img60-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img61-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img62-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img63-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img64-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img65-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img66-tripadvisor@2x.png" alt="Tripadvisor")               
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img67-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image
-                    img(src="/assets/app/tripadvisor/img68-tripadvisor@2x.png" alt="Tripadvisor")
-                  .modal-image 
-                    img(src="/assets/app/tripadvisor/img69-tripadvisor@2x.png" alt="Tripadvisor")                        
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Tripadvisor
-                        //-　コピーライト
-                        span.service-info__copy © TripAdvisor LLC
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 旅行
-
-          .back-button
-            a(href="/page3.html")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img01-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img02-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img03-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img04-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img05-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img06-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img07-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img08-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img09-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img10-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img11-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img12-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img13-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img14-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img15-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img16-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img17-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img18-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img19-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img20-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img21-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img22-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img23-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img24-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img25-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img26-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img27-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img28-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img29-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img30-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img31-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img32-tripadvisor@2x.png",
+                    },             
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img33-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img34-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img35-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img36-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img37-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img38-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img39-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img40-tripadvisor@2x.png",
+                    }, 
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img41-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img42-tripadvisor@2x.png",
+                    },             
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img43-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img44-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img45-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img46-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img47-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img48-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img49-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img50-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img51-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img52-tripadvisor@2x.png",
+                    },             
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img53-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img54-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img55-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img56-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img57-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img58-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img59-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img60-tripadvisor@2x.png",
+                    },       
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img61-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img62-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img63-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img64-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img65-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img66-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img67-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img68-tripadvisor@2x.png",
+                    },
+                    {
+                      altName: "tripadvisor",
+                      imgSrc: "/assets/app/tripadvisor/img69-tripadvisor@2x.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img01-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img02-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img03-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img04-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img05-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img06-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img07-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img08-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img09-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img10-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img11-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img12-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img13-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img14-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img15-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img16-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img17-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img18-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img19-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img20-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img21-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img22-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img23-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img24-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img25-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img26-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img27-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img28-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img29-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img30-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img31-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img32-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img33-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img34-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img35-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img36-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img37-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img38-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img39-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img40-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img41-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img42-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img43-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img44-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img45-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img46-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img47-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img48-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img49-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img50-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img51-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img52-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img53-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img54-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img55-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img56-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img57-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img58-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img59-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img60-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img61-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img62-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img63-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img64-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img65-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img66-tripadvisor@2x.png" alt="Tripadvisor")               
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img67-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image
+                        img(src="/assets/app/tripadvisor/img68-tripadvisor@2x.png" alt="Tripadvisor")
+                      .modal-image 
+                        img(src="/assets/app/tripadvisor/img69-tripadvisor@2x.png" alt="Tripadvisor")                        
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/tripadvisor/icon-tripadvisor.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Tripadvisor
+                            //-　コピーライト
+                            span.service-info__copy © TripAdvisor LLC
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 旅行
+
+              .back-button
+                a(href="/page3.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

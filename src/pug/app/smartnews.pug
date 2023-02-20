@@ -6,458 +6,462 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「スマートニュース」ページです。';
 - var ogpUrl='https://ui-clip.com/app/smartnews';
 - var page = "smartnews"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　smartnewsサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/smartnews/icon-smartnews.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name スマートニュース
-                //-　コピーライト,version
-                span.service-info__copy © SmartNews, Inc.
-                span.service-info__version Version  23.1.10
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | SmartNews（スマートニュース）は、世の中で「いま」起きていることや、あなたの生活に役立つ、良質で身近な情報を毎日お届けします。
-            br
-            | 国内や海外の政治や経済、グルメ、エンタメ、スポーツ、IT、クーポンなど豊富なコンテンツの「いま」話題のニュースを片手でスラスラめくっていくだけ。
-            br
-            | 海外ニュースは英語原文も読めて、どれだけ読んでも全部無料。豊富なコンテンツから、自分のライフスタイルにあったチャンネルを選択！話題のニュースだけではなく、あなたの見たいニュースも逃しません。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ニュース
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews1.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews2.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews3.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews4.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews5.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews6.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews7.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews8.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews9.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews10.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews11.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews12.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews13.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews14.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews15.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews16.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews17.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews18.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews19.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews20.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews21.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews22.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews23.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews24.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews25.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews26.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews27.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews28.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews29.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews30.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews31.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews32.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews33.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews34.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews35.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews36.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews37.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews38.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews39.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews40.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews41.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews42.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews43.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews44.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews45.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews46.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews47.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews48.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews49.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews50.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews51.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews52.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews53.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews54.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews55.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews56.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews57.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews58.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews59.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews60.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews61.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews62.webp",
-                },                                                                                                                   
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　smartnewsサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/smartnews/icon-smartnews.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name スマートニュース
+                    //-　コピーライト,version
+                    span.service-info__copy © SmartNews, Inc.
+                    span.service-info__version Version  23.1.10
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | SmartNews（スマートニュース）は、世の中で「いま」起きていることや、あなたの生活に役立つ、良質で身近な情報を毎日お届けします。
+                br
+                | 国内や海外の政治や経済、グルメ、エンタメ、スポーツ、IT、クーポンなど豊富なコンテンツの「いま」話題のニュースを片手でスラスラめくっていくだけ。
+                br
+                | 海外ニュースは英語原文も読めて、どれだけ読んでも全部無料。豊富なコンテンツから、自分のライフスタイルにあったチャンネルを選択！話題のニュースだけではなく、あなたの見たいニュースも逃しません。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ニュース
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews1.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews2.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews3.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews4.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews5.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews6.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews7.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews8.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews9.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews10.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews11.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews12.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews13.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews14.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews15.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews16.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews17.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews18.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews19.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews20.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews21.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews22.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews23.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews24.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews25.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews26.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews27.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews28.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews29.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews30.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews31.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews32.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews33.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews34.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews35.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews36.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews37.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews38.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews39.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews40.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews41.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews42.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews43.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews44.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews45.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews46.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews47.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews48.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews49.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews50.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews51.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews52.webp" alt="smartnews")  
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews53.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews54.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews55.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews56.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews57.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews58.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews59.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews60.webp" alt="smartnews")
-                  .modal-image 
-                    img(src="/assets/app/smartnews/smartnews61.webp" alt="smartnews")
-                  .modal-image
-                    img(src="/assets/app/smartnews/smartnews62.webp" alt="smartnews")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/smartnews/icon-smartnews.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name スマートニュース
-                        //-　コピーライト
-                        span.service-info__copy © SmartNews, Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ニュース
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews1.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews2.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews3.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews4.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews5.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews6.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews7.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews8.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews9.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews10.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews11.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews12.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews13.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews14.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews15.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews16.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews17.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews18.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews19.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews20.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews21.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews22.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews23.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews24.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews25.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews26.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews27.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews28.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews29.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews30.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews31.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews32.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews33.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews34.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews35.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews36.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews37.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews38.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews39.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews40.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews41.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews42.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews43.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews44.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews45.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews46.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews47.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews48.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews49.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews50.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews51.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews52.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews53.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews54.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews55.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews56.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews57.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews58.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews59.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews60.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews61.webp",
+                    },
+                    {
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews62.webp",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews1.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews2.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews3.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews4.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews5.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews6.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews7.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews8.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews9.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews10.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews11.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews12.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews13.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews14.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews15.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews16.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews17.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews18.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews19.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews20.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews21.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews22.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews23.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews24.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews25.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews26.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews27.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews28.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews29.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews30.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews31.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews32.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews33.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews34.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews35.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews36.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews37.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews38.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews39.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews40.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews41.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews42.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews43.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews44.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews45.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews46.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews47.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews48.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews49.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews50.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews51.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews52.webp" alt="smartnews")  
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews53.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews54.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews55.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews56.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews57.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews58.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews59.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews60.webp" alt="smartnews")
+                      .modal-image 
+                        img(src="/assets/app/smartnews/smartnews61.webp" alt="smartnews")
+                      .modal-image
+                        img(src="/assets/app/smartnews/smartnews62.webp" alt="smartnews")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/smartnews/icon-smartnews.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name スマートニュース
+                            //-　コピーライト
+                            span.service-info__copy © SmartNews, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ニュース
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

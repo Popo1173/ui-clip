@@ -6,456 +6,460 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Makuake」ページです。';
 - var ogpUrl='https://ui-clip.com/app/makuake';
 - var page = "makuake"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　makuakeサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/makuake/icon-makuake.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Makuake
-                //-　コピーライト,version
-                span.service-info__copy © Makuake, Inc.
-                span.service-info__version Version  3.3.1
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | Makuake (マクアケ) とは、未来を感じるガジェット、自慢したくなるファッションアイテム、実現を願っていたアニメ作品、連れて行きたくなるお店などのアイデアが続々と登場する場所です。
-            br
-            | 気になるアイデアは応援購入をして、チャレンジの実現をみんなで後押しししよう！
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ショッピング
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-01.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-02.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-03.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-04.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-05.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-06.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-07.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-08.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-09.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-10.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-11.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-12.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-13.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-14.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-15.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-16.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-17.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-18.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-19.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-20.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-21.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-22.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-23.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-24.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-25.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-26.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-27.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-28.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-29.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-30.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-31.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-32.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-33.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-34.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-35.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-36.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-37.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-38.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-39.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-40.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-41.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-42.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-43.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-44.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-45.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-46.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-47.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-48.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-49.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-50.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-51.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-52.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-53.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-54.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-55.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-56.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-57.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-58.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-59.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-60.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-61.png",
-                },
-                {
-                  altName: "makuake",
-                  imgSrc: "/assets/app/makuake/makuake-62.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　makuakeサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/makuake/icon-makuake.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Makuake
+                    //-　コピーライト,version
+                    span.service-info__copy © Makuake, Inc.
+                    span.service-info__version Version  3.3.1
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | Makuake (マクアケ) とは、未来を感じるガジェット、自慢したくなるファッションアイテム、実現を願っていたアニメ作品、連れて行きたくなるお店などのアイデアが続々と登場する場所です。
+                br
+                | 気になるアイデアは応援購入をして、チャレンジの実現をみんなで後押しししよう！
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-01.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-02.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-03.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-04.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-05.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-06.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-07.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-08.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-09.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-10.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-11.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-12.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-13.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-14.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-15.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-16.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-17.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-18.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-19.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-20.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-21.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-22.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-23.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-24.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-25.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-26.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-27.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-28.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-29.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-30.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-31.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-32.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-33.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-34.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-35.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-36.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-37.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-38.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-39.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-40.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-41.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-42.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-43.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-44.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-45.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-46.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-47.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-48.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-49.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-50.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-51.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-52.png" alt="makuake")  
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-53.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-54.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-55.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-56.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-57.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-58.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-59.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-60.png" alt="makuake")
-                  .modal-image 
-                    img(src="/assets/app/makuake/makuake-61.png" alt="makuake")
-                  .modal-image
-                    img(src="/assets/app/makuake/makuake-62.png" alt="makuake")  
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/makuake/icon-makuake.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Makuake
-                        //-　コピーライト
-                        span.service-info__copy © Makuake, Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ショッピング
-
-          .back-button
-            a(href="/page2.html")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-01.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-02.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-03.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-04.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-05.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-06.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-07.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-08.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-09.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-10.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-11.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-12.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-13.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-14.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-15.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-16.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-17.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-18.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-19.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-20.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-21.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-22.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-23.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-24.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-25.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-26.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-27.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-28.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-29.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-30.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-31.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-32.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-33.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-34.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-35.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-36.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-37.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-38.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-39.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-40.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-41.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-42.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-43.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-44.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-45.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-46.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-47.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-48.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-49.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-50.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-51.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-52.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-53.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-54.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-55.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-56.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-57.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-58.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-59.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-60.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-61.png",
+                    },
+                    {
+                      altName: "makuake",
+                      imgSrc: "/assets/app/makuake/makuake-62.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-01.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-02.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-03.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-04.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-05.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-06.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-07.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-08.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-09.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-10.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-11.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-12.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-13.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-14.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-15.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-16.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-17.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-18.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-19.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-20.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-21.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-22.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-23.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-24.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-25.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-26.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-27.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-28.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-29.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-30.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-31.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-32.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-33.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-34.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-35.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-36.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-37.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-38.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-39.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-40.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-41.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-42.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-43.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-44.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-45.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-46.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-47.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-48.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-49.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-50.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-51.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-52.png" alt="makuake")  
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-53.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-54.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-55.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-56.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-57.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-58.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-59.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-60.png" alt="makuake")
+                      .modal-image 
+                        img(src="/assets/app/makuake/makuake-61.png" alt="makuake")
+                      .modal-image
+                        img(src="/assets/app/makuake/makuake-62.png" alt="makuake")  
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/makuake/icon-makuake.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Makuake
+                            //-　コピーライト
+                            span.service-info__copy © Makuake, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

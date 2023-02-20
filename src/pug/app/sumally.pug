@@ -6,464 +6,468 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Sumally」ページです。';
 - var ogpUrl='https://ui-clip.com/app/sumally';
 - var page = "sumally"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　sumallyサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/sumally/icon-sumally.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Sumally
-                //-　コピーライト,version
-                span.service-info__copy © Sumally Inc
-                span.service-info__version Version  22.2.0
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | Sumally（サマリー）は、世界中の人の「欲しい」と「持っている」で繋がる、新感覚のモノ系ソーシャルネットワーキングサービス。
-            br
-            | 「want」するだけで、欲しいモノがどんどん見つかる！世界中の「欲しい（want）」と「持っている（have）」をつなぐ新しいカタチ。
-            br
-            | 150万点もの登録アイテムのなかから「欲しい！」と思ったモノを”want”して、あなたがまだ知らない素敵なモノに出会っちゃおう！
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ショッピング
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-01.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-02.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-03.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-04.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-05.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-06.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-07.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-08.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-09.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-10.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-11.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-12.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-13.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-14.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-15.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-16.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-17.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-18.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-19.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-20.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-21.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-22.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-23.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-24.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-25.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-26.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-27.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-28.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-29.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-30.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-31.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-32.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-33.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-34.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-35.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-36.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-37.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-38.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-39.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-40.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-41.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-42.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-43.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-44.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-45.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-46.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-47.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-48.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-49.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-50.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-51.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-52.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-53.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-54.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-55.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-56.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-57.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-58.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-59.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-60.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-61.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-62.png",
-                },
-                {
-                  altName: "sumally",
-                  imgSrc: "/assets/app/sumally/sumally-63.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　sumallyサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/sumally/icon-sumally.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Sumally
+                    //-　コピーライト,version
+                    span.service-info__copy © Sumally Inc
+                    span.service-info__version Version  22.2.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | Sumally（サマリー）は、世界中の人の「欲しい」と「持っている」で繋がる、新感覚のモノ系ソーシャルネットワーキングサービス。
+                br
+                | 「want」するだけで、欲しいモノがどんどん見つかる！世界中の「欲しい（want）」と「持っている（have）」をつなぐ新しいカタチ。
+                br
+                | 150万点もの登録アイテムのなかから「欲しい！」と思ったモノを”want”して、あなたがまだ知らない素敵なモノに出会っちゃおう！
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-01.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-02.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-03.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-04.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-05.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-06.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-07.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-08.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-09.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-10.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-11.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-12.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-13.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-14.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-15.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-16.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-17.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-18.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-19.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-20.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-21.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-22.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-23.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-24.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-25.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-26.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-27.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-28.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-29.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-30.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-31.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-32.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-33.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-34.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-35.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-36.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-37.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-38.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-39.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-40.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-41.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-42.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-43.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-44.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-45.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-46.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-47.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-48.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-49.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-50.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-51.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-52.png" alt="sumally")  
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-53.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-54.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-55.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-56.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-57.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-58.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-59.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-60.png" alt="sumally")
-                  .modal-image 
-                    img(src="/assets/app/sumally/sumally-61.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-62.png" alt="sumally")
-                  .modal-image
-                    img(src="/assets/app/sumally/sumally-63.png" alt="sumally")  
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/sumally/icon-sumally.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Sumally
-                        //-　コピーライト
-                        span.service-info__copy © Sumally Inc
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ショッピング
-
-          .back-button
-            a(href="/page2.html")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-01.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-02.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-03.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-04.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-05.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-06.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-07.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-08.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-09.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-10.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-11.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-12.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-13.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-14.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-15.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-16.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-17.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-18.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-19.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-20.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-21.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-22.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-23.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-24.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-25.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-26.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-27.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-28.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-29.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-30.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-31.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-32.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-33.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-34.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-35.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-36.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-37.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-38.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-39.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-40.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-41.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-42.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-43.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-44.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-45.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-46.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-47.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-48.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-49.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-50.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-51.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-52.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-53.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-54.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-55.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-56.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-57.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-58.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-59.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-60.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-61.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-62.png",
+                    },
+                    {
+                      altName: "sumally",
+                      imgSrc: "/assets/app/sumally/sumally-63.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-01.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-02.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-03.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-04.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-05.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-06.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-07.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-08.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-09.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-10.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-11.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-12.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-13.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-14.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-15.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-16.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-17.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-18.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-19.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-20.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-21.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-22.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-23.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-24.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-25.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-26.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-27.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-28.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-29.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-30.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-31.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-32.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-33.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-34.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-35.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-36.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-37.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-38.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-39.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-40.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-41.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-42.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-43.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-44.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-45.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-46.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-47.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-48.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-49.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-50.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-51.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-52.png" alt="sumally")  
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-53.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-54.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-55.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-56.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-57.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-58.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-59.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-60.png" alt="sumally")
+                      .modal-image 
+                        img(src="/assets/app/sumally/sumally-61.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-62.png" alt="sumally")
+                      .modal-image
+                        img(src="/assets/app/sumally/sumally-63.png" alt="sumally")  
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/sumally/icon-sumally.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Sumally
+                            //-　コピーライト
+                            span.service-info__copy © Sumally Inc
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer
