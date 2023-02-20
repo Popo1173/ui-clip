@@ -6,29 +6,471 @@
 - var ogpDescription='UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。';
 - var ogpUrl='https://ui-clip.com/';
 
-doctype html
-html(lang="ja")
-  include include/_meta
+section.content
+  .content__inner
+    .tab-contents
+      //-　APPコンテンツ
+      .tab-contents__item-area.is-show
+        //-　fincサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/finc/icon-finc.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name FiNC
+                //-　コピーライト
+                span.service-info__copy © FINC TECHNOLOGIES INC.
+          
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var list = [
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc2.webp",
+                },
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc3.webp",
+                },
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc4.webp",
+                },
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc5.webp",
+                },
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc6.webp",
+                },
+                {
+                  altName: "finc",
+                  imgSrc: "/assets/app/finc/finc7.webp",
+                },                                                                                                    
+              ]
+            each item in list
+              div.service-thumbnail__app-item
+                a(href="/app/finc.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")
+                
+        //-　tabelogサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/tabelog/icon-tabelog.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name 食べログ
+                //-　コピーライト
+                span.service-info__copy © Kakaku.com, Inc.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listtabelog = [
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog1.webp",
+                },
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog2.webp",
+                },
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog3.webp",
+                },
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog4.webp",
+                },
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog5.webp",
+                },
+                {
+                  altName: "tabelog",
+                  imgSrc: "/assets/app/tabelog/tabelog6.webp",
+                },                                                                                                    
+              ]
+            each item in listtabelog
+              div.service-thumbnail__app-item
+                a(href="/app/tabelog.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")                
 
-  body
-    include include/_header
+        //-　hotpepperサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/hotpepper/icon-hotpepper.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name ホットペッパーグルメ
+                //-　コピーライト
+                span.service-info__copy © Recruit Co.,Ltd.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listhotpepper = [
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper1.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper2.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper3.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper4.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper5.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper6.webp",
+                },                                                                                                    
+              ]
+            each item in listhotpepper
+              div.service-thumbnail__app-item
+                a(href="/app/hotpepper.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")               
 
-    section.content
-      .content__inner
-        .tab-contents
-          //-　APPコンテンツ
-          .tab-contents__item-area.is-show
-            //-　tokyoartbeatサービス情報
-            .tab-contents__item-inner
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/tokyoartbeat/icon-tokyoartbeat.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name Tokyo Art Beat
-                    //-　コピーライト
-                    span.service-info__copy © Art Beat, Inc.
+        //-　rettyサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/retty/icon-retty.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Retty
+                //-　コピーライト
+                span.service-info__copy © Retty, Inc
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listretty = [
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty1.webp",
+                },
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty2.webp",
+                },
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty3.webp",
+                },
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty4.webp",
+                },
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty5.webp",
+                },
+                {
+                  altName: "retty",
+                  imgSrc: "/assets/app/retty/retty6.webp",
+                },                                                                                                    
+              ]
+            each item in listretty
+              div.service-thumbnail__app-item
+                a(href="/app/retty.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")      
+
+        //-　gunosyサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/gunosy/icon-gunosy.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name グノシー
+                //-　コピーライト
+                span.service-info__copy © Gunosy Inc. 
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listgunosy = [
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy1.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy2.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy3.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy4.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy5.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy6.webp",
+                },                                                                                               
+              ]
+            each item in listgunosy
+              div.service-thumbnail__app-item
+                a(href="/app/gunosy.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+        //-　AmazonBannerエリア
+        include include/_TheBooksBanner
+
+        //-　smartnewsサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/smartnews/icon-smartnews.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name スマートニュース
+                //-　コピーライト
+                span.service-info__copy © SmartNews, Inc.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listsmartnews = [
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews1.webp",
+                },
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews2.webp",
+                },
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews3.webp",
+                },
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews4.webp",
+                },
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews5.webp",
+                },
+                {
+                  altName: "smartnews",
+                  imgSrc: "/assets/app/smartnews/smartnews6.webp",
+                },                                                                                                    
+              ]
+            each item in listsmartnews
+              div.service-thumbnail__app-item
+                a(href="/app/smartnews.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")        
+
+        //-　yahoonewsサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/yahoonews/icon-yahoonews.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Yahoo!ニュース
+                //-　コピーライト
+                span.service-info__copy © Yahoo Japan Corp.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listyahoonews = [
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews1.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews2.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews3.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews4.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews5.webp",
+                },
+                {
+                  altName: "yahoonews",
+                  imgSrc: "/assets/app/yahoonews/yahoonews6.webp",
+                },                                                                                                    
+              ]
+            each item in listyahoonews
+              div.service-thumbnail__app-item
+                a(href="/app/yahoonews.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+        //-　mercariサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/mercari/icon-mercari.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name メルカリ
+                //-　コピーライト
+                span.service-info__copy © Mercari, Inc.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listmercari = [
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari1.webp",
+                },
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari2.webp",
+                },
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari3.webp",
+                },
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari4.webp",
+                },
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari5.webp",
+                },
+                {
+                  altName: "mercari",
+                  imgSrc: "/assets/app/mercari/mercari6.webp",
+                },                                                                                                    
+              ]
+            each item in listmercari
+              div.service-thumbnail__app-item
+                a(href="/app/mercari.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+        //-　yahooauctionsサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/yahooauctions/icon-yahooauctions.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name ヤフオク!
+                //-　コピーライト
+                span.service-info__copy © Yahoo Japan Corp.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listyahooauctions = [
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions1.webp",
+                },
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions2.webp",
+                },
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions3.webp",
+                },
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions4.webp",
+                },
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions5.webp",
+                },
+                {
+                  altName: "yahooauctions",
+                  imgSrc: "/assets/app/yahooauctions/yahooauctions6.webp",
+                },                                                                                                    
+              ]
+            each item in listyahooauctions
+              div.service-thumbnail__app-item
+                a(href="/app/yahooauctions.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")                     
+
+        //-　rakumaサービス情報
+        .tab-contents__item-inner
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/rakuma/icon-rakuma.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name ラクマ
+                //-　コピーライト
+                span.service-info__copy © Rakuten Group, Inc.
+          //-　画像
+          div.service-thumbnail__app.slider-thumbnail
+            - 
+              var listrakuma = [
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma1.webp",
+                },
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma2.webp",
+                },
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma3.webp",
+                },
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma4.webp",
+                },
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma5.webp",
+                },
+                {
+                  altName: "rakuma",
+                  imgSrc: "/assets/app/rakuma/rakuma6.webp",
+                },                                                                                                    
+              ]
+            each item in listrakuma
+              div.service-thumbnail__app-item
+                a(href="/app/rakuma.html")
+                  img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+        //- ページネーション
+        .pagination
+          //- .pagination__end
+            a.pagination__link(href="")
+              .pagination__back-ground
+                img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
               
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
