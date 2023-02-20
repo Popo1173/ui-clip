@@ -46,6 +46,27 @@ html(lang="ja")
                     .background-tag
                     span.item-text ヘルスケア／フィットネス
 
+              .swiperModalButton
+                button.modalOpen(data-modal="1") スライダー1
+                button.modalOpen(data-modal="2") スライダー2
+
+              #modal.modal
+                .modal__overlay.modalClose
+                .modal__content
+                    .modal_inner
+                      .modal__close-btn.modalClose(aria-label="閉じる")
+                        span.lineClose
+                      .swiper.modalInSlider
+                        .swiper-wrapper
+                          .swiper-slide.modalInSlider
+                            p.swiperText スライド1
+                          .swiper-slide.modalInSlider
+                            p.swiperText スライド2
+                          .swiper-slide.modalInSlider
+                            p.swiperText スライド3                                                    
+                    .swiper-button-prev 戻る
+                    .swiper-button-next 進む
+
               ul.detail-contents__thumbnail
                 - 
                   var list = [
