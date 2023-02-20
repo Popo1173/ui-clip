@@ -6,472 +6,476 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「クックパッドマート」ページです。';
 - var ogpUrl='https://ui-clip.com/app/cookpadmart';
 - var page = "cookpadmart"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　cookpadmartサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name クックパッドマート
-                //-　コピーライト,version
-                span.service-info__copy © cookpadmart Inc.
-                span.service-info__version Version  15.0.1
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 産地直送の新鮮野菜・お魚・お肉をひとつから、送料無料でお届けします！「クックパッドマート」は地域で有名な精肉店や鮮魚店、農家などのこだわり食材をアプリで購入できる生鮮食品ネットスーパーです。
-            br
-            | 1品からでも送料無料＆アプリひとつで注文OK！新鮮な食材を毎回必要な分だけ、通勤時や家事の合間など空いた時間にさっとすることができます。※有料オプションでご自宅への配送も承っております。
-            br
-            | 購入した商品は、新鮮なうちに出荷。地域にある店鋪や施設など複数の「受け取り場所」から、好きな場所を選んで受け取ることができます。
-            br
-            | さらに好きな時間に受け取ることができるので、仕事帰りにスーパーに寄る時間のない方や、何かと忙しく買物をする時間がない方でも安心です。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text ショッピング
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-01.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-02.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-03.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-04.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-05.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-06.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-07.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-08.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-09.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-10.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-11.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-12.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-13.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-14.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-15.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-16.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-17.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-18.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-19.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-20.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-21.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-22.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-23.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-24.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-25.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-26.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-27.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-28.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-29.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-30.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-31.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-32.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-33.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-34.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-35.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-36.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-37.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-38.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-39.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-40.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-41.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-42.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-43.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-44.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-45.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-46.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-47.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-48.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-49.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-50.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-51.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-52.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-53.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-54.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-55.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-56.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-57.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-58.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-59.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-60.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-61.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-62.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-63.png",
-                },
-                {
-                  altName: "cookpadmart",
-                  imgSrc: "/assets/app/cookpadmart/cookpadmart-64.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　cookpadmartサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name クックパッドマート
+                    //-　コピーライト,version
+                    span.service-info__copy © cookpadmart Inc.
+                    span.service-info__version Version  15.0.1
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 産地直送の新鮮野菜・お魚・お肉をひとつから、送料無料でお届けします！「クックパッドマート」は地域で有名な精肉店や鮮魚店、農家などのこだわり食材をアプリで購入できる生鮮食品ネットスーパーです。
+                br
+                | 1品からでも送料無料＆アプリひとつで注文OK！新鮮な食材を毎回必要な分だけ、通勤時や家事の合間など空いた時間にさっとすることができます。※有料オプションでご自宅への配送も承っております。
+                br
+                | 購入した商品は、新鮮なうちに出荷。地域にある店鋪や施設など複数の「受け取り場所」から、好きな場所を選んで受け取ることができます。
+                br
+                | さらに好きな時間に受け取ることができるので、仕事帰りにスーパーに寄る時間のない方や、何かと忙しく買物をする時間がない方でも安心です。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-01.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-02.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-03.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-04.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-05.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-06.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-07.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-08.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-09.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-10.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-11.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-12.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-13.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-14.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-15.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-16.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-17.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-18.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-19.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-20.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-21.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-22.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-23.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-24.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-25.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-26.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-27.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-28.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-29.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-30.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-31.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-32.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-33.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-34.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-35.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-36.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-37.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-38.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-39.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-40.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-41.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-42.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-43.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-44.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-45.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-46.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-47.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-48.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-49.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-50.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-51.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-52.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-53.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-54.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-55.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-56.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-57.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-58.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-59.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-60.png" alt="cookpadmart")
-                  .modal-image 
-                    img(src="/assets/app/cookpadmart/cookpadmart-61.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-62.png" alt="cookpadmart")  
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-63.png" alt="cookpadmart")
-                  .modal-image
-                    img(src="/assets/app/cookpadmart/cookpadmart-64.png" alt="cookpadmart")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name cookpadmart
-                        //-　コピーライト
-                        span.service-info__copy © cookpadmart Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item ショッピング
-
-          .back-button
-            a(href="/page2.html")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-01.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-02.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-03.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-04.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-05.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-06.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-07.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-08.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-09.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-10.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-11.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-12.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-13.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-14.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-15.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-16.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-17.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-18.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-19.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-20.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-21.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-22.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-23.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-24.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-25.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-26.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-27.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-28.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-29.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-30.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-31.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-32.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-33.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-34.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-35.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-36.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-37.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-38.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-39.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-40.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-41.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-42.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-43.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-44.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-45.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-46.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-47.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-48.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-49.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-50.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-51.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-52.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-53.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-54.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-55.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-56.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-57.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-58.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-59.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-60.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-61.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-62.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-63.png",
+                    },
+                    {
+                      altName: "cookpadmart",
+                      imgSrc: "/assets/app/cookpadmart/cookpadmart-64.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-01.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-02.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-03.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-04.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-05.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-06.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-07.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-08.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-09.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-10.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-11.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-12.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-13.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-14.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-15.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-16.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-17.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-18.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-19.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-20.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-21.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-22.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-23.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-24.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-25.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-26.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-27.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-28.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-29.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-30.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-31.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-32.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-33.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-34.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-35.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-36.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-37.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-38.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-39.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-40.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-41.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-42.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-43.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-44.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-45.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-46.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-47.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-48.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-49.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-50.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-51.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-52.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-53.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-54.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-55.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-56.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-57.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-58.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-59.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-60.png" alt="cookpadmart")
+                      .modal-image 
+                        img(src="/assets/app/cookpadmart/cookpadmart-61.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-62.png" alt="cookpadmart")  
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-63.png" alt="cookpadmart")
+                      .modal-image
+                        img(src="/assets/app/cookpadmart/cookpadmart-64.png" alt="cookpadmart")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name cookpadmart
+                            //-　コピーライト
+                            span.service-info__copy © cookpadmart Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

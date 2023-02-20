@@ -6,912 +6,470 @@
 - var ogpDescription='UI Clipは、優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイトです。国内外を問わず、Web・アプリ制作の参考となるサイト・アプリをセレクトしています。';
 - var ogpUrl='https://ui-clip.com/';
 
-section.content
-  .content__inner
-    .tab-contents
-      //-　APPコンテンツ
-      .tab-contents__item-area.is-show
-        //-　fincサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/finc/icon-finc.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name FiNC
-                //-　コピーライト
-                span.service-info__copy © FINC TECHNOLOGIES INC.
-          
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var list = [
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc2.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc3.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc4.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc5.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc6.webp",
-                },
-                {
-                  altName: "finc",
-                  imgSrc: "/assets/app/finc/finc7.webp",
-                },                                                                                                    
-              ]
-            each item in list
-              div.service-thumbnail__app-item
-                a(href="/app/finc.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")
-                
-        //-　tabelogサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/tabelog/icon-tabelog.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name 食べログ
-                //-　コピーライト
-                span.service-info__copy © Kakaku.com, Inc.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listtabelog = [
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog1.webp",
-                },
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog2.webp",
-                },
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog3.webp",
-                },
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog4.webp",
-                },
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog5.webp",
-                },
-                {
-                  altName: "tabelog",
-                  imgSrc: "/assets/app/tabelog/tabelog6.webp",
-                },                                                                                                    
-              ]
-            each item in listtabelog
-              div.service-thumbnail__app-item
-                a(href="/app/tabelog.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")                
+doctype html
+html(lang="ja")
+  include include/_meta
 
-        //-　hotpepperサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/hotpepper/icon-hotpepper.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name ホットペッパーグルメ
-                //-　コピーライト
-                span.service-info__copy © Recruit Co.,Ltd.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listhotpepper = [
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper1.webp",
-                },
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper2.webp",
-                },
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper3.webp",
-                },
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper4.webp",
-                },
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper5.webp",
-                },
-                {
-                  altName: "hotpepper",
-                  imgSrc: "/assets/app/hotpepper/hotpepper6.webp",
-                },                                                                                                    
-              ]
-            each item in listhotpepper
-              div.service-thumbnail__app-item
-                a(href="/app/hotpepper.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")               
+  body
+    include include/_header
 
-        //-　rettyサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/retty/icon-retty.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Retty
-                //-　コピーライト
-                span.service-info__copy © Retty, Inc
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listretty = [
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty1.webp",
-                },
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty2.webp",
-                },
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty3.webp",
-                },
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty4.webp",
-                },
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty5.webp",
-                },
-                {
-                  altName: "retty",
-                  imgSrc: "/assets/app/retty/retty6.webp",
-                },                                                                                                    
-              ]
-            each item in listretty
-              div.service-thumbnail__app-item
-                a(href="/app/retty.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")      
-
-        //-　gunosyサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/gunosy/icon-gunosy.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name グノシー
-                //-　コピーライト
-                span.service-info__copy © Gunosy Inc. 
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listgunosy = [
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy1.webp",
-                },
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy2.webp",
-                },
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy3.webp",
-                },
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy4.webp",
-                },
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy5.webp",
-                },
-                {
-                  altName: "gunosy",
-                  imgSrc: "/assets/app/gunosy/gunosy6.webp",
-                },                                                                                               
-              ]
-            each item in listgunosy
-              div.service-thumbnail__app-item
-                a(href="/app/gunosy.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")   
-
-        //-　AmazonBannerエリア
-        include include/_TheBooksBanner
-
-        //-　smartnewsサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/smartnews/icon-smartnews.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name スマートニュース
-                //-　コピーライト
-                span.service-info__copy © SmartNews, Inc.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listsmartnews = [
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews1.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews2.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews3.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews4.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews5.webp",
-                },
-                {
-                  altName: "smartnews",
-                  imgSrc: "/assets/app/smartnews/smartnews6.webp",
-                },                                                                                                    
-              ]
-            each item in listsmartnews
-              div.service-thumbnail__app-item
-                a(href="/app/smartnews.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")        
-
-        //-　yahoonewsサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/yahoonews/icon-yahoonews.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Yahoo!ニュース
-                //-　コピーライト
-                span.service-info__copy © Yahoo Japan Corp.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listyahoonews = [
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews1.webp",
-                },
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews2.webp",
-                },
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews3.webp",
-                },
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews4.webp",
-                },
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews5.webp",
-                },
-                {
-                  altName: "yahoonews",
-                  imgSrc: "/assets/app/yahoonews/yahoonews6.webp",
-                },                                                                                                    
-              ]
-            each item in listyahoonews
-              div.service-thumbnail__app-item
-                a(href="/app/yahoonews.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")   
-
-        //-　mercariサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/mercari/icon-mercari.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name メルカリ
-                //-　コピーライト
-                span.service-info__copy © Mercari, Inc.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listmercari = [
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari1.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari2.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari3.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari4.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari5.webp",
-                },
-                {
-                  altName: "mercari",
-                  imgSrc: "/assets/app/mercari/mercari6.webp",
-                },                                                                                                    
-              ]
-            each item in listmercari
-              div.service-thumbnail__app-item
-                a(href="/app/mercari.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")   
-
-        //-　yahooauctionsサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/yahooauctions/icon-yahooauctions.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name ヤフオク!
-                //-　コピーライト
-                span.service-info__copy © Yahoo Japan Corp.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listyahooauctions = [
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions1.webp",
-                },
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions2.webp",
-                },
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions3.webp",
-                },
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions4.webp",
-                },
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions5.webp",
-                },
-                {
-                  altName: "yahooauctions",
-                  imgSrc: "/assets/app/yahooauctions/yahooauctions6.webp",
-                },                                                                                                    
-              ]
-            each item in listyahooauctions
-              div.service-thumbnail__app-item
-                a(href="/app/yahooauctions.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")                     
-
-        //-　rakumaサービス情報
-        .tab-contents__item-inner
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/rakuma/icon-rakuma.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name ラクマ
-                //-　コピーライト
-                span.service-info__copy © Rakuten Group, Inc.
-          //-　画像
-          div.service-thumbnail__app.slider-thumbnail
-            - 
-              var listrakuma = [
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma1.webp",
-                },
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma2.webp",
-                },
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma3.webp",
-                },
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma4.webp",
-                },
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma5.webp",
-                },
-                {
-                  altName: "rakuma",
-                  imgSrc: "/assets/app/rakuma/rakuma6.webp",
-                },                                                                                                    
-              ]
-            each item in listrakuma
-              div.service-thumbnail__app-item
-                a(href="/app/rakuma.html")
-                  img(src=item.imgSrc alt=item.altName loading="lazy")   
-
-        //- ページネーション
-        .pagination
-          //- .pagination__end
-            a.pagination__link(href="")
-              .pagination__back-ground
-                img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
+    section.content
+      .content__inner
+        .tab-contents
+          //-　APPコンテンツ
+          .tab-contents__item-area.is-show
+            //-　fincサービス情報
+            .tab-contents__item-inner
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/finc/icon-finc.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name FiNC
+                    //-　コピーライト
+                    span.service-info__copy © FINC TECHNOLOGIES INC.
               
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
                   var list = [
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-01.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc2.webp",
                     },
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-02.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc3.webp",
                     },
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-03.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc4.webp",
                     },
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-04.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc5.webp",
                     },
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-05.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc6.webp",
                     },
                     {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-06.png",
+                      altName: "finc",
+                      imgSrc: "/assets/app/finc/finc7.webp",
                     },                                                                                                    
                   ]
                 each item in list
                   div.service-thumbnail__app-item
-                    a(href="/app/tokyoartbeat.html")
+                    a(href="/app/finc.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")
                     
-            //-　artstickerサービス情報
+            //-　tabelogサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/artsticker/icon-artsticker.svg")
+                  img(src="/assets/app/tabelog/icon-tabelog.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name ArtSticker
+                  h2.service-info__name 食べログ
                     //-　コピーライト
-                    span.service-info__copy © The Chain Museum
+                    span.service-info__copy © Kakaku.com, Inc.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listartsticker = [
+                  var listtabelog = [
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-01.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog1.webp",
                     },
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-02.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog2.webp",
                     },
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-03.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog3.webp",
                     },
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-04.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog4.webp",
                     },
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-05.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog5.webp",
                     },
                     {
-                      altName: "artsticker",
-                      imgSrc: "/assets/app/artsticker/artsticker-06.png",
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog6.webp",
                     },                                                                                                    
                   ]
-                each item in listartsticker
+                each item in listtabelog
                   div.service-thumbnail__app-item
-                    a(href="/app/artsticker.html")
+                    a(href="/app/tabelog.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")                
 
-            //-　cookpadサービス情報
+            //-　hotpepperサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/cookpad/icon-cookpad.svg")
+                  img(src="/assets/app/hotpepper/icon-hotpepper.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name クックパッド
+                  h2.service-info__name ホットペッパーグルメ
                     //-　コピーライト
-                    span.service-info__copy © Cookpad Inc.
+                    span.service-info__copy © Recruit Co.,Ltd.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listcookpad = [
+                  var listhotpepper = [
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-01.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper1.webp",
                     },
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-02.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper2.webp",
                     },
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-03.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper3.webp",
                     },
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-04.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper4.webp",
                     },
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-05.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper5.webp",
                     },
                     {
-                      altName: "cookpad",
-                      imgSrc: "/assets/app/cookpad/cookpad-06.png",
+                      altName: "hotpepper",
+                      imgSrc: "/assets/app/hotpepper/hotpepper6.webp",
                     },                                                                                                    
                   ]
-                each item in listcookpad
+                each item in listhotpepper
                   div.service-thumbnail__app-item
-                    a(href="/app/cookpad.html")
+                    a(href="/app/hotpepper.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")               
 
-            //-　cookpadmartサービス情報
+            //-　rettyサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
+                  img(src="/assets/app/retty/icon-retty.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name クックパッドマート
+                  h2.service-info__name Retty
                     //-　コピーライト
-                    span.service-info__copy © Cookpad Inc.
+                    span.service-info__copy © Retty, Inc
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listcookpadmart = [
+                  var listretty = [
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-01.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty1.webp",
                     },
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-02.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty2.webp",
                     },
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-03.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty3.webp",
                     },
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-04.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty4.webp",
                     },
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-05.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty5.webp",
                     },
                     {
-                      altName: "cookpadmart",
-                      imgSrc: "/assets/app/cookpadmart/cookpadmart-06.png",
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty6.webp",
                     },                                                                                                    
                   ]
-                each item in listcookpadmart
+                each item in listretty
                   div.service-thumbnail__app-item
-                    a(href="/app/cookpadmart.html")
+                    a(href="/app/retty.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")      
 
-            //-　makuakeサービス情報
+            //-　gunosyサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/makuake/icon-makuake.svg")
+                  img(src="/assets/app/gunosy/icon-gunosy.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name Makuake
+                  h2.service-info__name グノシー
                     //-　コピーライト
-                    span.service-info__copy © Makuake, Inc. 
+                    span.service-info__copy © Gunosy Inc. 
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listmakuake = [
+                  var listgunosy = [
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-01.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy1.webp",
                     },
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-02.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy2.webp",
                     },
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-03.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy3.webp",
                     },
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-04.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy4.webp",
                     },
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-05.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy5.webp",
                     },
                     {
-                      altName: "makuake",
-                      imgSrc: "/assets/app/makuake/makuake-06.png",
+                      altName: "gunosy",
+                      imgSrc: "/assets/app/gunosy/gunosy6.webp",
                     },                                                                                               
                   ]
-                each item in listmakuake
+                each item in listgunosy
                   div.service-thumbnail__app-item
-                    a(href="/app/makuake.html")
+                    a(href="/app/gunosy.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")   
 
             //-　AmazonBannerエリア
             include include/_TheBooksBanner
 
-            //-　sumallyサービス情報
+            //-　smartnewsサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/sumally/icon-sumally.svg")
+                  img(src="/assets/app/smartnews/icon-smartnews.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name Sumally
+                  h2.service-info__name スマートニュース
                     //-　コピーライト
-                    span.service-info__copy © Sumally Inc
+                    span.service-info__copy © SmartNews, Inc.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listSumally = [
+                  var listsmartnews = [
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-01.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews1.webp",
                     },
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-02.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews2.webp",
                     },
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-03.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews3.webp",
                     },
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-04.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews4.webp",
                     },
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-05.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews5.webp",
                     },
                     {
-                      altName: "sumally",
-                      imgSrc: "/assets/app/sumally/sumally-06.png",
+                      altName: "smartnews",
+                      imgSrc: "/assets/app/smartnews/smartnews6.webp",
                     },                                                                                                    
                   ]
-                each item in listSumally
+                each item in listsmartnews
                   div.service-thumbnail__app-item
-                    a(href="/app/sumally.html")
+                    a(href="/app/smartnews.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")        
 
-            //-　expediaサービス情報
+            //-　yahoonewsサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/expedia/icon-expedia.svg")
+                  img(src="/assets/app/yahoonews/icon-yahoonews.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name エクスペディア
+                  h2.service-info__name Yahoo!ニュース
                     //-　コピーライト
-                    span.service-info__copy © Expedia, Inc.
+                    span.service-info__copy © Yahoo Japan Corp.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listExpedia = [
+                  var listyahoonews = [
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-01.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews1.webp",
                     },
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-02.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews2.webp",
                     },
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-03.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews3.webp",
                     },
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-04.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews4.webp",
                     },
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-05.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews5.webp",
                     },
                     {
-                      altName: "expedia",
-                      imgSrc: "/assets/app/expedia/expedia-06.png",
+                      altName: "yahoonews",
+                      imgSrc: "/assets/app/yahoonews/yahoonews6.webp",
                     },                                                                                                    
                   ]
-                each item in listExpedia
+                each item in listyahoonews
                   div.service-thumbnail__app-item
-                    a(href="/app/expedia.html")
+                    a(href="/app/yahoonews.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")   
 
-            //-　bookingcomサービス情報
+            //-　mercariサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/bookingcom/icon-bookingcom.svg")
+                  img(src="/assets/app/mercari/icon-mercari.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name Booking.com
+                  h2.service-info__name メルカリ
                     //-　コピーライト
-                    span.service-info__copy © Booking.com B.V.
+                    span.service-info__copy © Mercari, Inc.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listbookingcom = [
+                  var listmercari = [
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-01.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari1.webp",
                     },
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-02.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari2.webp",
                     },
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-03.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari3.webp",
                     },
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-04.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari4.webp",
                     },
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-05.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari5.webp",
                     },
                     {
-                      altName: "bookingcom",
-                      imgSrc: "/assets/app/bookingcom/bookingcom-06.png",
+                      altName: "mercari",
+                      imgSrc: "/assets/app/mercari/mercari6.webp",
                     },                                                                                                    
                   ]
-                each item in listbookingcom
+                each item in listmercari
                   div.service-thumbnail__app-item
-                    a(href="/app/bookingcom.html")
+                    a(href="/app/mercari.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")   
 
-            //-　tripcomサービス情報
+            //-　yahooauctionsサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/tripcom/icon-tripcom.svg")
+                  img(src="/assets/app/yahooauctions/icon-yahooauctions.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name Trip.com
+                  h2.service-info__name ヤフオク!
                     //-　コピーライト
-                    span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
+                    span.service-info__copy © Yahoo Japan Corp.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listtripcom = [
+                  var listyahooauctions = [
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-01.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions1.webp",
                     },
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-02.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions2.webp",
                     },
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-03.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions3.webp",
                     },
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-04.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions4.webp",
                     },
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-05.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions5.webp",
                     },
                     {
-                      altName: "tripcom",
-                      imgSrc: "/assets/app/tripcom/tripcom-06.png",
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions6.webp",
                     },                                                                                                    
                   ]
-                each item in listtripcom
+                each item in listyahooauctions
                   div.service-thumbnail__app-item
-                    a(href="/app/tripcom.html")
+                    a(href="/app/yahooauctions.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")                     
 
-            //-　reluxサービス情報
+            //-　rakumaサービス情報
             .tab-contents__item-inner
               dl.service-info
                 dt
                   //-　アイコン
-                  img(src="/assets/app/relux/icon-relux.svg")
+                  img(src="/assets/app/rakuma/icon-rakuma.svg")
                 dd
                   //-　サービス名称
-                  h2.service-info__name Relux
+                  h2.service-info__name ラクマ
                     //-　コピーライト
-                    span.service-info__copy © Loco Partners Co., Ltd.
+                    span.service-info__copy © Rakuten Group, Inc.
               //-　画像
               div.service-thumbnail__app.slider-thumbnail
                 - 
-                  var listrelux = [
+                  var listrakuma = [
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-01.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma1.webp",
                     },
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-02.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma2.webp",
                     },
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-03.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma3.webp",
                     },
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-04.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma4.webp",
                     },
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-05.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma5.webp",
                     },
                     {
-                      altName: "relux",
-                      imgSrc: "/assets/app/relux/relux-06.png",
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma6.webp",
                     },                                                                                                    
                   ]
-                each item in listrelux
+                each item in listrakuma
                   div.service-thumbnail__app-item
-                    a(href="/app/relux.html")
+                    a(href="/app/rakuma.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")   
 
             //- ページネーション
@@ -921,26 +479,475 @@ section.content
                   .pagination__back-ground
                     img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
                   
-              //- .pagination__inside
-                a.pagination__link(href="") 
-                  img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="前へ")
-                  p.pagination__text 前へ
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var list = [
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-01.png",
+                        },
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-02.png",
+                        },
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-03.png",
+                        },
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-04.png",
+                        },
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-05.png",
+                        },
+                        {
+                          altName: "tokyoartbeat",
+                          imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in list
+                      div.service-thumbnail__app-item
+                        a(href="/app/tokyoartbeat.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")
+                        
+                //-　artstickerサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/artsticker/icon-artsticker.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name ArtSticker
+                        //-　コピーライト
+                        span.service-info__copy © The Chain Museum
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listartsticker = [
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-01.png",
+                        },
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-02.png",
+                        },
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-03.png",
+                        },
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-04.png",
+                        },
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-05.png",
+                        },
+                        {
+                          altName: "artsticker",
+                          imgSrc: "/assets/app/artsticker/artsticker-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listartsticker
+                      div.service-thumbnail__app-item
+                        a(href="/app/artsticker.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")                
 
-              .pagination__inside.is-next
-                a.pagination__link(href="page2.html")
-                  p.pagination__text 次へ
-                  img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="次へ")
-                  
+                //-　cookpadサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/cookpad/icon-cookpad.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name クックパッド
+                        //-　コピーライト
+                        span.service-info__copy © Cookpad Inc.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listcookpad = [
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-01.png",
+                        },
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-02.png",
+                        },
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-03.png",
+                        },
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-04.png",
+                        },
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-05.png",
+                        },
+                        {
+                          altName: "cookpad",
+                          imgSrc: "/assets/app/cookpad/cookpad-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listcookpad
+                      div.service-thumbnail__app-item
+                        a(href="/app/cookpad.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")               
 
-              //- .pagination__end
-                a.pagination__link(href="")
-                  .pagination__back-ground
-                    img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番最後へ")
+                //-　cookpadmartサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/cookpadmart/icon-cookpadmart.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name クックパッドマート
+                        //-　コピーライト
+                        span.service-info__copy © Cookpad Inc.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listcookpadmart = [
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-01.png",
+                        },
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-02.png",
+                        },
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-03.png",
+                        },
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-04.png",
+                        },
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-05.png",
+                        },
+                        {
+                          altName: "cookpadmart",
+                          imgSrc: "/assets/app/cookpadmart/cookpadmart-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listcookpadmart
+                      div.service-thumbnail__app-item
+                        a(href="/app/cookpadmart.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")      
 
-            //-　AmazonBannerエリア
-            include include/_TheBooksBanner
+                //-　makuakeサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/makuake/icon-makuake.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name Makuake
+                        //-　コピーライト
+                        span.service-info__copy © Makuake, Inc. 
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listmakuake = [
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-01.png",
+                        },
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-02.png",
+                        },
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-03.png",
+                        },
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-04.png",
+                        },
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-05.png",
+                        },
+                        {
+                          altName: "makuake",
+                          imgSrc: "/assets/app/makuake/makuake-06.png",
+                        },                                                                                               
+                      ]
+                    each item in listmakuake
+                      div.service-thumbnail__app-item
+                        a(href="/app/makuake.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")   
 
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述
-    footer
-      include include/_footer
+                //-　AmazonBannerエリア
+                include include/_TheBooksBanner
+
+                //-　sumallyサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/sumally/icon-sumally.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name Sumally
+                        //-　コピーライト
+                        span.service-info__copy © Sumally Inc
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listSumally = [
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-01.png",
+                        },
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-02.png",
+                        },
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-03.png",
+                        },
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-04.png",
+                        },
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-05.png",
+                        },
+                        {
+                          altName: "sumally",
+                          imgSrc: "/assets/app/sumally/sumally-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listSumally
+                      div.service-thumbnail__app-item
+                        a(href="/app/sumally.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")        
+
+                //-　expediaサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/expedia/icon-expedia.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name エクスペディア
+                        //-　コピーライト
+                        span.service-info__copy © Expedia, Inc.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listExpedia = [
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-01.png",
+                        },
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-02.png",
+                        },
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-03.png",
+                        },
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-04.png",
+                        },
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-05.png",
+                        },
+                        {
+                          altName: "expedia",
+                          imgSrc: "/assets/app/expedia/expedia-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listExpedia
+                      div.service-thumbnail__app-item
+                        a(href="/app/expedia.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+                //-　bookingcomサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/bookingcom/icon-bookingcom.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name Booking.com
+                        //-　コピーライト
+                        span.service-info__copy © Booking.com B.V.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listbookingcom = [
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-01.png",
+                        },
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-02.png",
+                        },
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-03.png",
+                        },
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-04.png",
+                        },
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-05.png",
+                        },
+                        {
+                          altName: "bookingcom",
+                          imgSrc: "/assets/app/bookingcom/bookingcom-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listbookingcom
+                      div.service-thumbnail__app-item
+                        a(href="/app/bookingcom.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+                //-　tripcomサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/tripcom/icon-tripcom.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name Trip.com
+                        //-　コピーライト
+                        span.service-info__copy © Trip.com Travel Singapore Pte. Ltd.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listtripcom = [
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-01.png",
+                        },
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-02.png",
+                        },
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-03.png",
+                        },
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-04.png",
+                        },
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-05.png",
+                        },
+                        {
+                          altName: "tripcom",
+                          imgSrc: "/assets/app/tripcom/tripcom-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listtripcom
+                      div.service-thumbnail__app-item
+                        a(href="/app/tripcom.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")                     
+
+                //-　reluxサービス情報
+                .tab-contents__item-inner
+                  dl.service-info
+                    dt
+                      //-　アイコン
+                      img(src="/assets/app/relux/icon-relux.svg")
+                    dd
+                      //-　サービス名称
+                      h2.service-info__name Relux
+                        //-　コピーライト
+                        span.service-info__copy © Loco Partners Co., Ltd.
+                  //-　画像
+                  div.service-thumbnail__app.slider-thumbnail
+                    - 
+                      var listrelux = [
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-01.png",
+                        },
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-02.png",
+                        },
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-03.png",
+                        },
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-04.png",
+                        },
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-05.png",
+                        },
+                        {
+                          altName: "relux",
+                          imgSrc: "/assets/app/relux/relux-06.png",
+                        },                                                                                                    
+                      ]
+                    each item in listrelux
+                      div.service-thumbnail__app-item
+                        a(href="/app/relux.html")
+                          img(src=item.imgSrc alt=item.altName loading="lazy")   
+
+                //- ページネーション
+                .pagination
+                  //- .pagination__end
+                    a.pagination__link(href="")
+                      .pagination__back-ground
+                        img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
+                      
+                  //- .pagination__inside
+                    a.pagination__link(href="") 
+                      img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="前へ")
+                      p.pagination__text 前へ
+
+                  .pagination__inside.is-next
+                    a.pagination__link(href="page2.html")
+                      p.pagination__text 次へ
+                      img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="次へ")
+                      
+
+                  //- .pagination__end
+                    a.pagination__link(href="")
+                      .pagination__back-ground
+                        img.pagination__image.is-last-arrow(src="/assets/common/icon-goto-first.svg" alt="一番最後へ")
+
+                //-　AmazonBannerエリア
+                include include/_TheBooksBanner
+
+        //- footer (SNS、コピーライト)
+        //- script もfooterの中に記述
+        footer
+          include include/_footer
