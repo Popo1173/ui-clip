@@ -11,6 +11,7 @@
   align-items: center;
   margin-bottom: 25px;
   font-family: $jp-font;
+  line-height: 1;
 
   @include mq-up("sp") {
     margin-bottom: 0.5em;
