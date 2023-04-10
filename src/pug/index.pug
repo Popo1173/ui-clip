@@ -472,22 +472,18 @@ html(lang="ja")
                     a(href="/app/rakuma.html")
                       img(src=item.imgSrc alt=item.altName loading="lazy")   
 
-        //- ページネーション
-        .pagination
-          //- .pagination__end
-            a.pagination__link(href="")
-              .pagination__back-ground
-                img.pagination__image(src="/assets/common/icon-goto-first.svg" alt="一番最初へ")
-              
-          //- .pagination__inside
-            a.pagination__link(href="") 
-              img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="前へ")
-              p.pagination__text 前へ
+            //- ページネーション
+            .pagination
 
-          .pagination__inside.is-next
-            a.pagination__link(href="page2.html")
-              p.pagination__text 次へ
-              img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="次へ")
+              //- .pagination__inside
+                a.pagination__link(href="") 
+                  img.pagination__inside-image.is-back(src="/assets/common/icon-arrow.svg" alt="前へ")
+                  p.pagination__text 前へ
+
+              .pagination__inside.is-next
+                a.pagination__link(href="page2.html")
+                  p.pagination__text 次へ
+                  img.pagination__inside-image(src="/assets/common/icon-arrow.svg" alt="次へ")
               
 
           //- .pagination__end
@@ -498,7 +494,7 @@ html(lang="ja")
         //-　AmazonBannerエリア
         include include/_TheBooksBanner
 
-        //- footer (SNS、コピーライト)
-        //- script もfooterの中に記述
-        footer
-          include include/_footer
+      //- footer (SNS、コピーライト)
+      //- script もfooterの中に記述
+      footer
+        include include/_footer
