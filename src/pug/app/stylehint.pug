@@ -6,426 +6,422 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「StyleHint」ページです。';
 - var ogpUrl='https://ui-clip.com/app/stylehint';
 - var page = "stylehint"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
 
-doctype html
-html(lang="ja")
-  include ../include/_meta
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　stylehintサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/stylehint/icon-stylehint.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name StyleHint
+                //-　コピーライト,version
+                span.service-info__copy © FAST RETAILING CO., LTD. 
+                span.service-info__version Version  3.13.1
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | UNIQLO（ユニクロ）、GU（ジーユー）公式のコーデ・着こなし発見アプリ。ユニクロやジーユーのアイテムを使った、世界中のおしゃれな着こなしやコーディネートのテクニックをチェック。
+            br
+            | ユニクロ、ジーユーのアプリと連携すれば、全員に割引クーポンをプレゼント。
+            br
+            | あなたの新しいスタイルがこのアプリからはじまる。
 
-  body
-    include ../include/_header
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ショッピング
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　stylehintサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/stylehint/icon-stylehint.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name StyleHint
-                    //-　コピーライト,version
-                    span.service-info__copy © FAST RETAILING CO., LTD. 
-                    span.service-info__version Version  3.13.1
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | UNIQLO（ユニクロ）、GU（ジーユー）公式のコーデ・着こなし発見アプリ。ユニクロやジーユーのアイテムを使った、世界中のおしゃれな着こなしやコーディネートのテクニックをチェック。
-                br
-                | ユニクロ、ジーユーのアプリと連携すれば、全員に割引クーポンをプレゼント。
-                br
-                | あなたの新しいスタイルがこのアプリからはじまる。
-
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text ショッピング
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img01-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img02-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img03-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img04-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img05-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img06-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img07-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img08-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img09-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img10-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img11-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img12-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img13-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img14-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img15-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img16-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img17-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img18-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img19-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img20-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img21-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img22-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img23-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img24-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img25-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img26-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img27-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img28-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img29-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img30-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img31-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img32-stylehint@2x.png",
-                    },             
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img33-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img34-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img35-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img36-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img37-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img38-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img39-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img40-stylehint@2x.png",
-                    }, 
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img41-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img42-stylehint@2x.png",
-                    },             
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img43-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img44-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img45-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img46-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img47-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img48-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img49-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img50-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img51-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img52-stylehint@2x.png",
-                    },             
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img53-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img54-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img55-stylehint@2x.png",
-                    },
-                    {
-                      altName: "stylehint",
-                      imgSrc: "/assets/app/stylehint/img56-stylehint@2x.png",
-                    },                                                                                                                
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img01-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img02-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img03-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img04-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img05-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img06-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img07-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img08-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img09-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img10-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img11-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img12-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img13-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img14-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img15-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img16-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img17-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img18-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img19-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img20-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img21-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img22-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img23-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img24-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img25-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img26-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img27-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img28-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img29-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img30-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img31-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img32-stylehint@2x.png",
+                },             
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img33-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img34-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img35-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img36-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img37-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img38-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img39-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img40-stylehint@2x.png",
+                }, 
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img41-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img42-stylehint@2x.png",
+                },             
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img43-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img44-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img45-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img46-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img47-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img48-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img49-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img50-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img51-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img52-stylehint@2x.png",
+                },             
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img53-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img54-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img55-stylehint@2x.png",
+                },
+                {
+                  altName: "stylehint",
+                  imgSrc: "/assets/app/stylehint/img56-stylehint@2x.png",
+                },                                                                                                                
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img01-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img02-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img03-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img04-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img05-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img06-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img07-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img08-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img09-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img10-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img11-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img12-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img13-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img14-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img15-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img16-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img17-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img18-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img19-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img20-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img21-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img22-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img23-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img24-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img25-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img26-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img27-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img28-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img29-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img30-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img31-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img32-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img33-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img34-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img35-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img36-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img37-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img38-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img39-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img40-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img41-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img42-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img43-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img44-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img45-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img46-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img47-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img48-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img49-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img50-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img51-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img52-stylehint@2x.png" alt="StyleHint")               
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img53-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img54-stylehint@2x.png" alt="StyleHint")
-                      .modal-image 
-                        img(src="/assets/app/stylehint/img55-stylehint@2x.png" alt="StyleHint")
-                      .modal-image
-                        img(src="/assets/app/stylehint/img56-stylehint@2x.png" alt="StyleHint")                                   
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/stylehint/icon-stylehint.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name StyleHint
-                            //-　コピーライト
-                            span.service-info__copy © FAST RETAILING CO., LTD. 
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ショッピング
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img01-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img02-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img03-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img04-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img05-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img06-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img07-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img08-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img09-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img10-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img11-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img12-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img13-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img14-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img15-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img16-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img17-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img18-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img19-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img20-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img21-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img22-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img23-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img24-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img25-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img26-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img27-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img28-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img29-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img30-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img31-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img32-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img33-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img34-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img35-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img36-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img37-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img38-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img39-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img40-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img41-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img42-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img43-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img44-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img45-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img46-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img47-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img48-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img49-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img50-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img51-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img52-stylehint@2x.png" alt="StyleHint")               
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img53-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img54-stylehint@2x.png" alt="StyleHint")
+                  .modal-image 
+                    img(src="/assets/app/stylehint/img55-stylehint@2x.png" alt="StyleHint")
+                  .modal-image
+                    img(src="/assets/app/stylehint/img56-stylehint@2x.png" alt="StyleHint")                                   
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/stylehint/icon-stylehint.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name StyleHint
+                        //-　コピーライト
+                        span.service-info__copy © FAST RETAILING CO., LTD. 
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ショッピング
 
-              .back-button
-                a(href="/page3.html")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
+          .back-button
+            a(href="/page3.html")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer

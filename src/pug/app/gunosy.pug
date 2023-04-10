@@ -6,423 +6,420 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「グノシー」ページです。';
 - var ogpUrl='https://ui-clip.com/app/gunosy';
 - var page = "gunosy"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-doctype html
-html(lang="ja")
-  include ../include/_meta
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
 
-  body
-    include ../include/_header
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　gunosyサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/gunosy/icon-gunosy.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name グノシー
+                //-　コピーライト,version
+                span.service-info__copy © Gunosy Inc.
+                span.service-info__version Version  7.9.0
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | 無料のニュースアプリ、グノシー（Gunosy）は、エンタメ / スポーツ / 社会 / まとめ / コラム / グルメなど、幅広い分野の旬のトピックがまとめて読むことができます。
+            br
+            | 1,000以上のメディア、800以上のチャンネルからご自身の興味、関心に合わせて自由にカスタマイズできます。
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　gunosyサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/gunosy/icon-gunosy.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name グノシー
-                    //-　コピーライト,version
-                    span.service-info__copy © Gunosy Inc.
-                    span.service-info__version Version  7.9.0
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | 無料のニュースアプリ、グノシー（Gunosy）は、エンタメ / スポーツ / 社会 / まとめ / コラム / グルメなど、幅広い分野の旬のトピックがまとめて読むことができます。
-                br
-                | 1,000以上のメディア、800以上のチャンネルからご自身の興味、関心に合わせて自由にカスタマイズできます。
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ニュース
 
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text ニュース
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy1.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy2.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy3.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy4.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy5.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy6.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy7.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy8.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy9.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy10.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy11.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy12.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy13.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy14.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy15.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy16.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy17.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy18.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy19.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy20.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy21.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy22.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy23.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy24.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy25.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy26.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy27.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy28.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy29.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy30.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy31.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy32.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy33.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy34.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy35.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy36.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy37.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy38.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy39.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy40.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy41.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy42.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy43.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy44.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy45.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy46.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy47.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy48.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy49.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy50.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy51.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy52.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy53.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy54.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy55.webp",
-                    },
-                    {
-                      altName: "gunosy",
-                      imgSrc: "/assets/app/gunosy/gunosy56.webp",
-                    },                                                                                                                  
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy1.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy2.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy3.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy4.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy5.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy6.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy7.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy8.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy9.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy10.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy11.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy12.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy13.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy14.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy15.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy16.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy17.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy18.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy19.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy20.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy21.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy22.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy23.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy24.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy25.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy26.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy27.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy28.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy29.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy30.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy31.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy32.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy33.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy34.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy35.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy36.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy37.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy38.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy39.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy40.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy41.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy42.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy43.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy44.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy45.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy46.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy47.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy48.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy49.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy50.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy51.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy52.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy53.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy54.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy55.webp",
+                },
+                {
+                  altName: "gunosy",
+                  imgSrc: "/assets/app/gunosy/gunosy56.webp",
+                },                                                                                                                  
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy1.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy2.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy3.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy4.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy5.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy6.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy7.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy8.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy9.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy10.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy11.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy12.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy13.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy14.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy15.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy16.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy17.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy18.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy19.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy20.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy21.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy22.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy23.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy24.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy25.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy26.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy27.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy28.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy29.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy30.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy31.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy32.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy33.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy34.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy35.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy36.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy37.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy38.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy39.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy40.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy41.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy42.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy43.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy44.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy45.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy46.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy47.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy48.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy49.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy50.webp" alt="gunosy")
-                      .modal-image 
-                        img(src="/assets/app/gunosy/gunosy51.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy52.webp" alt="gunosy")  
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy53.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy54.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy55.webp" alt="gunosy")
-                      .modal-image
-                        img(src="/assets/app/gunosy/gunosy56.webp" alt="gunosy")
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/gunosy/icon-gunosy.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name グノシー
-                            //-　コピーライト
-                            span.service-info__copy © Gunosy Inc.
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ニュース
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy1.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy2.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy3.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy4.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy5.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy6.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy7.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy8.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy9.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy10.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy11.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy12.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy13.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy14.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy15.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy16.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy17.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy18.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy19.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy20.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy21.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy22.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy23.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy24.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy25.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy26.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy27.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy28.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy29.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy30.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy31.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy32.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy33.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy34.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy35.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy36.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy37.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy38.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy39.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy40.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy41.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy42.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy43.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy44.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy45.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy46.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy47.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy48.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy49.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy50.webp" alt="gunosy")
+                  .modal-image 
+                    img(src="/assets/app/gunosy/gunosy51.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy52.webp" alt="gunosy")  
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy53.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy54.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy55.webp" alt="gunosy")
+                  .modal-image
+                    img(src="/assets/app/gunosy/gunosy56.webp" alt="gunosy")
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/gunosy/icon-gunosy.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name グノシー
+                        //-　コピーライト
+                        span.service-info__copy © Gunosy Inc.
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ニュース
 
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer

@@ -6,322 +6,318 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ホットペッパーグルメ」ページです。';
 - var ogpUrl='https://ui-clip.com/app/hotpepper';
 - var page = "hotpepper"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
 
-doctype html
-html(lang="ja")
-  include ../include/_meta
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　hotpepperサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/hotpepper/icon-hotpepper.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name ホットペッパーグルメ
+                //-　コピーライト,version
+                span.service-info__copy © Recruit Co.,Ltd.
+                span.service-info__version Version  5.11.0
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | リクルートのグルメ情報サイト「ホットペッパーグルメ 飲食店予約とお得なクーポン検索」の公式アプリ。
+            br
+            | テイクアウト可能な飲食店もすぐ見つかる！無料で様々なジャンルの飲食店を検索！お得なクーポンも多数掲載！気になるお店をネットで簡単予約！ネット予約でPontaポイントもたまります！
 
-  body
-    include ../include/_header
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text フード／ドリンク
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　hotpepperサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/hotpepper/icon-hotpepper.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name ホットペッパーグルメ
-                    //-　コピーライト,version
-                    span.service-info__copy © Recruit Co.,Ltd.
-                    span.service-info__version Version  5.11.0
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | リクルートのグルメ情報サイト「ホットペッパーグルメ 飲食店予約とお得なクーポン検索」の公式アプリ。
-                br
-                | テイクアウト可能な飲食店もすぐ見つかる！無料で様々なジャンルの飲食店を検索！お得なクーポンも多数掲載！気になるお店をネットで簡単予約！ネット予約でPontaポイントもたまります！
-
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text フード／ドリンク
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper1.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper2.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper3.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper4.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper5.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper6.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper7.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper8.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper9.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper10.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper11.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper12.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper13.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper14.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper15.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper16.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper17.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper18.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper19.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper20.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper21.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper22.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper23.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper24.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper25.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper26.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper27.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper28.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper29.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper30.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper31.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper32.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper33.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper34.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper35.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper36.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper37.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper38.webp",
-                    },
-                    {
-                      altName: "hotpepper",
-                      imgSrc: "/assets/app/hotpepper/hotpepper39.webp",
-                    },                                                                                                                   
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper1.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper2.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper3.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper4.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper5.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper6.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper7.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper8.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper9.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper10.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper11.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper12.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper13.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper14.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper15.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper16.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper17.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper18.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper19.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper20.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper21.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper22.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper23.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper24.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper25.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper26.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper27.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper28.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper29.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper30.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper31.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper32.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper33.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper34.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper35.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper36.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper37.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper38.webp",
+                },
+                {
+                  altName: "hotpepper",
+                  imgSrc: "/assets/app/hotpepper/hotpepper39.webp",
+                },                                                                                                                   
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/hotpepper/hotpepper1.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper2.webp" alt="hotpepper")  
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper3.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper4.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper5.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper6.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper7.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper8.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper9.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper10.webp" alt="hotpepper")
-                      .modal-image 
-                        img(src="/assets/app/hotpepper/hotpepper11.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper12.webp" alt="hotpepper")  
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper13.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper14.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper15.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper16.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper17.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper18.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper19.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper20.webp" alt="hotpepper")
-                      .modal-image 
-                        img(src="/assets/app/hotpepper/hotpepper21.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper22.webp" alt="hotpepper")  
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper23.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper24.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper25.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper26.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper27.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper28.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper29.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper30.webp" alt="hotpepper")
-                      .modal-image 
-                        img(src="/assets/app/hotpepper/hotpepper31.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper32.webp" alt="hotpepper")  
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper33.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper34.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper35.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper36.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper37.webp" alt="hotpepper")
-                      .modal-image 
-                        img(src="/assets/app/hotpepper/hotpepper38.webp" alt="hotpepper")
-                      .modal-image
-                        img(src="/assets/app/hotpepper/hotpepper39.webp" alt="hotpepper")
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/hotpepper/icon-hotpepper.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name ホットペッパーグルメ
-                            //-　コピーライト
-                            span.service-info__copy © Recruit Co.,Ltd.
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item フード／ドリンク
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/hotpepper/hotpepper1.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper2.webp" alt="hotpepper")  
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper3.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper4.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper5.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper6.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper7.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper8.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper9.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper10.webp" alt="hotpepper")
+                  .modal-image 
+                    img(src="/assets/app/hotpepper/hotpepper11.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper12.webp" alt="hotpepper")  
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper13.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper14.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper15.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper16.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper17.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper18.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper19.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper20.webp" alt="hotpepper")
+                  .modal-image 
+                    img(src="/assets/app/hotpepper/hotpepper21.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper22.webp" alt="hotpepper")  
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper23.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper24.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper25.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper26.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper27.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper28.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper29.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper30.webp" alt="hotpepper")
+                  .modal-image 
+                    img(src="/assets/app/hotpepper/hotpepper31.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper32.webp" alt="hotpepper")  
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper33.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper34.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper35.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper36.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper37.webp" alt="hotpepper")
+                  .modal-image 
+                    img(src="/assets/app/hotpepper/hotpepper38.webp" alt="hotpepper")
+                  .modal-image
+                    img(src="/assets/app/hotpepper/hotpepper39.webp" alt="hotpepper")
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/hotpepper/icon-hotpepper.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name ホットペッパーグルメ
+                        //-　コピーライト
+                        span.service-info__copy © Recruit Co.,Ltd.
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item フード／ドリンク
 
-              .back-button
-                a(href="/")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
+          .back-button
+            a(href="/")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer
