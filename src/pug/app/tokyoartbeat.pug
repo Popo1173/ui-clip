@@ -6,312 +6,308 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Tokyo Art Beat」ページです。';
 - var ogpUrl='https://ui-clip.com/app/tokyoartbeat';
 - var page = "tokyoartbeat"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+//- header (ロゴ、ナビゲーション)
+header
+  include ../include/_header
 
-doctype html
-html(lang="ja")
-  include ../include/_meta
+section.content
+  .content__inner
+      //-　APPコンテンツ
+      .detail-contents
+        //-　tokyoartbeatサービス情報
+        .detail-contents__items
+          dl.service-info
+            dt
+              //-　アイコン
+              img(src="/assets/app/tokyoartbeat/icon-tokyoartbeat.svg")
+            dd
+              //-　サービス名称
+              h2.service-info__name Tokyo Art Beat
+                //-　コピーライト,version
+                span.service-info__copy © Art Beat, Inc.
+                span.service-info__version Version  3.3.4
+          
+          //-　サービス概要
+          .detail-contents__overview
+            p.overview-text 
+            | アートを楽しむアプリの決定版！Tokyo Art Beatの公式アプリです。
+            br
+            | 東京や日本国内で開催中の600以上ものアートイベントを、ジャンルやエリアごとに表示したり、人気度や開催日順で並び替えして検索できます。最新のアートニュースや、動画インタビューも提供しています。
+            br
+            | Tokyo Art Beat は、株式会社アートビートが運営する、日本で最大のアート・デザインイベント情報メディアです。2004年から現在まで、美術館・ギャラリーの展覧会情報を毎月600以上を日英バイリンガルで提供しています。
 
-  body
-    include ../include/_header
+          .detail-contents__tag
+            ul.tag-items 
+              li.tag-items__item 
+                .background-tag
+                span.item-text ライフスタイル
 
-    section.content
-      .content__inner
-          //-　APPコンテンツ
-          .detail-contents
-            //-　tokyoartbeatサービス情報
-            .detail-contents__items
-              dl.service-info
-                dt
-                  //-　アイコン
-                  img(src="/assets/app/tokyoartbeat/icon-tokyoartbeat.svg")
-                dd
-                  //-　サービス名称
-                  h2.service-info__name Tokyo Art Beat
-                    //-　コピーライト,version
-                    span.service-info__copy © Art Beat, Inc.
-                    span.service-info__version Version  3.3.4
-              
-              //-　サービス概要
-              .detail-contents__overview
-                p.overview-text 
-                | アートを楽しむアプリの決定版！Tokyo Art Beatの公式アプリです。
-                br
-                | 東京や日本国内で開催中の600以上ものアートイベントを、ジャンルやエリアごとに表示したり、人気度や開催日順で並び替えして検索できます。最新のアートニュースや、動画インタビューも提供しています。
-                br
-                | Tokyo Art Beat は、株式会社アートビートが運営する、日本で最大のアート・デザインイベント情報メディアです。2004年から現在まで、美術館・ギャラリーの展覧会情報を毎月600以上を日英バイリンガルで提供しています。
-
-              .detail-contents__tag
-                ul.tag-items 
-                  li.tag-items__item 
-                    .background-tag
-                    span.item-text ライフスタイル
-
-              ul.detail-contents__thumbnail
-                - 
-                  var list = [
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-01.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-02.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-03.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-04.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-05.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-06.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-07.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-08.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-09.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-10.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-11.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-12.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-13.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-14.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-15.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-16.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-17.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-18.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-19.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-20.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-21.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-22.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-23.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-24.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-25.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-26.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-27.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-28.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-29.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-30.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-31.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-32.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-33.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-34.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-35.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-36.png",
-                    },
-                    {
-                      altName: "tokyoartbeat",
-                      imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-37.png",
-                    },                                                                                                                   
-                  ]
-                each item in list
-                  li.contents-thumbnail.is-modal-open
-                    img(src=item.imgSrc alt=item.altName)
+          ul.detail-contents__thumbnail
+            - 
+              var list = [
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-01.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-02.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-03.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-04.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-05.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-06.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-07.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-08.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-09.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-10.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-11.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-12.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-13.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-14.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-15.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-16.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-17.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-18.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-19.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-20.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-21.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-22.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-23.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-24.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-25.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-26.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-27.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-28.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-29.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-30.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-31.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-32.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-33.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-34.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-35.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-36.png",
+                },
+                {
+                  altName: "tokyoartbeat",
+                  imgSrc: "/assets/app/tokyoartbeat/tokyoartbeat-37.png",
+                },                                                                                                                   
+              ]
+            each item in list
+              li.contents-thumbnail.is-modal-open
+                img(src=item.imgSrc alt=item.altName)
 
 
-              #modal.modal
-                .modal-close.is-modal-close
-                  img(src="/assets/common/icon-close.png" alt="close")
-                .modal-content
-                  .modal-content__inner
-                    .modal-content__inner-slider.slick-modal
-                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                      .modal-image 
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-01.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-02.png" alt="tokyoartbeat")  
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-03.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-04.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-05.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-06.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-07.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-08.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-09.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-10.png" alt="tokyoartbeat")
-                      .modal-image 
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-11.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-12.png" alt="tokyoartbeat")  
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-13.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-14.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-15.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-16.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-17.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-18.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-19.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-20.png" alt="tokyoartbeat")
-                      .modal-image 
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-21.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-22.png" alt="tokyoartbeat")  
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-23.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-24.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-25.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-26.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-27.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-28.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-29.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-30.png" alt="tokyoartbeat")
-                      .modal-image 
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-31.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-32.png" alt="tokyoartbeat")  
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-33.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-34.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-35.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-36.png" alt="tokyoartbeat")
-                      .modal-image
-                        img(src="/assets/app/tokyoartbeat/tokyoartbeat-37.png" alt="tokyoartbeat")
-                    .modal-content__inner-app-information
-                      .app-information__service
-                        dl.service-info
-                          dt
-                            //-　アイコン
-                            img(src="/assets/app/tokyoartbeat/icon-tokyoartbeat.svg")
-                          dd
-                            //-　サービス名称
-                            h2.service-info__name Tokyo Art Beat
-                            //-　コピーライト
-                            span.service-info__copy © Art Beat, Inc.
-                            
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ライフスタイル
+          #modal.modal
+            .modal-close.is-modal-close
+              img(src="/assets/common/icon-close.png" alt="close")
+            .modal-content
+              .modal-content__inner
+                .modal-content__inner-slider.slick-modal
+                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                  .modal-image 
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-01.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-02.png" alt="tokyoartbeat")  
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-03.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-04.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-05.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-06.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-07.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-08.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-09.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-10.png" alt="tokyoartbeat")
+                  .modal-image 
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-11.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-12.png" alt="tokyoartbeat")  
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-13.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-14.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-15.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-16.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-17.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-18.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-19.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-20.png" alt="tokyoartbeat")
+                  .modal-image 
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-21.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-22.png" alt="tokyoartbeat")  
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-23.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-24.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-25.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-26.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-27.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-28.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-29.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-30.png" alt="tokyoartbeat")
+                  .modal-image 
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-31.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-32.png" alt="tokyoartbeat")  
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-33.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-34.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-35.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-36.png" alt="tokyoartbeat")
+                  .modal-image
+                    img(src="/assets/app/tokyoartbeat/tokyoartbeat-37.png" alt="tokyoartbeat")
+                .modal-content__inner-app-information
+                  .app-information__service
+                    dl.service-info
+                      dt
+                        //-　アイコン
+                        img(src="/assets/app/tokyoartbeat/icon-tokyoartbeat.svg")
+                      dd
+                        //-　サービス名称
+                        h2.service-info__name Tokyo Art Beat
+                        //-　コピーライト
+                        span.service-info__copy © Art Beat, Inc.
+                        
+                  .app-information__tags
+                    ul.app-information__tags-list
+                      li.app-information__tags-list-item
+                        span.list-item ライフスタイル
 
-              .back-button
-                a(href="/page2.html")
-                  .back-button__background
-                  .back-button__button 
-                    p.back-button__text 一覧に戻る
+          .back-button
+            a(href="/page2.html")
+              .back-button__background
+              .back-button__button 
+                p.back-button__text 一覧に戻る
 
-          //-　AmazonBannerエリア
-          include ../include/_TheBooksBanner
+      //-　AmazonBannerエリア
+      include ../include/_TheBooksBanner
 
 
-    //- footer (SNS、コピーライト)
-    //- script もfooterの中に記述 
-    footer
-      include ../include/_footer
+//- footer (SNS、コピーライト)
+//- script もfooterの中に記述 
+footer
+  include ../include/_footer

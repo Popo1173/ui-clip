@@ -13,11 +13,12 @@
   font-family: $jp-font;
 
   @include mq-up("sp") {
-    margin-bottom: 0.5em;
+    // margin-bottom: 0.5em;
   }
 
   dt {
     margin-right: 20px;
+    height: 60px;
 
     img {
       border-radius: 10px;
