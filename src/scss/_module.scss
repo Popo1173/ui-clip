@@ -517,6 +517,15 @@
 /*
   APP詳細モーダルウィンドウ
 */
+.is-modal {
+  position: fixed;
+  width: calc(100% + 100px);
+  margin: 0 -50px;
+  top: 0;
+  z-index: 1000;
+  display: block;
+  background: red;
+}
 .modal {
   display: none;
   position: fixed;
