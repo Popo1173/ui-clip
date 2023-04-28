@@ -275,7 +275,8 @@ html(lang="ja")
                 each item in list
                   li.contents-thumbnail
                     img(src=item.imgSrc alt=item.altName)
-              .is-modal
+              .modal
+                .modal__inner
 
               //- #modal.modal
               //-   .modal-close.is-modal-close
@@ -306,7 +307,7 @@ html(lang="ja")
                 a(href="/page2.html")
                   .back-button__background
                   .back-button__button 
-                    p.back-button__text 一覧に戻る
+                    p.back-button__text 一覧に戻る11
 
           //-　AmazonBannerエリア
           include ../include/_TheBooksBanner

@@ -116,13 +116,20 @@ $(function(){
     $.each(imgSrcList, function(index, imagePath) {
       var imgSrc = imagePath;
       var imgAlt = "";
-      var modalContent ='<div class="modal-content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
-      $('.is-modal').append(modalContent);
+      var modalContent ='<div class="modal__content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
+      $('.modal__inner').append(modalContent);
+      // console.log(modalContent)
     });
 
     
 
-    
+    $('.modal__inner').slick({
+      arrows: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
 
     // var modalContent = '<div class="modal-content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
 
@@ -130,11 +137,11 @@ $(function(){
     // var imgAlt = $(this).children('alt').attr('src');
 
     
-    console.log(modalContent)
+    // console.log(modalContent)
     // // モーダルウィンドウ内で上を表示
     // $('.is-modal').fadeIn().append(modalContent);
 
-    // $('.modal-content').slick();
+    
 
 
 
@@ -160,7 +167,6 @@ $(function(){
   // });
 });
 
-// モーダルウィンドウの表示、非表示
 $(function(){
   $('.is-modal-open').on('click',function(){
     // console.log('click')

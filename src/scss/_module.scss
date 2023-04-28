@@ -517,7 +517,7 @@
 /*
   APP詳細モーダルウィンドウ
 */
-.is-modal {
+.modal {
   position: fixed;
   width: calc(100% + 100px);
   margin: 0 -50px;
@@ -525,191 +525,196 @@
   z-index: 1000;
   display: block;
   background: red;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 5;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  background-color: #F7F7F7;
 
-  @include mq-up("pc") {
-    overflow-y: hidden;
-  }
-
-  // .modal-content
-  &-content {
-    // width: 500px;
-    height: 100vh;
-    margin: 0 auto 0;
-
-    // .modal-content__inner
-    &__inner {
-      // height: 100vh;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-
-      @include mq-up("sp") {
-        flex-direction: column;
-      }
-
-      //.modal-content__inner-slider
-      &-slider {
-        flex-grow: 3;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .modal-image {
-          padding: 0.5em;
-          display: flex !important;
-          flex-direction: column;
-          align-items: center;
-
-          img {
-            width: 100%;
-            border-radius: 10px;
-            @include mq-up("sp") {
-              width: 70%;
-            }
-          }
-        }
-
-        // slick用
-        @include mq-up('pc') {
-          .slick-list {
-            width: 340px;
-            margin: 0 auto;
-          }
-        }
-
-        @include mq-up("sp") {
-          padding: 20% 10% 10%;
-        }
-      }
-
-      // .modal-content__inner-app-information
-      &-app-information {
-        width: 33%;
-        height: 100vh;
-        // flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding-right: 30px;
-        padding-left: 30px;
-        background-color: #fff;
-
-        @include mq-up("sp") {
-          width: 100%;
-          height: 33vh;
-          padding: 10% 5% 10%;
-          justify-content: flex-start;
-        }
-
-        // .app-information__service
-        .app-information__service {}
-
-        // .app-information__tags
-        .app-information__tags {
-
-          // .app-information__tags-list
-          &-list {
-            display: flex;
-            flex-wrap: wrap;
-
-            // .app-information__tags-list-item
-            &-item {
-              position: relative;
-              z-index: 1;
-              display: flex;
-              justify-content: center;
-              // flex-grow: 1;
-              margin: 5px 10px 5px 0;
-              padding: 10px 20px;
-              background: #F7F7F7;
-              border-radius: 20px;
-              box-shadow: 3px 4px 4px rgba(222, 222, 222, 0.7);
-
-              // .list-item
-              .list-item {
-                position: relative;
-                z-index: 3;
-                font-size: 10px;
-              }
-            }
-          }
-
-        }
-      }
-
-      // .slick-prev
-      .slick-arrow {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        margin: 0 10px;
-        transform: rotate(45deg);
-      }
-
-      // .slick-prev
-      .slick-prev {
-        border-left: 2px solid #333;
-        border-bottom: 2px solid #333;
-
-        @include mq-up("pc") {
-          left: 40px;
-        }
-
-        @include mq-up("sp") {
-          left: 10px;
-        }
-
-        &::before {
-          content: none; // デフォルト矢印を打ち消し
-        }
-      }
-
-      // .slick-next
-      .slick-next {
-        right: 15px;
-        border-top: 2px solid #333;
-        border-right: 2px solid #333;
-
-        @include mq-up("pc") {
-          right: 15px;
-        }
-
-        @include mq-up("sp") {
-          right: 10px;
-        }
-
-        &::before {
-          content: none; // デフォルト矢印を打ち消し
-        }
-      }
-    }
-  }
-
-  &-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-    max-width: 60px;
-    cursor: pointer;
-
-    img {
-      width: 100%;
-    }
+  // .is-modal__inner
+  &__inner {
+    // width: 300px;
   }
 }
+// .modal {
+//   display: none;
+//   position: fixed;
+//   z-index: 5;
+//   left: 0;
+//   top: 0;
+//   height: 100%;
+//   width: 100%;
+//   overflow-y: scroll;
+//   background-color: #F7F7F7;
+
+//   @include mq-up("pc") {
+//     overflow-y: hidden;
+//   }
+
+//   // .modal-content
+//   &-content {
+//     // width: 500px;
+//     height: 100vh;
+//     margin: 0 auto 0;
+
+//     // .modal-content__inner
+//     &__inner {
+//       // height: 100vh;
+//       display: flex;
+//       flex-direction: row-reverse;
+//       justify-content: flex-end;
+
+//       @include mq-up("sp") {
+//         flex-direction: column;
+//       }
+
+//       //.modal-content__inner-slider
+//       &-slider {
+//         flex-grow: 3;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+
+//         .modal-image {
+//           padding: 0.5em;
+//           display: flex !important;
+//           flex-direction: column;
+//           align-items: center;
+
+//           img {
+//             width: 100%;
+//             border-radius: 10px;
+//             @include mq-up("sp") {
+//               width: 70%;
+//             }
+//           }
+//         }
+
+//         // slick用
+//         @include mq-up('pc') {
+//           .slick-list {
+//             width: 340px;
+//             margin: 0 auto;
+//           }
+//         }
+
+//         @include mq-up("sp") {
+//           padding: 20% 10% 10%;
+//         }
+//       }
+
+//       // .modal-content__inner-app-information
+//       &-app-information {
+//         width: 33%;
+//         height: 100vh;
+//         // flex-grow: 1;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         justify-content: center;
+//         padding-right: 30px;
+//         padding-left: 30px;
+//         background-color: #fff;
+
+//         @include mq-up("sp") {
+//           width: 100%;
+//           height: 33vh;
+//           padding: 10% 5% 10%;
+//           justify-content: flex-start;
+//         }
+
+//         // .app-information__service
+//         .app-information__service {}
+
+//         // .app-information__tags
+//         .app-information__tags {
+
+//           // .app-information__tags-list
+//           &-list {
+//             display: flex;
+//             flex-wrap: wrap;
+
+//             // .app-information__tags-list-item
+//             &-item {
+//               position: relative;
+//               z-index: 1;
+//               display: flex;
+//               justify-content: center;
+//               // flex-grow: 1;
+//               margin: 5px 10px 5px 0;
+//               padding: 10px 20px;
+//               background: #F7F7F7;
+//               border-radius: 20px;
+//               box-shadow: 3px 4px 4px rgba(222, 222, 222, 0.7);
+
+//               // .list-item
+//               .list-item {
+//                 position: relative;
+//                 z-index: 3;
+//                 font-size: 10px;
+//               }
+//             }
+//           }
+
+//         }
+//       }
+
+//       // .slick-prev
+//       .slick-arrow {
+//         display: inline-block;
+//         width: 18px;
+//         height: 18px;
+//         margin: 0 10px;
+//         transform: rotate(45deg);
+//       }
+
+//       // .slick-prev
+//       .slick-prev {
+//         border-left: 2px solid #333;
+//         border-bottom: 2px solid #333;
+
+//         @include mq-up("pc") {
+//           left: 40px;
+//         }
+
+//         @include mq-up("sp") {
+//           left: 10px;
+//         }
+
+//         &::before {
+//           content: none; // デフォルト矢印を打ち消し
+//         }
+//       }
+
+//       // .slick-next
+//       .slick-next {
+//         right: 15px;
+//         border-top: 2px solid #333;
+//         border-right: 2px solid #333;
+
+//         @include mq-up("pc") {
+//           right: 15px;
+//         }
+
+//         @include mq-up("sp") {
+//           right: 10px;
+//         }
+
+//         &::before {
+//           content: none; // デフォルト矢印を打ち消し
+//         }
+//       }
+//     }
+//   }
+
+//   &-close {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     z-index: 100;
+//     max-width: 60px;
+//     cursor: pointer;
+
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }
 
 .is-modal-open {
   cursor: pointer;
