@@ -518,6 +518,7 @@
   APP詳細モーダルウィンドウ
 */
 .modal {
+  // display: none;
   position: fixed;
   width: calc(100% + 100px);
   margin: 0 -50px;
@@ -530,6 +531,25 @@
   &__inner {
     // width: 300px;
   }
+
+  // .is-modal__list
+  &__list {
+    
+  }
+
+  // .is-modal__item
+  &__item {
+    padding: 1rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    // max-width: 300px;
+  }
+
+    // .is-modal__image
+    &__image {
+      width: 100%;
+    }
 }
 // .modal {
 //   display: none;

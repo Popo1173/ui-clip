@@ -99,6 +99,9 @@ $(function(){
 
 $(function(){
   $('.detail-contents__thumbnail').click(function() {
+
+    $('.modal').fadeIn();
+    
     
     // 変数の初期化
     var imgSrcList = [];  // 全ての画像
@@ -116,19 +119,21 @@ $(function(){
     $.each(imgSrcList, function(index, imagePath) {
       var imgSrc = imagePath;
       var imgAlt = "";
-      var modalContent ='<div class="modal__content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
-      $('.modal__inner').append(modalContent);
-      // console.log(modalContent)
+      var modalContent ='<div class="modal__item"><img class="modal__image" src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
+      $('.modal__list').append(modalContent);
+      console.log(modalContent)
     });
 
     
 
-    $('.modal__inner').slick({
+    $('.modal__list').slick({
       arrows: true,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
+      centerMode: true,
+      adaptiveHeight: true,
+      // autoplay: true,
+      // autoplaySpeed: 2000,
     });
 
     // var modalContent = '<div class="modal-content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';

@@ -277,7 +277,8 @@ html(lang="ja")
                     img(src=item.imgSrc alt=item.altName)
               .modal
                 .modal__inner
-
+                  .modal__list
+                  .modal__app-information
               //- #modal.modal
               //-   .modal-close.is-modal-close
               //-     img(src="/assets/common/icon-close.png" alt="close")
@@ -307,7 +308,7 @@ html(lang="ja")
                 a(href="/page2.html")
                   .back-button__background
                   .back-button__button 
-                    p.back-button__text 一覧に戻る11
+                    p.back-button__text 一覧に戻る
 
           //-　AmazonBannerエリア
           include ../include/_TheBooksBanner
