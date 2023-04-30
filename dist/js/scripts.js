@@ -100,7 +100,7 @@ $(function(){
 $(function(){
   $('.detail-contents__thumbnail').click(function() {
 
-    $('.modal').fadeIn();
+    $('.modal').addClass('');
     
     
     // 変数の初期化
@@ -132,6 +132,7 @@ $(function(){
       slidesToScroll: 1,
       centerMode: true,
       adaptiveHeight: true,
+      infinite: true,
       // autoplay: true,
       // autoplaySpeed: 2000,
     });

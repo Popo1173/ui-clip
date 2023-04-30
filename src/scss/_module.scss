@@ -539,10 +539,11 @@
 
   // .is-modal__item
   &__item {
-    padding: 1rem;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
+    padding: 4rem;
+    // display: flex !important;
+    // flex-direction: column;
+    // align-items: center;
+    background: green;
     // max-width: 300px;
   }
 
@@ -551,6 +552,23 @@
       width: 100%;
     }
 }
+
+.slick-list {
+  padding:0 30px !important;
+}
+
+//         // slick用
+//         @include mq-up('pc') {
+//           .slick-list {
+//             width: 340px;
+//             margin: 0 auto;
+//           }
+//         }
+
+//         @include mq-up("sp") {
+//           padding: 20% 10% 10%;
+//         }
+//       }
 // .modal {
 //   display: none;
 //   position: fixed;
