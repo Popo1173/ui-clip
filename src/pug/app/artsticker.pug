@@ -275,10 +275,24 @@ html(lang="ja")
                 each item in list
                   li.contents-thumbnail
                     img(src=item.imgSrc alt=item.altName)
-              .modal
+              .modal          
                 .modal__inner
+                  .modal__close.is-modal-close
+                    img(src="/assets/common/icon-close.png" alt="close")
                   .modal__list
                   .modal__app-information
+                    dl.service-info
+                      dt
+                        img(src="/assets/app/artsticker/icon-artsticker.svg")
+                      dd
+                         h2.service-info__name ArtSticker
+                         span.service-info__copy © The Chain Museum
+
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ライフスタイル
+                            
               //- #modal.modal
               //-   .modal-close.is-modal-close
               //-     img(src="/assets/common/icon-close.png" alt="close")

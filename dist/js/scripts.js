@@ -100,7 +100,7 @@ $(function(){
 $(function(){
   $('.detail-contents__thumbnail').click(function() {
 
-    $('.modal').addClass('');
+    $('.modal').fadeIn().css('display', 'block');
     
     
     // 変数の初期化
@@ -130,7 +130,7 @@ $(function(){
       arrows: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      centerMode: true,
+      // centerMode: true,
       adaptiveHeight: true,
       infinite: true,
       // autoplay: true,
@@ -174,13 +174,13 @@ $(function(){
 });
 
 $(function(){
-  $('.is-modal-open').on('click',function(){
-    // console.log('click')
-      $('.modal').fadeIn();
-      return false;
-  });
+  // $('.is-modal-open').on('click',function(){
+  //   // console.log('click')
+  //     $('.modal').fadeIn();
+  //     return false;
+  // });
   $('.is-modal-close').on('click',function(){
-      $('.modal').fadeOut();
+      $('.modal').fadeOut().css('display', 'none');
       return false;
   });
 });

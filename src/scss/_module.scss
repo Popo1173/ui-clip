@@ -518,17 +518,18 @@
   APP詳細モーダルウィンドウ
 */
 .modal {
-  // display: none;
+  display: none;
   position: fixed;
   width: calc(100% + 100px);
   margin: 0 -50px;
   top: 0;
-  z-index: 1000;
-  display: block;
+  z-index: 10;
   background: #F7F7F7;
 
   // .is-modal__inner
   &__inner {
+    position: relative;
+    // width: 100vw;
     // width: 300px;
   }
 
@@ -547,10 +548,23 @@
     // max-width: 300px;
   }
 
-    // .is-modal__image
-    &__image {
+  // .is-modal__image
+  &__image {
+    width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 85px;
+    z-index: 10;
+    max-width: 60px;
+    cursor: pointer;
+
+    img {
       width: 100%;
     }
+  }
 }
 
 .slick-list {
