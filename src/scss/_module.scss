@@ -525,7 +525,7 @@
   top: 0;
   z-index: 1000;
   display: block;
-  background: red;
+  background: #F7F7F7;
 
   // .is-modal__inner
   &__inner {
@@ -539,11 +539,11 @@
 
   // .is-modal__item
   &__item {
-    padding: 4rem;
+    padding: 4rem 4.5rem 4rem 2rem;
     // display: flex !important;
     // flex-direction: column;
     // align-items: center;
-    background: green;
+    // background: green;
     // max-width: 300px;
   }
 
@@ -555,6 +555,17 @@
 
 .slick-list {
   padding:0 30px !important;
+}
+
+
+.slick-arrow {
+  width: 18px !important;
+  height: 18px !important;
+  background: red !important;
+}
+
+.slick-next {
+  right: 0 !important;
 }
 
 //         // slick用
