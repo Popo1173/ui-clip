@@ -275,48 +275,6 @@ html(lang="ja")
                 each item in list
                   li.contents-thumbnail
                     img(src=item.imgSrc alt=item.altName)
-              .modal          
-                .modal__inner
-                  .modal__close.is-modal-close
-                    img(src="/assets/common/icon-close.png" alt="close")
-                  .modal__list
-                  .modal__app-information
-                    dl.service-info
-                      dt
-                        img(src="/assets/app/artsticker/icon-artsticker.svg")
-                      dd
-                         h2.service-info__name ArtSticker
-                         span.service-info__copy © The Chain Museum
-
-                      .app-information__tags
-                        ul.app-information__tags-list
-                          li.app-information__tags-list-item
-                            span.list-item ライフスタイル
-                            
-              //- #modal.modal
-              //-   .modal-close.is-modal-close
-              //-     img(src="/assets/common/icon-close.png" alt="close")
-              //-   .modal-content
-              //-     .modal-content__inner
-              //-       .modal-content__inner-slider.slick-modal
-              //-         .modal-image 
-              //-           img(src="/assets/app/artsticker/artsticker-01.png" alt="artsticker")
-              //-       .modal-content__inner-app-information
-              //-         .app-information__service
-              //-           dl.service-info
-              //-             dt
-              //-               //-　アイコン
-              //-               img(src="/assets/app/artsticker/icon-artsticker.svg")
-              //-             dd
-              //-               //-　サービス名称
-              //-               h2.service-info__name ArtSticker
-              //-               //-　コピーライト
-              //-               span.service-info__copy © The Chain Museum
-                            
-              //-         .app-information__tags
-              //-           ul.app-information__tags-list
-              //-             li.app-information__tags-list-item
-              //-               span.list-item ライフスタイル
 
               .back-button
                 a(href="/page2.html")
@@ -326,7 +284,25 @@ html(lang="ja")
 
           //-　AmazonBannerエリア
           include ../include/_TheBooksBanner
+  
+      //-　モーダルウィンドウ
+      .modal
+        .modal__inner
+          .modal__close.is-modal-close
+            img(src="/assets/common/icon-close.png" alt="close")
+          .modal__list
+          .modal__app-information
+            dl.service-info
+              dt
+                img(src="/assets/app/artsticker/icon-artsticker.svg")
+              dd
+                  h2.service-info__name ArtSticker
+                  span.service-info__copy © The Chain Museum
 
+              .app-information__tags
+                ul.app-information__tags-list
+                  li.app-information__tags-list-item
+                    span.list-item ライフスタイル  
 
     //- footer (SNS、コピーライト)
     //- script もfooterの中に記述 

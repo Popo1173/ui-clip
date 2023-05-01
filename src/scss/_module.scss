@@ -520,27 +520,31 @@
 .modal {
   display: none;
   position: fixed;
-  width: calc(100% + 100px);
-  margin: 0 -50px;
+  width: 100%;
   top: 0;
   z-index: 10;
   background: #F7F7F7;
+  overflow: scroll;
 
   // .is-modal__inner
   &__inner {
     position: relative;
+    // display: flex;
+    // flex-direction: column;
     // width: 100vw;
     // width: 300px;
   }
 
   // .is-modal__list
   &__list {
-    
+    // flex: 1 1 50%;
+    padding: 10%;
   }
 
   // .is-modal__item
   &__item {
-    padding: 4rem 4.5rem 4rem 2rem;
+    padding: 2rem;
+    // padding: 4rem 4.5rem 4rem 2rem;
     // display: flex !important;
     // flex-direction: column;
     // align-items: center;
@@ -556,7 +560,7 @@
   &__close {
     position: absolute;
     top: 5px;
-    right: 85px;
+    right: 20px;
     z-index: 10;
     max-width: 60px;
     cursor: pointer;
@@ -564,6 +568,11 @@
     img {
       width: 100%;
     }
+  }
+
+  // .modal__app-information
+  &__app-information {
+    flex: 1 1 50%;
   }
 }
 

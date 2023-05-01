@@ -98,79 +98,51 @@ $(function(){
 
 
 $(function(){
+
+  var isExecuted = false;
+  
   $('.detail-contents__thumbnail').click(function() {
-
     $('.modal').fadeIn().css('display', 'block');
-    
-    
-    // 変数の初期化
-    var imgSrcList = [];  // 全ての画像
-    var imgAltList = []; // 全てのAlt
+  
+    // フラグ変数がfalseの場合のみ処理を実行する
+    if (!isExecuted) { 
+      var imgSrcList = [];
+      var imgAltList = [];
 
-    // 画像、altを全て取得する
-    $(this).find('img').each(function() {
-      var imgSrc = $(this).attr('src');
-      var imgAlt = $(this).attr('alt');
-      imgSrcList.push(imgSrc);
-      imgAltList.push(imgAlt);
-    });
+      // 画像、altを全て取得する
+      $(this).find('img').each(function() {
+        var imgSrc = $(this).attr('src');
+        var imgAlt = $(this).attr('alt');
+        imgSrcList.push(imgSrc);
+        imgAltList.push(imgAlt);
+      });
+      // 配列の画像を取得してHTMLを作成する
+      $.each(imgSrcList, function(index, imagePath) {
+        var imgSrc = imagePath;
+        var imgAlt = "";
+        var modalContent ='<div class="modal__item"><img class="modal__image" src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
+        $('.modal__list').append(modalContent);
+      });
 
-    // 取得した画像、altでモーダル用のHTMLを作成する
-    $.each(imgSrcList, function(index, imagePath) {
-      var imgSrc = imagePath;
-      var imgAlt = "";
-      var modalContent ='<div class="modal__item"><img class="modal__image" src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
-      $('.modal__list').append(modalContent);
-      console.log(modalContent)
-    });
+      // 処理が実行された後、フラグ変数をtrueに変更する
+      isExecuted = true; 
+    }
 
-    
 
     $('.modal__list').slick({
       arrows: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // centerMode: true,
       adaptiveHeight: true,
-      infinite: true,
+      // centerMode: true,
+      // centerPadding: 10,
+      // slidesToShow: 1,
+      // slidesToScroll: 1,
+      // centerMode: true,
+      // adaptiveHeight: true,
+      // infinite: true,
       // autoplay: true,
       // autoplaySpeed: 2000,
     });
-
-    // var modalContent = '<div class="modal-content"><img src="' + imgSrc + '" alt="' + imgAlt + '"></div>';
-
-    // var imgSrc = $(this).children('img').attr('src');
-    // var imgAlt = $(this).children('alt').attr('src');
-
-    
-    // console.log(modalContent)
-    // // モーダルウィンドウ内で上を表示
-    // $('.is-modal').fadeIn().append(modalContent);
-
-    
-
-
-
-    // // モーダルウィンドウを非表示にする
-    // $('.is-modal').click(function() {
-    //   $(this).fadeOut().empty();
-    // });
-    
-    
-    // console.log(modalContent)
   })
-
-
-  // $('.is-modal-open').click(function(){
-  //   var slider = $('.slick-modal').slick();
-
-  //   console.log('click1')
-  //     slider.css('opacity',0);
-  //     slider.animate({'z-index':1},100,function(){
-  //         slider.slick('setPosition');
-  //         slider.animate({'opacity':1});
-  //     });
-  // });
 });
 
 $(function(){
