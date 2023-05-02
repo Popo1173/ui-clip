@@ -128,19 +128,10 @@ $(function(){
       isExecuted = true; 
     }
 
-
+    // モーダル内でslickを実行する
     $('.modal__list').slick({
       arrows: true,
       adaptiveHeight: true,
-      // centerMode: true,
-      // centerPadding: 10,
-      // slidesToShow: 1,
-      // slidesToScroll: 1,
-      // centerMode: true,
-      // adaptiveHeight: true,
-      // infinite: true,
-      // autoplay: true,
-      // autoplaySpeed: 2000,
     });
   })
 });
