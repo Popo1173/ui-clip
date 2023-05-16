@@ -1,4 +1,5 @@
 # Dependency directories
-dist/*
-node_modules/
-!/dist/js
+# dist/*
+# node_modules/
+# !/dist/js
+*.html
