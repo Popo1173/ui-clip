@@ -1,0 +1,699 @@
+//- meta情報
+- var pageName='ラクマ | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ラクマ」ページです。';
+- var pagekey='*****';
+- var ogpName='ラクマ | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ラクマ」ページです。';
+- var ogpUrl='https://ui-clip.com/app/rakuma';
+- var page = "rakuma"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+
+doctype html
+html(lang="ja")
+  include ../include/_meta
+
+  body
+    include ../include/_header
+
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　rakumaサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/rakuma/icon-rakuma.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name ラクマ
+                    //-　コピーライト,version
+                    span.service-info__copy © Rakuten Group, Inc.
+                    span.service-info__version Version  8.11.1
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 累計3,500万ダウンロード突破！ラクマは楽天運営の安心・かんたん・お得なフリマプリ！
+                br
+                | 楽天ポイントが使えて貯まってお得にフリマが楽しめます。人気ブランドが多数出品中。
+
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
+
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma1.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma2.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma3.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma4.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma5.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma6.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma7.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma8.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma9.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma10.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma11.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma12.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma13.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma14.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma15.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma16.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma17.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma18.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma19.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma20.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma21.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma22.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma23.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma24.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma25.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma26.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma27.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma28.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma29.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma30.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma31.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma32.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma33.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma34.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma35.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma36.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma37.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma38.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma39.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma40.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma41.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma42.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma43.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma44.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma45.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma46.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma47.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma48.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma49.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma50.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma51.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma52.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma53.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma54.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma55.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma56.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma57.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma58.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma59.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma60.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma61.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma62.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma63.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma64.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma65.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma66.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma67.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma68.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma69.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma70.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma71.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma72.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma73.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma74.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma75.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma76.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma77.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma78.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma79.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma80.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma81.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma82.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma83.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma84.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma85.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma86.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma87.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma88.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma89.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma90.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma91.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma92.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma93.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma94.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma95.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma96.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma97.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma98.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma99.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma100.webp",
+                    },
+                    {
+                      altName: "rakuma",
+                      imgSrc: "/assets/app/rakuma/rakuma101.webp",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
+
+
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma1.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma2.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma3.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma4.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma5.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma6.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma7.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma8.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma9.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma10.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma11.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma12.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma13.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma14.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma15.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma16.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma17.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma18.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma19.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma20.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma21.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma22.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma23.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma24.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma25.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma26.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma27.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma28.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma29.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma30.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma31.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma32.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma33.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma34.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma35.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma36.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma37.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma38.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma39.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma40.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma41.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma42.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma43.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma44.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma45.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma46.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma47.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma48.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma49.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma50.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma51.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma52.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma53.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma54.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma55.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma56.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma57.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma58.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma59.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma60.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma61.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma62.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma63.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma64.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma65.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma66.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma67.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma68.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma69.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma70.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma71.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma72.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma73.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma74.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma75.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma76.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma77.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma78.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma79.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma80.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma81.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma82.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma83.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma84.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma85.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma86.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma87.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma88.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma89.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma90.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma91.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma92.webp" alt="rakuma")  
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma93.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma94.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma95.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma96.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma97.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma98.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma99.webp" alt="rakuma")
+                      .modal-image
+                        img(src="/assets/app/rakuma/rakuma100.webp" alt="rakuma")
+                      .modal-image 
+                        img(src="/assets/app/rakuma/rakuma101.webp" alt="rakuma")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/rakuma/icon-rakuma.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name ラクマ
+                            //-　コピーライト
+                            span.service-info__copy © Rakuten Group, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

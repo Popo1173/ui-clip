@@ -6,442 +6,440 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「クックパッド」ページです。';
 - var ogpUrl='https://ui-clip.com/app/cookpad';
 - var page = "cookpad"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　cookpadサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/cookpad/icon-cookpad.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name クックパッド
-                //-　コピーライト,version
-                span.service-info__copy © Cookpad Inc.
-                span.service-info__version Version  2022.44.0
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 利用者数No.1の料理レシピサービス！月間約5,500万人が利用する日本最大の料理レシピ検索・投稿サービス「クックパッド」の公式アプリです。
-            br
-            | 373万品を超える豊富なレシピから、料理名・食材・タグで検索できるのでどんなレシピも簡単に見つかります。
-            br
-            | 料理のアイデア盛りだくさん！レシピ検索や料理の投稿を無料で行えるアプリです。定番メニューから、マンネリ解消レシピまで、もうおうちごはんに悩まない！
-            br
-            | おいしくできた料理をレシピ投稿やつくれぽ投稿で残しておくこともできます！
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text フード／ドリンク
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-01.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-02.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-03.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-04.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-05.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-06.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-07.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-08.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-09.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-10.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-11.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-12.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-13.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-14.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-15.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-16.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-17.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-18.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-19.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-20.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-21.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-22.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-23.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-24.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-25.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-26.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-27.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-28.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-29.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-30.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-31.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-32.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-33.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-34.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-35.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-36.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-37.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-38.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-39.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-40.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-41.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-42.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-43.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-44.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-45.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-46.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-47.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-48.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-49.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-50.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-51.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-52.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-53.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-54.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-55.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-56.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-57.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-58.png",
-                },
-                {
-                  altName: "cookpad",
-                  imgSrc: "/assets/app/cookpad/cookpad-59.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　cookpadサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/cookpad/icon-cookpad.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name クックパッド
+                    //-　コピーライト,version
+                    span.service-info__copy © Cookpad Inc.
+                    span.service-info__version Version  2022.44.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 利用者数No.1の料理レシピサービス！月間約5,500万人が利用する日本最大の料理レシピ検索・投稿サービス「クックパッド」の公式アプリです。
+                br
+                | 373万品を超える豊富なレシピから、料理名・食材・タグで検索できるのでどんなレシピも簡単に見つかります。
+                br
+                | 料理のアイデア盛りだくさん！レシピ検索や料理の投稿を無料で行えるアプリです。定番メニューから、マンネリ解消レシピまで、もうおうちごはんに悩まない！
+                br
+                | おいしくできた料理をレシピ投稿やつくれぽ投稿で残しておくこともできます！
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text フード／ドリンク
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-01.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-02.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-03.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-04.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-05.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-06.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-07.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-08.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-09.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-10.png" alt="cookpad")
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-11.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-12.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-13.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-14.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-15.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-16.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-17.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-18.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-19.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-20.png" alt="cookpad")
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-21.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-22.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-23.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-24.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-25.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-26.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-27.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-28.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-29.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-30.png" alt="cookpad")
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-31.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-32.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-33.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-34.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-35.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-36.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-37.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-38.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-39.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-40.png" alt="cookpad")
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-41.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-42.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-43.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-44.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-45.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-46.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-47.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-48.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-49.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-50.png" alt="cookpad")
-                  .modal-image 
-                    img(src="/assets/app/cookpad/cookpad-51.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-52.png" alt="cookpad")  
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-53.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-54.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-55.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-56.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-57.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-58.png" alt="cookpad")
-                  .modal-image
-                    img(src="/assets/app/cookpad/cookpad-59.png" alt="cookpad")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/cookpad/icon-cookpad.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name cookpad
-                        //-　コピーライト
-                        span.service-info__copy © Cookpad Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item フード／ドリンク
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-01.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-02.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-04.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-05.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-06.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-07.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-08.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-09.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-10.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-11.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-12.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-13.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-14.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-15.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-16.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-17.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-18.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-19.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-20.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-21.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-22.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-23.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-24.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-25.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-26.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-27.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-28.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-29.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-30.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-31.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-32.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-33.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-34.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-35.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-36.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-37.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-38.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-39.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-40.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-41.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-42.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-43.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-44.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-45.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-46.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-47.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-48.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-49.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-50.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-51.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-52.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-53.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-54.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-55.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-56.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-57.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-58.png",
+                    },
+                    {
+                      altName: "cookpad",
+                      imgSrc: "/assets/app/cookpad/cookpad-59.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-01.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-02.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-04.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-05.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-06.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-07.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-08.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-09.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-10.png" alt="cookpad")
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-11.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-12.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-13.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-14.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-15.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-16.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-17.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-18.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-19.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-20.png" alt="cookpad")
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-21.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-22.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-23.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-24.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-25.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-26.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-27.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-28.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-29.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-30.png" alt="cookpad")
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-31.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-32.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-33.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-34.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-35.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-36.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-37.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-38.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-39.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-40.png" alt="cookpad")
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-41.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-42.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-43.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-44.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-45.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-46.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-47.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-48.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-49.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-50.png" alt="cookpad")
+                      .modal-image 
+                        img(src="/assets/app/cookpad/cookpad-51.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-52.png" alt="cookpad")  
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-53.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-54.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-55.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-56.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-57.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-58.png" alt="cookpad")
+                      .modal-image
+                        img(src="/assets/app/cookpad/cookpad-59.png" alt="cookpad")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/cookpad/icon-cookpad.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name cookpad
+                            //-　コピーライト
+                            span.service-info__copy © Cookpad Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item フード／ドリンク
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

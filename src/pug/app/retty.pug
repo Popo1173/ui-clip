@@ -1,0 +1,447 @@
+//- meta情報
+- var pageName='Retty | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Retty」ページです。';
+- var pagekey='*****';
+- var ogpName='Retty | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Retty」ページです。';
+- var ogpUrl='https://ui-clip.com/app/retty';
+- var page = "retty"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+
+doctype html
+html(lang="ja")
+  include ../include/_meta
+
+  body
+    include ../include/_header
+
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　rettyサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/retty/icon-retty.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Retty
+                    //-　コピーライト,version
+                    span.service-info__copy © Retty, Inc
+                    span.service-info__version Version  4.12.56
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 日本最大級の実名型グルメサービス！沢山の"オススメ" の中からBestなお店が見つかるアプリ Rettyは「オススメのお店が集まる」サービスです。
+                br
+                | 人の好みは十人十色だからこそ、食の好みが似ているユーザーのオススメから、自分の好みやシーンに合ったお店と出会えます。
+
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text フード／ドリンク
+
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty1.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty2.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty3.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty4.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty5.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty6.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty7.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty8.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty9.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty10.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty11.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty12.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty13.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty14.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty15.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty16.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty17.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty18.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty19.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty20.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty21.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty22.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty23.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty24.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty25.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty26.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty27.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty28.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty29.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty30.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty31.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty32.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty33.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty34.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty35.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty36.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty37.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty38.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty39.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty40.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty41.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty42.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty43.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty44.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty45.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty46.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty47.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty48.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty49.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty50.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty51.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty52.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty53.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty54.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty55.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty56.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty57.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty58.webp",
+                    },
+                    {
+                      altName: "retty",
+                      imgSrc: "/assets/app/retty/retty59.webp",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
+
+
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/retty/retty1.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty2.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty3.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty4.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty5.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty6.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty7.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty8.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty9.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty10.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty11.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty12.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty13.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty14.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty15.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty16.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty17.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty18.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty19.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty20.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty21.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty22.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty23.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty24.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty25.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty26.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty27.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty28.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty29.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty30.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty31.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty32.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty33.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty34.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty35.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty36.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty37.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty38.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty39.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty40.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty41.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty42.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty43.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty44.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty45.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty46.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty47.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty48.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty49.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty50.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty51.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty52.webp" alt="retty")  
+                      .modal-image
+                        img(src="/assets/app/retty/retty53.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty54.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty55.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty56.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty57.webp" alt="retty")
+                      .modal-image 
+                        img(src="/assets/app/retty/retty58.webp" alt="retty")
+                      .modal-image
+                        img(src="/assets/app/retty/retty59.webp" alt="retty")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/retty/icon-retty.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Retty
+                            //-　コピーライト
+                            span.service-info__copy © Retty, Inc
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item フード／ドリンク
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

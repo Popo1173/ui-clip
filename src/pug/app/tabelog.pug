@@ -1,0 +1,517 @@
+//- meta情報
+- var pageName='食べログ | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「食べログ」ページです。';
+- var pagekey='*****';
+- var ogpName='食べログ | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「食べログ」ページです。';
+- var ogpUrl='https://ui-clip.com/app/tabelog';
+- var page = "tabelog"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+
+doctype html
+html(lang="ja")
+  include ../include/_meta
+
+  body
+    include ../include/_header
+
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　tabelogサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/tabelog/icon-tabelog.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name 食べログ
+                    //-　コピーライト,version
+                    span.service-info__copy © Kakaku.com, Inc.
+                    span.service-info__version Version  9.39.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 食べログは掲載店舗数・写真数No.1!!* 空いているお店がすぐに見つかるので、お店探しから予約まで食べログ1つで完結します。
+                br
+                | ランチ・ラーメン・焼肉・寿司・居酒屋・スイーツなど、全国80万件以上の飲食店に寄せられた4,000万件以上のクチコミがすべて無料。
+                br
+                | プレミアム会員なら最新グルメランキングを快適にチェックできます。
+                br
+                | *2018年10月食べログ調べ
+
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text フード／ドリンク
+
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog1.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog2.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog3.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog4.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog5.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog6.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog7.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog8.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog9.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog10.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog11.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog12.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog13.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog14.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog15.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog16.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog17.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog18.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog19.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog20.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog21.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog22.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog23.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog24.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog25.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog26.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog27.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog28.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog29.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog30.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog31.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog32.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog33.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog34.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog35.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog36.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog37.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog38.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog39.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog40.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog41.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog42.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog43.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog44.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog45.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog46.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog47.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog48.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog49.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog50.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog51.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog52.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog53.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog54.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog55.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog56.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog57.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog58.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog59.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog60.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog61.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog62.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog63.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog64.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog65.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog66.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog67.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog68.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog69.webp",
+                    },
+                    {
+                      altName: "tabelog",
+                      imgSrc: "/assets/app/tabelog/tabelog70.webp",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
+
+
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog1.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog2.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog3.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog4.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog5.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog6.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog7.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog8.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog9.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog10.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog11.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog12.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog13.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog14.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog15.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog16.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog17.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog18.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog19.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog20.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog21.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog22.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog23.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog24.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog25.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog26.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog27.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog28.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog29.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog30.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog31.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog32.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog33.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog34.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog35.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog36.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog37.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog38.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog39.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog40.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog41.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog42.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog43.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog44.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog45.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog46.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog47.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog48.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog49.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog50.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog51.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog52.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog53.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog54.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog55.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog56.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog57.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog58.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog59.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog60.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog61.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog62.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog63.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog64.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog65.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog66.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog67.webp" alt="tabelog")
+                      .modal-image 
+                        img(src="/assets/app/tabelog/tabelog68.webp" alt="tabelog")
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog69.webp" alt="tabelog")  
+                      .modal-image
+                        img(src="/assets/app/tabelog/tabelog70.webp" alt="tabelog")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/tabelog/icon-tabelog.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name 食べログ
+                            //-　コピーライト
+                            span.service-info__copy © Kakaku.com, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item フード／ドリンク
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

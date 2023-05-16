@@ -1,0 +1,615 @@
+//- meta情報
+- var pageName='ヤフオク! | UI Clip | UIデザインギャラリー';
+- var pageDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ヤフオク!」ページです。';
+- var pagekey='*****';
+- var ogpName='ヤフオク! | UI Clip | UIデザインギャラリー';
+- var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「ヤフオク!」ページです。';
+- var ogpUrl='https://ui-clip.com/app/yahooauctions';
+- var page = "yahooauctions"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
+
+doctype html
+html(lang="ja")
+  include ../include/_meta
+
+  body
+    include ../include/_header
+
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　yahooauctionsサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/yahooauctions/icon-yahooauctions.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name ヤフオク!
+                    //-　コピーライト,version
+                    span.service-info__copy © Yahoo Japan Corp.
+                    span.service-info__version Version  7.49.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | ヤフオク!アプリなら、あなたが気になる商品の情報をプッシュ通知でお知らせするので、アプリを閉じていてもほしいものを買い逃す心配ゼロ！キャンペーン情報もいち早くチェックできます。
+                br
+                | 圧倒的人気のオークションに加え、フリマみたいにすぐ売れる、買える商品がたくさん出品されるヤフオク!アプリでほしいものをさくさく探そう。
+
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text ショッピング
+
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions1.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions2.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions3.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions4.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions5.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions6.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions7.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions8.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions9.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions10.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions11.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions12.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions13.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions14.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions15.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions16.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions17.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions18.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions19.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions20.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions21.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions22.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions23.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions24.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions25.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions26.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions27.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions28.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions29.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions30.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions31.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions32.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions33.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions34.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions35.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions36.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions37.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions38.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions39.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions40.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions41.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions42.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions43.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions44.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions45.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions46.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions47.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions48.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions49.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions50.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions51.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions52.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions53.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions54.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions55.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions56.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions57.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions58.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions59.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions60.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions61.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions62.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions63.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions64.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions65.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions66.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions67.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions68.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions69.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions70.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions71.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions72.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions73.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions74.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions75.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions76.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions77.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions78.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions79.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions80.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions81.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions82.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions83.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions84.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions85.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions86.webp",
+                    },
+                    {
+                      altName: "yahooauctions",
+                      imgSrc: "/assets/app/yahooauctions/yahooauctions87.webp",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
+
+
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions1.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions2.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions3.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions4.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions5.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions6.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions7.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions8.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions9.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions10.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions11.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions12.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions13.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions14.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions15.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions16.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions17.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions18.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions19.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions20.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions21.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions22.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions23.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions24.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions25.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions26.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions27.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions28.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions29.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions30.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions31.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions32.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions33.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions34.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions35.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions36.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions37.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions38.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions39.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions40.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions41.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions42.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions43.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions44.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions45.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions46.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions47.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions48.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions49.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions50.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions51.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions52.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions53.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions54.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions55.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions56.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions57.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions58.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions59.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions60.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions61.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions62.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions63.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions64.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions65.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions66.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions67.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions68.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions69.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions70.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions71.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions72.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions73.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions74.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions75.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions76.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions77.webp" alt="yahooauctions")
+                      .modal-image 
+                        img(src="/assets/app/yahooauctions/yahooauctions78.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions79.webp" alt="yahooauctions")  
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions80.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions81.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions82.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions83.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions84.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions85.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions86.webp" alt="yahooauctions")
+                      .modal-image
+                        img(src="/assets/app/yahooauctions/yahooauctions87.webp" alt="yahooauctions")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/yahooauctions/icon-yahooauctions.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name ヤフオク!
+                            //-　コピーライト
+                            span.service-info__copy © Yahoo Japan Corp.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item ショッピング
+
+              .back-button
+                a(href="/")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

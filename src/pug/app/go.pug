@@ -6,435 +6,439 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「GO」ページです。';
 - var ogpUrl='https://ui-clip.com/app/go';
 - var page = "go"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　goサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/go/icon-go.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name GO
-                //-　コピーライト,version
-                span.service-info__copy © Mobility Technologies Co., Ltd.
-                span.service-info__version Version  6.2.0
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 旧MOVとJapanTaxiの提携車両に一括手配でき、タクシーをすぐに呼ぶことができます。支払いもキャッシュレス。
-            br
-            br
-            | ①一番近くのタクシーがすぐ来る、すぐ乗れる
-            br
-            | ②目安到着時間がわかるから、待ち時間も有効に使える
-            br
-            | ③GO Payを使えばキャッシュレス、乗っている間にアプリで事前決済
-            br
-            | ④AI予約で日時を指定して配車可能
-            br
-            | ⑤乗りたい車両を指定できる
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 旅行
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img01-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img02-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img03-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img04-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img05-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img06-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img07-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img08-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img09-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img10-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img11-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img12-go@2x.png",
-                },    
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img13-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img14-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img15-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img16-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img17-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img18-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img19-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img20-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img21-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img22-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img23-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img24-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img25-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img26-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img27-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img28-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img29-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img30-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img31-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img32-go@2x.png",
-                },    
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img33-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img34-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img35-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img36-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img37-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img38-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img39-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img40-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img41-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img42-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img43-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img44-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img45-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img46-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img47-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img48-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img49-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img50-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img51-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img52-go@2x.png",
-                },    
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img53-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img54-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img55-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img56-go@2x.png",
-                },
-                {
-                  altName: "go",
-                  imgSrc: "/assets/app/go/img57-go@2x.png",
-                },                                                                                                                     
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　goサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/go/icon-go.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name GO
+                    //-　コピーライト,version
+                    span.service-info__copy © Mobility Technologies Co., Ltd.
+                    span.service-info__version Version  6.2.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 旧MOVとJapanTaxiの提携車両に一括手配でき、タクシーをすぐに呼ぶことができます。支払いもキャッシュレス。
+                br
+                br
+                | ①一番近くのタクシーがすぐ来る、すぐ乗れる
+                br
+                | ②目安到着時間がわかるから、待ち時間も有効に使える
+                br
+                | ③GO Payを使えばキャッシュレス、乗っている間にアプリで事前決済
+                br
+                | ④AI予約で日時を指定して配車可能
+                br
+                | ⑤乗りたい車両を指定できる
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 旅行
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/go/img01-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img02-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img03-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img04-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img05-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img06-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img07-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img08-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img09-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img10-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img11-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img12-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img13-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img14-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img15-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img16-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img17-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img18-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img19-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img20-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img21-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img22-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img23-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img24-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img25-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img26-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img27-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img28-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img29-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img30-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img31-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img32-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img33-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img34-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img35-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img36-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img37-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img38-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img39-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img40-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img41-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img42-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img43-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img44-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img45-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img46-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img47-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img48-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img49-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img50-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img51-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img52-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img53-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img54-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img55-go@2x.png" alt="GO")
-                  .modal-image
-                    img(src="/assets/app/go/img56-go@2x.png" alt="GO")
-                  .modal-image 
-                    img(src="/assets/app/go/img57-go@2x.png" alt="GO")                        
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/go/icon-go.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name GO
-                        //-　コピーライト
-                        span.service-info__copy © Mobility Technologies Co., Ltd.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 旅行
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img01-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img02-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img03-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img04-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img05-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img06-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img07-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img08-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img09-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img10-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img11-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img12-go@2x.png",
+                    },    
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img13-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img14-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img15-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img16-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img17-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img18-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img19-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img20-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img21-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img22-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img23-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img24-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img25-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img26-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img27-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img28-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img29-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img30-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img31-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img32-go@2x.png",
+                    },    
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img33-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img34-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img35-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img36-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img37-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img38-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img39-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img40-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img41-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img42-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img43-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img44-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img45-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img46-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img47-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img48-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img49-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img50-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img51-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img52-go@2x.png",
+                    },    
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img53-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img54-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img55-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img56-go@2x.png",
+                    },
+                    {
+                      altName: "go",
+                      imgSrc: "/assets/app/go/img57-go@2x.png",
+                    },                                                                                                                     
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/go/img01-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img02-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img03-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img04-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img05-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img06-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img07-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img08-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img09-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img10-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img11-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img12-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img13-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img14-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img15-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img16-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img17-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img18-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img19-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img20-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img21-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img22-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img23-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img24-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img25-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img26-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img27-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img28-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img29-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img30-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img31-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img32-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img33-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img34-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img35-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img36-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img37-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img38-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img39-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img40-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img41-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img42-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img43-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img44-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img45-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img46-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img47-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img48-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img49-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img50-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img51-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img52-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img53-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img54-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img55-go@2x.png" alt="GO")
+                      .modal-image
+                        img(src="/assets/app/go/img56-go@2x.png" alt="GO")
+                      .modal-image 
+                        img(src="/assets/app/go/img57-go@2x.png" alt="GO")                        
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/go/icon-go.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name GO
+                            //-　コピーライト
+                            span.service-info__copy © Mobility Technologies Co., Ltd.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 旅行
+
+              .back-button
+                a(href="/page3.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

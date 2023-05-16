@@ -6,338 +6,342 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Relux」ページです。';
 - var ogpUrl='https://ui-clip.com/app/relux';
 - var page = "relux"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　reluxサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/relux/icon-relux.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Relux
-                //-　コピーライト,version
-                span.service-info__copy © Loco Partners Co., Ltd.
-                span.service-info__version Version  4.37.0
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | アートを楽しむアプリの決定版！Reluxの公式アプリです。
-            br
-            | 東京や日本国内で開催中の600以上ものアートイベントを、ジャンルやエリアごとに表示したり、人気度や開催日順で並び替えして検索できます。最新のアートニュースや、動画インタビューも提供しています。
-            br
-            | Relux は、株式会社アートビートが運営する、日本で最大のアート・デザインイベント情報メディアです。2004年から現在まで、美術館・ギャラリーの展覧会情報を毎月600以上を日英バイリンガルで提供しています。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 旅行
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-01.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-02.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-03.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-04.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-05.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-06.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-07.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-08.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-09.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-10.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-11.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-12.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-13.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-14.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-15.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-16.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-17.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-18.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-19.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-20.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-21.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-22.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-23.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-24.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-25.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-26.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-27.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-28.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-29.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-30.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-31.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-32.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-33.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-34.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-35.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-36.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-37.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-38.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-39.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-40.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-41.png",
-                },
-                {
-                  altName: "relux",
-                  imgSrc: "/assets/app/relux/relux-42.png",
-                },                                                                                                                   
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　reluxサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/relux/icon-relux.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Relux
+                    //-　コピーライト,version
+                    span.service-info__copy © Loco Partners Co., Ltd.
+                    span.service-info__version Version  4.37.0
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | アートを楽しむアプリの決定版！Reluxの公式アプリです。
+                br
+                | 東京や日本国内で開催中の600以上ものアートイベントを、ジャンルやエリアごとに表示したり、人気度や開催日順で並び替えして検索できます。最新のアートニュースや、動画インタビューも提供しています。
+                br
+                | Relux は、株式会社アートビートが運営する、日本で最大のアート・デザインイベント情報メディアです。2004年から現在まで、美術館・ギャラリーの展覧会情報を毎月600以上を日英バイリンガルで提供しています。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 旅行
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/relux/relux-01.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-02.png" alt="relux")  
-                  .modal-image
-                    img(src="/assets/app/relux/relux-03.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-04.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-05.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-06.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-07.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-08.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-09.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-10.png" alt="relux")
-                  .modal-image 
-                    img(src="/assets/app/relux/relux-11.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-12.png" alt="relux")  
-                  .modal-image
-                    img(src="/assets/app/relux/relux-13.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-14.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-15.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-16.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-17.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-18.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-19.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-20.png" alt="relux")
-                  .modal-image 
-                    img(src="/assets/app/relux/relux-21.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-22.png" alt="relux")  
-                  .modal-image
-                    img(src="/assets/app/relux/relux-23.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-24.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-25.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-26.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-27.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-28.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-29.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-30.png" alt="relux")
-                  .modal-image 
-                    img(src="/assets/app/relux/relux-31.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-32.png" alt="relux")  
-                  .modal-image
-                    img(src="/assets/app/relux/relux-33.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-34.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-35.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-36.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-37.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-38.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-39.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-40.png" alt="relux")
-                  .modal-image 
-                    img(src="/assets/app/relux/relux-41.png" alt="relux")
-                  .modal-image
-                    img(src="/assets/app/relux/relux-42.png" alt="relux")
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/relux/icon-relux.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Relux
-                        //-　コピーライト
-                        span.service-info__copy © Loco Partners Co., Ltd.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 旅行
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-01.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-02.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-03.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-04.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-05.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-06.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-07.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-08.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-09.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-10.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-11.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-12.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-13.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-14.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-15.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-16.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-17.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-18.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-19.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-20.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-21.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-22.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-23.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-24.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-25.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-26.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-27.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-28.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-29.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-30.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-31.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-32.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-33.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-34.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-35.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-36.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-37.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-38.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-39.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-40.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-41.png",
+                    },
+                    {
+                      altName: "relux",
+                      imgSrc: "/assets/app/relux/relux-42.png",
+                    },                                                                                                                   
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/relux/relux-01.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-02.png" alt="relux")  
+                      .modal-image
+                        img(src="/assets/app/relux/relux-03.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-04.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-05.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-06.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-07.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-08.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-09.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-10.png" alt="relux")
+                      .modal-image 
+                        img(src="/assets/app/relux/relux-11.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-12.png" alt="relux")  
+                      .modal-image
+                        img(src="/assets/app/relux/relux-13.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-14.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-15.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-16.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-17.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-18.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-19.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-20.png" alt="relux")
+                      .modal-image 
+                        img(src="/assets/app/relux/relux-21.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-22.png" alt="relux")  
+                      .modal-image
+                        img(src="/assets/app/relux/relux-23.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-24.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-25.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-26.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-27.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-28.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-29.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-30.png" alt="relux")
+                      .modal-image 
+                        img(src="/assets/app/relux/relux-31.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-32.png" alt="relux")  
+                      .modal-image
+                        img(src="/assets/app/relux/relux-33.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-34.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-35.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-36.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-37.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-38.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-39.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-40.png" alt="relux")
+                      .modal-image 
+                        img(src="/assets/app/relux/relux-41.png" alt="relux")
+                      .modal-image
+                        img(src="/assets/app/relux/relux-42.png" alt="relux")
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/relux/icon-relux.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Relux
+                            //-　コピーライト
+                            span.service-info__copy © Loco Partners Co., Ltd.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 旅行
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

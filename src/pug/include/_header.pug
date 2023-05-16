@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 doctype
 html(lang="ja")
   head
@@ -95,3 +96,64 @@ html(lang="ja")
                     a(href="https://www.buymeacoffee.com/uiclip")
                       img.icon-coffee(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")
                       
+=======
+header
+  .header-inner
+    ul.header-inner__nav
+      li.header-inner__logo
+        a(href="/")
+          img(src="/assets/common/logo.svg" alt="UICLIP") 
+      li.header-inner__nav-link
+        //- バーガーメニュー
+        .hamburger
+          .hamburger-inner
+            span.hamburger__lineTop
+            span.hamburger__lineMiddle
+            span.hamburger__lineBottom
+            
+        .nav__inner
+          .background-nav
+          -
+            var nav = {
+              about: {
+                url: "/about/",
+                name: "About"
+              },
+              blog: {
+                url: "https://ui-clip.com/blog/",
+                name: "Blog",
+              },
+              books: {
+                url: "/books/",
+                name: "Books"
+              }                    
+            };
+            function currentCheck(i){
+              if(i == page) 
+                return "is-current";
+              else
+                return "";
+            }        
+          ul.header-inner__menu
+            - for(item in nav)
+              li(class=`header-inner__menu-item ${currentCheck(item)}`)
+                a(href=`${nav[item].url}`)= nav[item].name
+            li.header-inner__menu-item.icons
+              ul.icons-items
+                li
+                  a.icons-items__link(href="https://twitter.com/uiclip" target="_blank" rel="noopener noreferrer")
+                    .background-icon
+                    img.icon-twitter(src="/assets/common/icon-twitter.svg" alt="twitter")
+                li
+                  a.icons-items__link(href="https://www.facebook.com/uiclip" target="_blank" rel="noopener noreferrer")
+                    .background-icon
+                    img.icon-facebook(src="/assets/common/icon-facebook.svg" alt="facebook")
+                li
+                  a.icons-items__link(href="https://note.com/ui_clip" target="_blank" rel="noopener noreferrer")
+                    .background-icon
+                    img.icon-rss(src="/assets/common/icon-note.svg" alt="note" class="icons-items__link-icon")
+                li
+                  a(href="https://www.buymeacoffee.com/uiclip")
+                    img.icon-coffee(src="/assets/common/banner-coffee.svg" alt="buy me a coffee")
+                    
+>>>>>>> production

@@ -6,432 +6,436 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「エクスペディア」ページです。';
 - var ogpUrl='https://ui-clip.com/app/expedia';
 - var page = "expedia"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　expediaサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/expedia/icon-expedia.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name エクスペディア
-                //-　コピーライト,version
-                span.service-info__copy © Expedia, Inc.
-                span.service-info__version Version  22.44
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 旅行の手配はエクスペディア旅行アプリにおまかせ ! ご希望にぴったりの宿泊施設や航空券をすばやく簡単に検索し、お得にご予約いただけます。
-            br
-            | 沖縄の美しいビーチでバカンスするもよし、都心の高級ホテルでロマンチックな時間を過ごすもよし。旅行の計画の際は、会員価格をチェックして割引予約のチャンスをお見逃しなく。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 旅行
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-01.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-02.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-03.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-04.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-05.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-06.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-07.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-08.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-09.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-10.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-11.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-12.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-13.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-14.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-15.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-16.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-17.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-18.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-19.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-20.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-21.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-22.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-23.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-24.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-25.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-26.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-27.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-28.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-29.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-30.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-31.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-32.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-33.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-34.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-35.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-36.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-37.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-38.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-39.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-40.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-41.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-42.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-43.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-44.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-45.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-46.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-47.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-48.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-49.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-50.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-51.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-52.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-53.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-54.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-55.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-56.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-57.png",
-                },
-                {
-                  altName: "expedia",
-                  imgSrc: "/assets/app/expedia/expedia-58.png",
-                },
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　expediaサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/expedia/icon-expedia.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name エクスペディア
+                    //-　コピーライト,version
+                    span.service-info__copy © Expedia, Inc.
+                    span.service-info__version Version  22.44
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 旅行の手配はエクスペディア旅行アプリにおまかせ ! ご希望にぴったりの宿泊施設や航空券をすばやく簡単に検索し、お得にご予約いただけます。
+                br
+                | 沖縄の美しいビーチでバカンスするもよし、都心の高級ホテルでロマンチックな時間を過ごすもよし。旅行の計画の際は、会員価格をチェックして割引予約のチャンスをお見逃しなく。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 旅行
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-01.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-02.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-03.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-04.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-05.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-06.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-07.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-08.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-09.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-10.png" alt="expedia")
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-11.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-12.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-13.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-14.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-15.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-16.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-17.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-18.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-19.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-20.png" alt="expedia")
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-21.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-22.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-23.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-24.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-25.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-26.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-27.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-28.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-29.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-30.png" alt="expedia")
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-31.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-32.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-33.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-34.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-35.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-36.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-37.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-38.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-39.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-40.png" alt="expedia")
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-41.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-42.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-43.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-44.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-45.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-46.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-47.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-48.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-49.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-50.png" alt="expedia")
-                  .modal-image 
-                    img(src="/assets/app/expedia/expedia-51.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-52.png" alt="expedia")  
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-53.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-54.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-55.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-56.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-57.png" alt="expedia")
-                  .modal-image
-                    img(src="/assets/app/expedia/expedia-58.png" alt="expedia")  
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/expedia/icon-expedia.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name エクスペディア
-                        //-　コピーライト
-                        span.service-info__copy © Expedia, Inc.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 旅行
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-01.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-02.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-03.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-04.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-05.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-06.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-07.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-08.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-09.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-10.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-11.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-12.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-13.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-14.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-15.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-16.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-17.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-18.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-19.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-20.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-21.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-22.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-23.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-24.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-25.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-26.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-27.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-28.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-29.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-30.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-31.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-32.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-33.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-34.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-35.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-36.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-37.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-38.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-39.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-40.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-41.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-42.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-43.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-44.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-45.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-46.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-47.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-48.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-49.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-50.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-51.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-52.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-53.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-54.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-55.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-56.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-57.png",
+                    },
+                    {
+                      altName: "expedia",
+                      imgSrc: "/assets/app/expedia/expedia-58.png",
+                    },
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-01.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-02.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-03.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-04.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-05.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-06.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-07.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-08.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-09.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-10.png" alt="expedia")
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-11.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-12.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-13.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-14.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-15.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-16.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-17.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-18.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-19.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-20.png" alt="expedia")
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-21.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-22.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-23.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-24.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-25.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-26.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-27.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-28.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-29.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-30.png" alt="expedia")
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-31.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-32.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-33.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-34.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-35.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-36.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-37.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-38.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-39.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-40.png" alt="expedia")
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-41.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-42.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-43.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-44.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-45.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-46.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-47.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-48.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-49.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-50.png" alt="expedia")
+                      .modal-image 
+                        img(src="/assets/app/expedia/expedia-51.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-52.png" alt="expedia")  
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-53.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-54.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-55.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-56.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-57.png" alt="expedia")
+                      .modal-image
+                        img(src="/assets/app/expedia/expedia-58.png" alt="expedia")  
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/expedia/icon-expedia.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name エクスペディア
+                            //-　コピーライト
+                            span.service-info__copy © Expedia, Inc.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 旅行
+
+              .back-button
+                a(href="/page2.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer

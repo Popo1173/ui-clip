@@ -6,511 +6,515 @@
 - var ogpDescription='優れたUIのサービス・プロダクトを中心としたデザインギャラリーサイト UI Clipの「Evernote」ページです。';
 - var ogpUrl='https://ui-clip.com/app/evernote';
 - var page = "evernote"; //　ナビゲーションのカレントデザインを表示するためにページslugを入れる
-//- header (ロゴ、ナビゲーション)
-header
-  include ../include/_header
 
-section.content
-  .content__inner
-      //-　APPコンテンツ
-      .detail-contents
-        //-　evernoteサービス情報
-        .detail-contents__items
-          dl.service-info
-            dt
-              //-　アイコン
-              img(src="/assets/app/evernote/icon-evernote.svg")
-            dd
-              //-　サービス名称
-              h2.service-info__name Evernote
-                //-　コピーライト,version
-                span.service-info__copy © Evernote Corporation.
-                span.service-info__version Version  10.39
-          
-          //-　サービス概要
-          .detail-contents__overview
-            p.overview-text 
-            | 思い浮かんだアイデアをその場で記録。ノート、ToDo、スケジュールをまとめて管理して、毎日をサクサク進めましょう。職場でも自宅でも外出先でも、やるべきことをこなせます。
-            br
-            br
-            | Evernote はご利用のすべてのデバイスで同期するため、どこにいても生産性を維持できます。移動中に ToDo リストを確認したり、Google カレンダーと連携してスケジュールを管理したり。また、カスタマイズ可能なホーム画面には、その時に最も関連性の高い情報が表示されるので、これまで以上に簡単に必要な情報へアクセスできます。
+doctype html
+html(lang="ja")
+  include ../include/_meta
 
-          .detail-contents__tag
-            ul.tag-items 
-              li.tag-items__item 
-                .background-tag
-                span.item-text 仕事効率化
+  body
+    include ../include/_header
 
-          ul.detail-contents__thumbnail
-            - 
-              var list = [
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img01-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img02-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img03-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img04-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img05-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img06-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img07-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img08-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img09-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img10-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img11-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img12-evernote@2x.png",
-                },             
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img13-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img14-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img15-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img16-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img17-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img18-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img19-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img20-evernote@2x.png",
-                },       
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img21-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img22-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img23-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img24-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img25-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img26-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img27-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img28-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img29-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img30-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img31-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img32-evernote@2x.png",
-                },             
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img33-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img34-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img35-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img36-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img37-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img38-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img39-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img40-evernote@2x.png",
-                }, 
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img41-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img42-evernote@2x.png",
-                },             
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img43-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img44-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img45-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img46-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img47-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img48-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img49-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img50-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img51-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img52-evernote@2x.png",
-                },             
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img53-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img54-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img55-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img56-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img57-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img58-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img59-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img60-evernote@2x.png",
-                },       
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img61-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img62-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img63-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img64-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img65-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img66-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img67-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img68-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img69-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img70-evernote@2x.png",
-                },
-                {
-                  altName: "evernote",
-                  imgSrc: "/assets/app/evernote/img71-evernote@2x.png",
-                },                                                                                                              
-              ]
-            each item in list
-              li.contents-thumbnail.is-modal-open
-                img(src=item.imgSrc alt=item.altName)
+    section.content
+      .content__inner
+          //-　APPコンテンツ
+          .detail-contents
+            //-　evernoteサービス情報
+            .detail-contents__items
+              dl.service-info
+                dt
+                  //-　アイコン
+                  img(src="/assets/app/evernote/icon-evernote.svg")
+                dd
+                  //-　サービス名称
+                  h2.service-info__name Evernote
+                    //-　コピーライト,version
+                    span.service-info__copy © Evernote Corporation.
+                    span.service-info__version Version  10.39
+              
+              //-　サービス概要
+              .detail-contents__overview
+                p.overview-text 
+                | 思い浮かんだアイデアをその場で記録。ノート、ToDo、スケジュールをまとめて管理して、毎日をサクサク進めましょう。職場でも自宅でも外出先でも、やるべきことをこなせます。
+                br
+                br
+                | Evernote はご利用のすべてのデバイスで同期するため、どこにいても生産性を維持できます。移動中に ToDo リストを確認したり、Google カレンダーと連携してスケジュールを管理したり。また、カスタマイズ可能なホーム画面には、その時に最も関連性の高い情報が表示されるので、これまで以上に簡単に必要な情報へアクセスできます。
 
+              .detail-contents__tag
+                ul.tag-items 
+                  li.tag-items__item 
+                    .background-tag
+                    span.item-text 仕事効率化
 
-          #modal.modal
-            .modal-close.is-modal-close
-              img(src="/assets/common/icon-close.png" alt="close")
-            .modal-content
-              .modal-content__inner
-                .modal-content__inner-slider.slick-modal
-                  //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
-                  .modal-image 
-                    img(src="/assets/app/evernote/img01-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img02-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img03-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img04-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img05-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img06-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img07-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img08-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img09-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img10-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img11-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img12-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img13-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img14-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img15-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img16-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img17-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img18-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img19-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img20-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img21-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img22-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img23-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img24-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img25-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img26-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img27-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img28-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img29-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img30-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img31-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img32-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img33-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img34-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img35-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img36-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img37-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img38-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img39-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img40-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img41-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img42-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img43-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img44-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img45-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img46-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img47-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img48-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img49-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img50-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img51-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img52-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img53-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img54-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img55-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img56-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img57-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img58-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img59-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img60-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img61-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img62-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img63-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img64-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img65-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img66-evernote@2x.png" alt="evernote")               
-                  .modal-image 
-                    img(src="/assets/app/evernote/img67-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img68-evernote@2x.png" alt="evernote")
-                  .modal-image 
-                    img(src="/assets/app/evernote/img69-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img70-evernote@2x.png" alt="evernote")
-                  .modal-image
-                    img(src="/assets/app/evernote/img71-evernote@2x.png" alt="evernote")                        
-                .modal-content__inner-app-information
-                  .app-information__service
-                    dl.service-info
-                      dt
-                        //-　アイコン
-                        img(src="/assets/app/evernote/icon-evernote.svg")
-                      dd
-                        //-　サービス名称
-                        h2.service-info__name Evernote
-                        //-　コピーライト
-                        span.service-info__copy © Evernote Corporation.
-                        
-                  .app-information__tags
-                    ul.app-information__tags-list
-                      li.app-information__tags-list-item
-                        span.list-item 仕事効率化
-
-          .back-button
-            a(href="/")
-              .back-button__background
-              .back-button__button 
-                p.back-button__text 一覧に戻る
-
-      //-　AmazonBannerエリア
-      include ../include/_TheBooksBanner
+              ul.detail-contents__thumbnail
+                - 
+                  var list = [
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img01-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img02-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img03-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img04-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img05-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img06-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img07-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img08-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img09-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img10-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img11-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img12-evernote@2x.png",
+                    },             
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img13-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img14-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img15-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img16-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img17-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img18-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img19-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img20-evernote@2x.png",
+                    },       
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img21-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img22-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img23-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img24-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img25-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img26-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img27-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img28-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img29-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img30-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img31-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img32-evernote@2x.png",
+                    },             
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img33-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img34-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img35-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img36-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img37-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img38-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img39-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img40-evernote@2x.png",
+                    }, 
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img41-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img42-evernote@2x.png",
+                    },             
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img43-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img44-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img45-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img46-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img47-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img48-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img49-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img50-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img51-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img52-evernote@2x.png",
+                    },             
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img53-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img54-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img55-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img56-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img57-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img58-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img59-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img60-evernote@2x.png",
+                    },       
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img61-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img62-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img63-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img64-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img65-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img66-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img67-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img68-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img69-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img70-evernote@2x.png",
+                    },
+                    {
+                      altName: "evernote",
+                      imgSrc: "/assets/app/evernote/img71-evernote@2x.png",
+                    },                                                                                                              
+                  ]
+                each item in list
+                  li.contents-thumbnail.is-modal-open
+                    img(src=item.imgSrc alt=item.altName)
 
 
-//- footer (SNS、コピーライト)
-//- script もfooterの中に記述 
-footer
-  include ../include/_footer
+              #modal.modal
+                .modal-close.is-modal-close
+                  img(src="/assets/common/icon-close.png" alt="close")
+                .modal-content
+                  .modal-content__inner
+                    .modal-content__inner-slider.slick-modal
+                      //- todo SPタップ時にモーダルが開いてしまうので、、、何らかの対策講じる
+                      .modal-image 
+                        img(src="/assets/app/evernote/img01-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img02-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img03-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img04-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img05-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img06-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img07-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img08-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img09-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img10-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img11-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img12-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img13-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img14-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img15-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img16-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img17-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img18-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img19-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img20-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img21-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img22-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img23-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img24-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img25-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img26-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img27-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img28-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img29-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img30-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img31-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img32-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img33-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img34-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img35-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img36-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img37-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img38-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img39-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img40-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img41-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img42-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img43-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img44-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img45-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img46-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img47-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img48-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img49-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img50-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img51-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img52-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img53-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img54-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img55-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img56-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img57-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img58-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img59-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img60-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img61-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img62-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img63-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img64-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img65-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img66-evernote@2x.png" alt="evernote")               
+                      .modal-image 
+                        img(src="/assets/app/evernote/img67-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img68-evernote@2x.png" alt="evernote")
+                      .modal-image 
+                        img(src="/assets/app/evernote/img69-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img70-evernote@2x.png" alt="evernote")
+                      .modal-image
+                        img(src="/assets/app/evernote/img71-evernote@2x.png" alt="evernote")                        
+                    .modal-content__inner-app-information
+                      .app-information__service
+                        dl.service-info
+                          dt
+                            //-　アイコン
+                            img(src="/assets/app/evernote/icon-evernote.svg")
+                          dd
+                            //-　サービス名称
+                            h2.service-info__name Evernote
+                            //-　コピーライト
+                            span.service-info__copy © Evernote Corporation.
+                            
+                      .app-information__tags
+                        ul.app-information__tags-list
+                          li.app-information__tags-list-item
+                            span.list-item 仕事効率化
+
+              .back-button
+                a(href="/page3.html")
+                  .back-button__background
+                  .back-button__button 
+                    p.back-button__text 一覧に戻る
+
+          //-　AmazonBannerエリア
+          include ../include/_TheBooksBanner
+
+
+    //- footer (SNS、コピーライト)
+    //- script もfooterの中に記述 
+    footer
+      include ../include/_footer
