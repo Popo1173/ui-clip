@@ -1,6 +1,4 @@
 # Dependency directories
-dist/
+dist/*
 node_modules/
-
-# html,cssを除外
-!/js
+!/dist/js
