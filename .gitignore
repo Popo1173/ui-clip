@@ -1,5 +1,7 @@
+# html,cssを除外
+# *.css
+# *.html
+# dist/
+
 # Dependency directories
-# dist/*
 # node_modules/
-# !/dist/js
-*.html
