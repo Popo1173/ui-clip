@@ -1,5 +1,5 @@
 # html,cssを除外
-*.js
+!/dist/js
 
 # Dependency directories
 dist/
