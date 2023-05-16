@@ -1,7 +1,3 @@
-# html,cssを除外
-# *.css
+# 除外
 *.html
-# dist/
-
-# Dependency directories
-# node_modules/
+.DS_Store
