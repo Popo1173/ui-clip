@@ -131,7 +131,10 @@ $(function(){
     // モーダル内でslickを実行する
     $('.modal__list').slick({
       arrows: true,
-      adaptiveHeight: true,
+      centerMode: true,
+      centerPadding: "100px",
+      autoplay: true,
+      autoplaySpeed: 1000
     });
   })
 });
