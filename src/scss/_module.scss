@@ -520,10 +520,9 @@
 .modal {
   display: none;
   position: fixed;
-  width: 100%;
   top: 0;
   z-index: 10;
-  background: #F7F7F7;
+  background: #fff;
   height: 100vh;
   overflow-y: scroll;
 
@@ -534,14 +533,15 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 100vw;
-    // width: 300px;
 
     @include mq-up("pc") {
-      background: red;
+      flex-direction: row-reverse;
     }
 
     // modal内のカルーセル矢印
     .slick-arrow {
+      position: absolute;
+      z-index: 10;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -568,8 +568,8 @@
 
   // .is-modal__list
   &__list {
-    // flex: 1 1 50%;
     padding: 10%;
+    background: #F7F7F7;
   }
 
   // .is-modal__item
@@ -609,9 +609,20 @@
   // .modal__app-information
   &__app-information {
     height: 33vh;
-    flex: 1 1 50%;
     padding: 10% 5% 10%;
     background-color: #fff;
+
+    @include mq-up("pc") {
+      width: 33%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-right: 30px;
+      padding-left: 30px;
+      background-color: #fff;
+    }
   }
 }
 
