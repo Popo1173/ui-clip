@@ -39,32 +39,32 @@ $(function() {
 
 
 /* APPタブのカルーセル SPの時だけイベントを発火させる */
-$(function(){
-  function checkBreakPoint() {
-    w = $(window).width();
-    if (w <= 767) {
-      // スマホ向け（767px以下のとき）
-      $('.slider-thumbnail').not('.slick-initialized').slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed: 1000,
-        infinite: false,
-        centerMode: false,
-        dots: false, 
-      });
-    } else {
-      // PC向け
-      $('.slider-thumbnail.slick-initialized').slick('unslick');
-    }
-  }
-  // ウインドウがリサイズする度にチェックすして発火させる
-  $(window).resize(function(){
-    checkBreakPoint();
-  });
-  checkBreakPoint();
-})
+// $(function(){
+//   function checkBreakPoint() {
+//     w = $(window).width();
+//     if (w <= 767) {
+//       // スマホ向け（767px以下のとき）
+//       $('.slider-thumbnail').not('.slick-initialized').slick({
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//         arrows: false,
+//         autoplay: false,
+//         autoplaySpeed: 1000,
+//         infinite: false,
+//         centerMode: false,
+//         dots: false, 
+//       });
+//     } else {
+//       // PC向け
+//       $('.slider-thumbnail.slick-initialized').slick('unslick');
+//     }
+//   }
+//   // ウインドウがリサイズする度にチェックすして発火させる
+//   $(window).resize(function(){
+//     checkBreakPoint();
+//   });
+//   checkBreakPoint();
+// })
 
 // window.addEventListener("load", function() {
   
@@ -94,8 +94,6 @@ $(function(){
   デフォルトはdisplay: none のため、slickの発火を「is-modal-open」の後にする
   モーダル表示時間に合わせて発火するように小細工
 */ 
-
-
 
 $(function(){
 
@@ -132,7 +130,7 @@ $(function(){
     $('.modal__list').slick({
       arrows: true,
       centerMode: true,
-      centerPadding: "100px",
+      centerPadding: "1000px",
       autoplay: false,
       autoplaySpeed: 1000
     });
