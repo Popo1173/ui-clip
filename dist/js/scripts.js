@@ -133,7 +133,7 @@ $(function(){
       arrows: true,
       centerMode: true,
       centerPadding: "100px",
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000
     });
   })

@@ -525,13 +525,15 @@
   z-index: 10;
   background: #F7F7F7;
   height: 100vh;
+  overflow-y: scroll;
 
   // .is-modal__inner
   &__inner {
     position: relative;
-    // display: flex;
-    // flex-direction: column;
-    // width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
     // width: 300px;
 
     // modal内のカルーセル矢印
@@ -602,12 +604,48 @@
 
   // .modal__app-information
   &__app-information {
+    height: 33vh;
     flex: 1 1 50%;
+    padding: 10% 5% 10%;
+    background-color: #fff;
   }
 }
 
 .slick-list {
   padding:0 30px !important;
+}
+
+.app-information {
+  // app-information__tags
+  &__tags {
+
+  }
+
+  // app-information__tags-list
+  &__tags-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // app-information__tags-list-item
+  &__tags-list-item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px 5px 0;
+    padding: 10px 20px;
+    background: #F7F7F7;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px rgba(222, 222, 222, 0.7);
+  }
+
+  // app-information__tags-list-text
+  &__tags-list-text {
+    position: relative;
+    z-index: 3;
+    font-size: 10px;
+  }
 }
 
 // .slick-next {
@@ -674,7 +712,7 @@
 //           img {
 //             width: 100%;
 //             border-radius: 10px;
-//             @include mq-up("sp") {
+//             @include mq-up("sp") {z
 //               width: 70%;
 //             }
 //           }
